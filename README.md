@@ -22,9 +22,6 @@
 
 
 
-# Portfolio
-
-> Portfolio Microverse Project 1 | Creation of a Mobile-first Portfolio website
 
 
 ## Built With
