@@ -81,8 +81,8 @@ To get a local copy up and running follow these simple example steps.
 
 Install this project using:
 
-- cd project/directory
-- Git clone [portfolio](https://github.com/jecode93/portfolio)
+- cd project directory
+- Git clone [portfolio](https://github.com/jecode93/personal-portfolio.git)
 
 ### Usage
 
@@ -95,14 +95,14 @@ To run the project, execute the following command:
 
 To run tests, run the following command:
 
-- Open the index.html file
-- Modify the name in the h1 tag or the description
-- Refresh you browser to see the changes
+- `npm run test`
+
 
 ### Deployment
 
 You can deploy this project using:
 
+- [Vercel](https://vercel.com/)
 - [Netlify](https://www.netlify.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
