@@ -1,7 +1,5 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import './globals.css';
+import { nunito } from './fonts';
 
 export const metadata = {
   title: 'Full-Stack Software Engineer | Jean Emmanuel Cadet',
@@ -11,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${nunito.className} bg-black text-white`}>{children}</body>
     </html>
   )
 }
