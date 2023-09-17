@@ -1,0 +1,20 @@
+.humberger div {
+  transition: 0.5s;
+}
+
+.humberger:hover div {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.line-1 {
+  width: 100%;
+}
+
+.line-2 {
+  width: 80%;
+}
+
+.line-3 {
+  width: 60%;
+}

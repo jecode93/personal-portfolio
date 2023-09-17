@@ -1,5 +1,6 @@
 import './globals.css';
-import { nunito } from './fonts';
+import { nunito } from './js/fonts';
+import Navbar from './components/menu';
 
 export const metadata = {
   title: 'Full-Stack Software Engineer | Jean Emmanuel Cadet',
@@ -9,7 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${nunito.className} bg-black text-white`}>{children}</body>
+      <body className={`${nunito.className} bg-black text-white`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
