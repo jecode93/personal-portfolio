@@ -1,0 +1,28 @@
+/* Mobile menu */
+
+.humberger div {
+  transition: 0.5s;
+}
+
+.humberger:hover div {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.line-1 {
+  width: 100%;
+}
+
+.line-2 {
+  width: 80%;
+}
+
+.line-3 {
+  width: 60%;
+}
+
+/* Desktop menu */
+
+.desktopMenu {
+  background-color: rgba(255, 255, 255, 0.1);
+}
