@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <header className="px-5 py-5">
       {/* Mobile logo and icons */}
-      <div className="md:hidden flex justify-between items-center">
+      <div className="min-[940px]:hidden flex justify-between items-center">
         {/* Logo header */}
         <Link href="/" className="hover:scale-125 duration-300">
           <Image src={logo} alt="Logo jecode93" width={80} />
@@ -113,7 +113,7 @@ const Navbar = () => {
       {/* End Mobile menu links */}
 
       {/* Desktop menu */}
-      <div className="desktopMenu hidden relative md:block mt-10 mx-40 border rounded-lg px-5 py-3 backdrop-blur-xl">
+      <div className="desktopMenu hidden relative min-[940px]:block mt-10 mx-40 rounded-lg px-5 py-3 backdrop-blur-xl">
         <div className="flex z-10 w-full justify-between items-center">
           <Link href="/" className="hover:scale-125 duration-300">
             <Image src={logo} alt="Logo jecode93" width={80} />

@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="mx-44">
+    <main>
       <h2>Home</h2>
     </main>
   )
