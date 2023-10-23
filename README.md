@@ -117,7 +117,7 @@ You can deploy this project using:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link will be available soon]()
+- [Live Demo Link will be available soon](https://jeanemmanuelcadet.vercel.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
