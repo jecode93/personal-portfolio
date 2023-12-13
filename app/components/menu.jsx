@@ -72,8 +72,8 @@ const Navbar = () => {
 
             <div className="menu-links mt-48 ml-5">
               <ul className="menu-items" onClick={handleClick}>
-                {menu.map((data) => (
-                  <li className="mb-4 text-lg hover:text-black w-28 hover:-translate-y-1 duration-300">
+                {menu.map((data, index) => (
+                  <li key={index} className="mb-4 text-lg hover:text-black w-28 hover:-translate-y-1 duration-300">
                     <Link href={data.path}>{data.name}</Link>
                   </li>
                 ))}
@@ -82,8 +82,8 @@ const Navbar = () => {
 
             <div className="socials-links mt-48 ml-10">
               <ul className="absolute flex gap-8 justify-center items-center left-0 right-0 bottom-32">
-                {socials.map((social) => (
-                  <li className="text-3xl hover:-translate-y-2 duration-300">
+                {socials.map((social, index) => (
+                  <li key={index} className="text-3xl hover:-translate-y-2 duration-300">
                     <Link href={social.link}>{social.icon}</Link>
                   </li>
                 ))}
@@ -102,8 +102,8 @@ const Navbar = () => {
             <Image src={logo} alt="Logo jecode93" width={50} />
           </Link>
           <ul className="flex">
-            {menu.map((data) => (
-              <li className="hover:text-orange-500 mr-10 duration-300">
+            {menu.map((data, index) => (
+              <li key={index} className="hover:text-orange-500 mr-10 duration-300">
                 <Link href={data.path}>{data.name}</Link>
               </li>
             ))}
