@@ -12,7 +12,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${nunito.className} bg-black text-white`}>
         <Navbar />
-        {children}
+        <div className="container px-5">
+          {children}
+        </div>
       </body>
     </html>
   )
