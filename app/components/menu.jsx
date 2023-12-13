@@ -5,8 +5,8 @@ import Image from "next/image";
 import logo from "../images/logo-header2.png";
 import logowhite from "../images/logo-header.png";
 import Link from "next/link";
+import { menu, socials } from '../js/data/menu'
 import { MdClose } from "react-icons/md";
-import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,12 +16,12 @@ const Navbar = () => {
   };
 
   return (
-    <header className="px-5 py-5">
+    <header className="px-5 py-5 lg:py-0">
       {/* Mobile logo and icons */}
       <div className="min-[940px]:hidden flex justify-between items-center">
         {/* Logo header */}
         <Link href="/" className="hover:scale-125 duration-300">
-          <Image src={logo} alt="Logo jecode93" width={80} />
+          <Image src={logo} alt="Logo jecode93" width={40} />
         </Link>
         {/* End logo header */}
 
@@ -57,7 +57,7 @@ const Navbar = () => {
         >
           <div className="flex justify-center mt-5" onClick={handleClick}>
             <Link href="/" className="hover:scale-125 duration-300">
-              <Image src={logowhite} alt="Logo jecode93" width={70} />
+              <Image src={logowhite} alt="Logo jecode93" width={40} />
             </Link>
           </div>
           <nav>
@@ -70,40 +70,23 @@ const Navbar = () => {
               </span>
             </div>
 
-            <div className="menu-links mt-48 ml-10">
+            <div className="menu-links mt-48 ml-5">
               <ul className="menu-items" onClick={handleClick}>
-                <li className="mb-4 text-lg font-bold hover:text-black duration-300 w-28  hover:-translate-y-1 duration-300">
-                  <Link href="about">About</Link>
-                </li>
-                <li className="mb-4 text-lg font-bold hover:text-black duration-300 w-28 hover:-translate-y-1 duration-300">
-                  <Link href="portfolio">Portfolio</Link>
-                </li>
-                <li className="mb-4 text-lg font-bold hover:text-black duration-300 w-28 hover:-translate-y-1 duration-300">
-                  <Link href="services">Services</Link>
-                </li>
-                <li className="mb-4 text-lg font-bold hover:text-black duration-300 w-28 hover:-translate-y-1 duration-300">
-                  <Link href="contact">Contact</Link>
-                </li>
+                {menu.map((data) => (
+                  <li className="mb-4 text-lg hover:text-black w-28 hover:-translate-y-1 duration-300">
+                    <Link href={data.path}>{data.name}</Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
             <div className="socials-links mt-48 ml-10">
               <ul className="absolute flex gap-8 justify-center items-center left-0 right-0 bottom-32">
-                <li className="text-3xl hover:-translate-y-2 duration-300">
-                  <Link href="#">
-                    <BsFacebook />
-                  </Link>
-                </li>
-                <li className="text-3xl hover:-translate-y-2 duration-300">
-                  <Link href="#">
-                    <BsLinkedin />
-                  </Link>
-                </li>
-                <li className="text-3xl hover:-translate-y-2 duration-300">
-                  <Link href="#">
-                    <BsGithub />
-                  </Link>
-                </li>
+                {socials.map((social) => (
+                  <li className="text-3xl hover:-translate-y-2 duration-300">
+                    <Link href={social.link}>{social.icon}</Link>
+                  </li>
+                ))}
               </ul>
               <div className="absolute mx-auto left-0 right-0 bottom-24 w-20 border border-white shadow-2xl"></div>
             </div>
@@ -113,24 +96,17 @@ const Navbar = () => {
       {/* End Mobile menu links */}
 
       {/* Desktop menu */}
-      <div className="desktopMenu hidden relative min-[940px]:block mt-10 mx-40 rounded-lg px-5 py-3 backdrop-blur-xl">
+      <div className="desktopMenu hidden relative min-[940px]:block mt-5 mx-28 rounded-lg px-5 py-3 backdrop-blur-xl">
         <div className="flex z-10 w-full justify-between items-center">
           <Link href="/" className="hover:scale-125 duration-300">
-            <Image src={logo} alt="Logo jecode93" width={80} />
+            <Image src={logo} alt="Logo jecode93" width={50} />
           </Link>
           <ul className="flex">
-            <li className="text-lg font-bold hover:text-orange-500 duration-300 mr-10 duration-300">
-              <Link href="about">About</Link>
-            </li>
-            <li className="text-lg font-bold hover:text-orange-500 duration-300 mr-10 duration-300">
-              <Link href="portfolio">Portfolio</Link>
-            </li>
-            <li className="text-lg font-bold hover:text-orange-500 duration-300 mr-10 duration-300">
-              <Link href="services">Services</Link>
-            </li>
-            <li className="text-lg font-bold hover:text-orange-500 duration-300 duration-300">
-              <Link href="contact">Contact</Link>
-            </li>
+            {menu.map((data) => (
+              <li className="hover:text-orange-500 mr-10 duration-300">
+                <Link href={data.path}>{data.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
