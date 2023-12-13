@@ -53,7 +53,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "right-0" : "-right-[100%]"
-          } fixed top-0 bg-orange-600 w-2/3 h-full duration-500`}
+          } fixed top-0 bg-orange-600 w-3/4 h-screen duration-500`}
         >
           <div className="flex justify-center mt-5" onClick={handleClick}>
             <Link href="/" className="hover:scale-125 duration-300">
@@ -70,7 +70,7 @@ const Navbar = () => {
               </span>
             </div>
 
-            <div className="menu-links mt-48 ml-5">
+            <div className="menu-links mt-[50%] ml-5">
               <ul className="menu-items" onClick={handleClick}>
                 {menu.map((data, index) => (
                   <li key={index} className="mb-4 text-lg hover:text-black w-28 hover:-translate-y-1 duration-300">
@@ -80,15 +80,15 @@ const Navbar = () => {
               </ul>
             </div>
 
-            <div className="socials-links mt-48 ml-10">
-              <ul className="absolute flex gap-8 justify-center items-center left-0 right-0 bottom-32">
+            <div className="socials-links ml-10">
+              <ul className="absolute flex gap-4 justify-center items-center left-0 right-0 bottom-[13%]">
                 {socials.map((social, index) => (
                   <li key={index} className="text-3xl hover:-translate-y-2 duration-300">
                     <a href={social.link} target="_blank">{social.icon}</a>
                   </li>
                 ))}
               </ul>
-              <div className="absolute mx-auto left-0 right-0 bottom-24 w-20 border border-white shadow-2xl"></div>
+              <div className="absolute mx-auto left-0 right-0 bottom-[10%] w-20 border border-white shadow-2xl"></div>
             </div>
           </nav>
         </div>
