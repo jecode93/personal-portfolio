@@ -81,14 +81,14 @@ const Navbar = () => {
             </div>
 
             <div className="socials-links ml-10">
-              <ul className="absolute flex gap-4 justify-center items-center left-0 right-0 bottom-[13%]">
+              <ul className="absolute flex gap-4 justify-center items-center left-0 right-0 bottom-32">
                 {socials.map((social, index) => (
                   <li key={index} className="text-3xl hover:-translate-y-2 duration-300">
                     <a href={social.link} target="_blank">{social.icon}</a>
                   </li>
                 ))}
               </ul>
-              <div className="absolute mx-auto left-0 right-0 bottom-[10%] w-20 border border-white shadow-2xl"></div>
+              <div className="absolute mx-auto left-0 right-0 bottom-24 w-20 border border-white shadow-2xl"></div>
             </div>
           </nav>
         </div>
