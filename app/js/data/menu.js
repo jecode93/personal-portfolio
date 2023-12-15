@@ -3,6 +3,10 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 export const menu = [
   {
+    name: "Home",
+    path: "/",
+  },
+  {
     name: "About",
     path: "/about",
   },
@@ -22,16 +26,16 @@ export const menu = [
 
 export const socials = [
   {
-    link: "https://www.facebook.com/jeanemmanuelcadet07",
-    icon: <BsFacebook />,
+    link: "https://github.com/jecode93",
+    icon: <BsGithub />,
   },
   {
     link: "https://www.linkedin.com/in/jean-emmanuel-cadet/",
     icon: <BsLinkedin />,
   },
   {
-    link: "https://github.com/jecode93",
-    icon: <BsGithub />,
+    link: "https://www.facebook.com/jeanemmanuelcadet07",
+    icon: <BsFacebook />,
   },
   {
     link: "https://twitter.com/jecode93",
