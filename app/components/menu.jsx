@@ -57,7 +57,7 @@ const Navbar = () => {
                 <MdClose className="hover:rotate-180 duration-300" />
               </span>
             </div>
-
+            
             <div className="py-12 px-[10%] flex flex-col justify-between h-full">
               <div className="menu-links ml-5">
                 <h2 className="mb-8 uppercase text-gray">Menu</h2>
