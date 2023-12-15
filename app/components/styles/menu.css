@@ -1,10 +1,10 @@
 /* Mobile menu */
 
-.humberger div {
+.hamburger div {
   transition: 0.5s;
 }
 
-.humberger:hover div {
+.hamburger:hover div {
   width: 100%;
   transition: all 0.3s;
 }
