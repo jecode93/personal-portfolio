@@ -10,12 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${nunito.className} bg-black text-white`}>
+      <body className={`${nunito.className} bg-blue text-white`}>
         <Navbar />
-        <div className="container px-5">
-          {children}
-        </div>
+        <div className="container px-5">{children}</div>
       </body>
     </html>
-  )
+  );
 }
