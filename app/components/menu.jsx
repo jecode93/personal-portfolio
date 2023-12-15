@@ -46,7 +46,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "right-0" : "-right-[100%]"
-          } fixed top-0 bg-darkblue w-full md:w-[44%] h-screen duration-500`}
+          } fixed top-0 bottom-0 bg-darkblue w-full md:w-[44%] h-screen duration-500`}
         >
           <nav className="h-full">
             <div
@@ -58,14 +58,14 @@ const Navbar = () => {
               </span>
             </div>
 
-            <div className="py-12 px-[10%] flex flex-col justify-between h-full">
-              <div className="menu-links ml-5">
+            <div className="py-20 px-5 md:px-[10%] flex flex-col justify-between h-full">
+              <div className="menu-links">
                 <h2 className="mb-8 uppercase text-gray">Menu</h2>
                 <ul className="menu-items" onClick={handleClick}>
                   {menu.map((data, index) => (
                     <li
                       key={index}
-                      className="mb-5 text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 duration-300"
+                      className="mb-5 md:text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 duration-300"
                     >
                       <Link href={data.path}>{data.name}</Link>
                     </li>
@@ -90,10 +90,10 @@ const Navbar = () => {
                 <div className="mx-auto left-0 right-0 w-20 border border-white shadow-2xl"></div>
               </div>
               <div className="absolute bottom-0 right-0">
-                <Image src={bullet} alt="bullet-point" width={80} />
+                <Image src={bullet} alt="bullet-point" width={90} />
               </div>
               <div className="absolute bottom-0 left-0">
-                <Image src={bullet} alt="bullet-point" width={80} />
+                <Image src={bullet} alt="bullet-point" width={90} />
               </div>
             </div>
           </nav>
