@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="px-5 py-5">
+    <header className="px-5 py-5 fixed">
       {/* Mobile logo and icons */}
       <div className="flex justify-between items-center">
         {/* Mobile icon */}
@@ -46,7 +46,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "right-0" : "-right-[100%]"
-          } fixed top-0 bottom-0 bg-darkblue w-full md:w-[44%] h-screen duration-500`}
+          } fixed top-0 bottom-0 bg-darkblue w-full md:w-[48%] h-screen duration-500`}
         >
           <nav className="h-full">
             <div
