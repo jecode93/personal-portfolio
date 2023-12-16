@@ -19,7 +19,7 @@ module.exports = {
       slate: '#94a3b8',
       blue: '#001f3f',
       darkblue: '#001B36',
-      gray: '#808080'
+      gray: '#888'
     },
   },
   plugins: [],
