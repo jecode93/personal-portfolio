@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./styles/menu.css";
 import Image from "next/image";
 import bullet from "../images/bullet.png";
+import jec from "../images/jec.png";
 import Link from "next/link";
 import { menu, socials } from '../js/data/menu'
 import { MdClose } from "react-icons/md";
@@ -19,6 +20,11 @@ const Navbar = () => {
       {/* Mobile logo and icons */}
       <div className="flex justify-between items-center">
         {/* Mobile icon */}
+        <div className="fixed top-7 left-5 md:px-5 lg:px-32">
+          <Link href="/">
+            <Image src={jec} alt="Jean Emmanuel Cadet" width={300} className="hover:scale-105 duration-300"/>
+          </Link>
+        </div>
         <div
           className="hamburger fixed top-5 right-5 cursor-pointer flex flex-col items-end justify-around w-10 h-10 rounded p-1"
           onClick={handleClick}
@@ -46,7 +52,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "right-0" : "-right-[100%]"
-          } fixed top-0 bottom-0 bg-darkblue w-full md:w-[48%] h-screen duration-500`}
+          } fixed top-0 bottom-0 bg-darkblue w-full md:w-[48%] h-screen duration-300`}
         >
           <nav className="h-full">
             <div
@@ -60,19 +66,21 @@ const Navbar = () => {
 
             <div className="py-20 px-5 md:px-[10%] flex flex-col justify-between h-full">
               <div className="menu-links">
-                <h2 className="mb-8 uppercase text-gray">Menu</h2>
+                <h2 className="mb-8 uppercase text-orange-500 font-bold tracking-widest">
+                  Menu
+                </h2>
                 <ul className="menu-items" onClick={handleClick}>
                   {menu.map((data, index) => (
                     <li
                       key={index}
-                      className="mb-5 md:text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 duration-300"
+                      className="mb-5 md:text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 duration-300 tracking-widest"
                     >
                       <Link href={data.path}>{data.name}</Link>
                     </li>
                   ))}
                 </ul>
               </div>
-              
+
               {/* Social section */}
               <div className="socials-links z-40">
                 <ul className="flex gap-4 justify-center items-center left-0 right-0 mb-10">
