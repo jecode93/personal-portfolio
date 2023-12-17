@@ -8,3 +8,18 @@ export const hero = [
     desc2: 'Let\'s embark on a journey to explore the endless possibilities of code...'
   },
 ];
+
+export const infos = [
+  {
+    text: "Email",
+    content: "jeanemmanuelcadet@gmail.com",
+  },
+  {
+    text: "Phone",
+    content: "+1 (267) 529 6040",
+  },
+  {
+    text: "Work location",
+    content: "Remote",
+  },
+];
