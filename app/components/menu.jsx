@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="px-5 py-5 fixed">
+    <header className="px-5 py-5 fixed z-40">
       {/* Mobile logo and icons */}
       <div className="flex justify-between items-center">
         {/* Mobile icon */}
