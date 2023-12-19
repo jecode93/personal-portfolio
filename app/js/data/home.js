@@ -25,7 +25,7 @@ export const infosHero = [
   },
 ];
 
-export const about = [
+export const aboutme = [
   {
     title: "I'm Jean Emmanuel Cadet",
     content: "I'm a full-stack software engineer who specializes in using Javascript, React/Redux, Next.js, Ruby and Ruby on Rails to build software solutions for small and larger businesses.",
