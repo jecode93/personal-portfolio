@@ -29,7 +29,7 @@ export default function Home() {
           ))}
           <Link
             href="/contact"
-            className="md:hidden uppercase w-fit hover:scale-105 font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300"
+            className="md:hidden w-fit hover:scale-105 font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300"
           >
             Contact me
           </Link>
