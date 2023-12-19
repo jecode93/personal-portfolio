@@ -10,7 +10,7 @@ export const hero = [
   },
 ];
 
-export const infos = [
+export const infosHero = [
   {
     text: "Email",
     content: "jeanemmanuelcadet@gmail.com",
@@ -22,5 +22,12 @@ export const infos = [
   {
     text: "Work location",
     content: "Remotely",
+  },
+];
+
+export const about = [
+  {
+    title: "I'm Jean Emmanuel Cadet",
+    content: "I'm a full-stack software engineer who specializes in using Javascript, React/Redux, Next.js, Ruby and Ruby on Rails to build software solutions for small and larger businesses.",
   },
 ];

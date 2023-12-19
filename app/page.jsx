@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { hero, infos } from "./js/data/hero";
+import { hero, infosHero } from "./js/data/home";
 
 export default function Home() {
   return (
@@ -32,7 +32,7 @@ export default function Home() {
           ))}
         </div>
         <div className="hidden mb-10 md:flex gap-5 md:divide-x">
-          {infos.map((info, index) => (
+          {infosHero.map((info, index) => (
             <div className="mb-5 md:mb-0 px-5 text-sm" key={index}>
               <h3 className="font-bold mb-1">{info.text}</h3>
               {info.text === "Email" && (
@@ -50,6 +50,20 @@ export default function Home() {
               )}
             </div>
           ))}
+        </div>
+      </section>
+      <section id="about" className="about px-5 lg:px-32 py-20 border">
+        <div className="flex flex-col lg:flex-row items-center gap-10 md:px-5">
+          <div className="flex justify-center lg:justify-start w-full h-56 border lg:w-1/2">
+            <p>Photo</p>
+          </div>
+          <div className="flex justify-center lg:justify-start w-full lg:w-1/2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus hic esse commodi fuga nulla iure ipsa quasi, a illum. Voluptas omnis qui perferendis tempore quidem quibusdam ut maxime animi at.
+            Ipsa unde molestiae voluptas rem esse accusantium aspernatur totam nam perferendis sed, dolore minima nulla deleniti reiciendis beatae officiis officia distinctio impedit tempora deserunt omnis laudantium mollitia! Eius, ad suscipit?
+            Dignissimos sunt ipsa odio porro similique facere, voluptates nihil reiciendis voluptatum excepturi nemo modi libero necessitatibus dolore animi vel temporibus qui earum aut minus unde iusto? Modi, dolorem deserunt! Aut!
+            Optio deserunt fugiat distinctio quas accusantium, saepe commodi exercitationem iure in voluptate nostrum excepturi veniam, illo earum fuga dolor debitis. Suscipit esse soluta nobis, quae ea autem officia. Dignissimos, quibusdam.
+            Excepturi, quis et saepe libero accusamus perferendis minus officia maiores quod tenetur dolor mollitia, dolorum a doloremque ad cum accusantium est sint molestias porro perspiciatis maxime eligendi dolorem aperiam. Asperiores.</p>
+          </div>
         </div>
       </section>
     </>
