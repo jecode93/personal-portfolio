@@ -14,7 +14,7 @@ export default function Home() {
         <div className="flex flex-col px-5 tracking-widest leading-7 justify-center lg:w-[70%] h-full">
           {hero.map((text, index) => (
             <div key={index}>
-              <p className="text-white mb-3 text-sm md:text-xl">
+              <p className="text-white mb-3 md:text-xl">
                 {text.subTitle}
               </p>
               <h1 className="text-2xl mb-5 md:text-4xl font-black md:leading-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-orange-500">
@@ -23,20 +23,20 @@ export default function Home() {
               </h1>
 
               <div className="border w-20 md:w-40 mb-7 text-gray" />
-              <p className="mb-3 text-sm md:text-xl">{text.desc1}</p>
-              <p className="mb-7 text-sm md:text-xl">{text.desc2}</p>
+              <p className="mb-3 md:text-xl">{text.desc1}</p>
+              <p className="mb-7 md:text-xl">{text.desc2}</p>
             </div>
           ))}
           <Link
             href="/contact"
-            className="md:hidden uppercase w-fit hover:scale-105 text-sm font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300"
+            className="md:hidden uppercase w-fit hover:scale-105 font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300"
           >
             Contact me
           </Link>
         </div>
         <div className="hidden mb-10 md:flex gap-5 md:divide-x">
           {infosHero.map((info, index) => (
-            <div className="mb-5 md:mb-0 px-5 text-sm" key={index}>
+            <div className="mb-5 md:mb-0 px-5 " key={index}>
               <h3 className="font-bold mb-1">{info.text}</h3>
               {info.text === "Email" && (
                 <a href={`mailto:${info.content}`} className="text-gray">
@@ -74,22 +74,22 @@ export default function Home() {
                 <h2 className="text-xl md:text-2xl lg:text-3xl mb-4 font-bold tracking-widest">
                   {about.title}
                 </h2>
-                <p className="text-sm md:text-xl tracking-widest">
+                <p className="md:text-xl tracking-widest">
                   {about.paragraph}
                 </p>
                 <br />
-                <p className="text-sm md:text-xl tracking-widest">
+                <p className="md:text-xl tracking-widest">
                   {about.paragraph2}
                 </p>
                 <br />
-                <p className="text-sm md:text-xl tracking-widest">
+                <p className="md:text-xl tracking-widest">
                   {about.paragraph3}
                 </p>
               </div>
             ))}
             <Link
               href="/about"
-              className="w-fit mt-10 hover:scale-105 text-sm md:text-xl font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300"
+              className="w-fit mt-10 hover:scale-105 md:text-xl font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300"
             >
               Read more...
             </Link>
