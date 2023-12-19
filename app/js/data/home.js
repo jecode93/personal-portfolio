@@ -28,6 +28,11 @@ export const infosHero = [
 export const aboutme = [
   {
     title: "I'm Jean Emmanuel Cadet",
-    content: "I'm a full-stack software engineer who specializes in using Javascript, React/Redux, Next.js, Ruby and Ruby on Rails to build software solutions for small and larger businesses.",
+    paragraph:
+      "I'm a full-stack software engineer who specializes in using Javascript, React/Redux, Next.js, Ruby and Ruby on Rails to build software solutions for small and larger businesses.",
+    paragraph2:
+      "I'm currently completing coursework at Microverse, a full-time remote software development program that allows devs from all over the world to use pair programming and project building to teach development.",
+    paragraph3:
+      "I've spent the last several months working remotely and asynchronously with people across different time zones.",
   },
 ];
