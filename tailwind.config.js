@@ -23,7 +23,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'noise': 'url("images/noise-transparent.png")',
+        'noise': 'url("images/noise.png")',
         'hero': 'url("images/hero.webp")',
       }
     },
