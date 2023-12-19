@@ -1,5 +1,8 @@
 import Link from "next/link";
-import { hero, infosHero } from "./js/data/home";
+import { hero, infosHero, aboutme } from "./js/data/home";
+import me from "./images/me.png";
+import noise from "./images/noise.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -22,14 +25,14 @@ export default function Home() {
               <div className="border w-20 md:w-40 mb-7 text-gray" />
               <p className="mb-3 text-sm md:text-xl">{text.desc1}</p>
               <p className="mb-7 text-sm md:text-xl">{text.desc2}</p>
-              <Link
-                href="/contact"
-                className="md:hidden uppercase hover:scale-105 text-sm font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300 rounded"
-              >
-                Contact me
-              </Link>
             </div>
           ))}
+          <Link
+            href="/contact"
+            className="md:hidden uppercase w-fit hover:scale-105 text-sm font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300"
+          >
+            Contact me
+          </Link>
         </div>
         <div className="hidden mb-10 md:flex gap-5 md:divide-x">
           {infosHero.map((info, index) => (
@@ -52,17 +55,44 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section id="about" className="about px-5 lg:px-32 py-20 border">
+      <section id="about" className="about px-5 lg:px-32 py-32 bg-noise">
         <div className="flex flex-col lg:flex-row items-center gap-10 md:px-5">
-          <div className="flex justify-center lg:justify-start w-full h-56 border lg:w-1/2">
-            <p>Photo</p>
+          <div className="flex justify-center items-center lg:w-1/2">
+            <Image
+              src={me}
+              className="w-full md:w-[500px]"
+              alt="Jean Emmanuel Cadet"
+              placeholder="blur"
+            />
           </div>
-          <div className="flex justify-center lg:justify-start w-full lg:w-1/2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus hic esse commodi fuga nulla iure ipsa quasi, a illum. Voluptas omnis qui perferendis tempore quidem quibusdam ut maxime animi at.
-            Ipsa unde molestiae voluptas rem esse accusantium aspernatur totam nam perferendis sed, dolore minima nulla deleniti reiciendis beatae officiis officia distinctio impedit tempora deserunt omnis laudantium mollitia! Eius, ad suscipit?
-            Dignissimos sunt ipsa odio porro similique facere, voluptates nihil reiciendis voluptatum excepturi nemo modi libero necessitatibus dolore animi vel temporibus qui earum aut minus unde iusto? Modi, dolorem deserunt! Aut!
-            Optio deserunt fugiat distinctio quas accusantium, saepe commodi exercitationem iure in voluptate nostrum excepturi veniam, illo earum fuga dolor debitis. Suscipit esse soluta nobis, quae ea autem officia. Dignissimos, quibusdam.
-            Excepturi, quis et saepe libero accusamus perferendis minus officia maiores quod tenetur dolor mollitia, dolorum a doloremque ad cum accusantium est sint molestias porro perspiciatis maxime eligendi dolorem aperiam. Asperiores.</p>
+          <div className="flex flex-col justify-start lg:w-1/2">
+            {aboutme.map((about, index) => (
+              <div key={index}>
+                <h3 className="text-xl md:text-2xl mb-3 text-orange-500">
+                  Who am I?
+                </h3>
+                <h2 className="text-xl md:text-2xl lg:text-3xl mb-4 font-bold tracking-widest">
+                  {about.title}
+                </h2>
+                <p className="text-sm md:text-xl tracking-widest">
+                  {about.paragraph}
+                </p>
+                <br />
+                <p className="text-sm md:text-xl tracking-widest">
+                  {about.paragraph2}
+                </p>
+                <br />
+                <p className="text-sm md:text-xl tracking-widest">
+                  {about.paragraph3}
+                </p>
+              </div>
+            ))}
+            <Link
+              href="/about"
+              className="w-fit mt-10 hover:scale-105 text-sm md:text-xl font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300"
+            >
+              Read more...
+            </Link>
           </div>
         </div>
       </section>
