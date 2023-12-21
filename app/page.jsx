@@ -7,6 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
+      {/* Hero section */}
       <section
         id="home"
         className="hero md:px-5 lg:px-32 flex justify-between h-screen flex-col bg-hero bg-cover bg-left md:bg-center bg-no-repeat"
@@ -55,7 +56,9 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section id="about" className="about px-5 lg:px-32 py-32 bg-noise">
+      
+      {/* About section */}
+      <section id="about" className="about px-5 lg:px-32 py-28 bg-noise">
         <div className="flex flex-col lg:flex-row items-center gap-10 md:px-5">
           <div className="flex justify-center items-center lg:w-1/2">
             <Image
