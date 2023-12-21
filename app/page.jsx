@@ -7,6 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
+      {/* Hero section */}
       <section
         id="home"
         className="hero md:px-5 lg:px-32 flex justify-between h-screen flex-col bg-hero bg-cover bg-left md:bg-center bg-no-repeat"
@@ -55,7 +56,9 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section id="about" className="about px-5 lg:px-32 py-32 bg-noise">
+      
+      {/* About section */}
+      <section id="about" className="about px-5 lg:px-32 py-28 bg-noise">
         <div className="flex flex-col lg:flex-row items-center gap-10 md:px-5">
           <div className="flex justify-center items-center lg:w-1/2">
             <Image
@@ -74,22 +77,17 @@ export default function Home() {
                 <h2 className="text-xl md:text-2xl lg:text-3xl mb-4 font-bold tracking-widest">
                   {about.title}
                 </h2>
-                <p className="md:text-xl tracking-widest">
+                <p className="md:text-xl tracking-widest mb-5">
                   {about.paragraph}
                 </p>
-                <br />
                 <p className="md:text-xl tracking-widest">
                   {about.paragraph2}
-                </p>
-                <br />
-                <p className="md:text-xl tracking-widest">
-                  {about.paragraph3}
                 </p>
               </div>
             ))}
             <Link
               href="/about"
-              className="w-fit mt-10 hover:scale-105 md:text-xl font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300"
+              className="w-fit mt-8 hover:scale-105 md:text-xl font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300"
             >
               Read more...
             </Link>

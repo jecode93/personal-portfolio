@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./styles/menu.css";
 import Image from "next/image";
 import bullet from "../images/bullet.png";
@@ -10,19 +10,42 @@ import { MdClose } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 50;
+      setIsScrolled(scrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
   const handleClick = () => {
     setIsOpen((open) => !open);
   };
 
   return (
-    <header className="px-5 py-5 fixed z-40">
+    <header
+      className={`px-5 py-5 fixed h-20 z-40 duration-300 ${
+        isScrolled ? "bg-darkblue duration-300 w-full" : ""
+      }`}
+    >
       {/* Mobile logo and icons */}
       <div className="flex justify-between items-center">
         {/* Mobile icon */}
         <div className="fixed top-7 left-5 md:px-5 lg:px-32">
           <Link href="/">
-            <Image src={jec} alt="Jean Emmanuel Cadet" width={300} className="hover:scale-105 duration-300"/>
+            <Image
+              src={jec}
+              alt="Jean Emmanuel Cadet"
+              width={300}
+              className="hover:scale-105 duration-300"
+            />
           </Link>
         </div>
         <div
