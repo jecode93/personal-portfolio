@@ -2,10 +2,8 @@
 import React, { useEffect, useState } from "react";
 import "./styles/menu.css";
 import Image from "next/image";
-import bullet from "../images/bullet.png";
-import jec from "../images/jec.png";
 import Link from "next/link";
-import { menu, socials } from '../js/data/menu'
+import { menu, socials } from "@/js/data/menu";
 import { MdClose } from "react-icons/md";
 
 const Navbar = () => {
@@ -24,7 +22,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+
   const handleClick = () => {
     setIsOpen((open) => !open);
   };
@@ -41,9 +39,10 @@ const Navbar = () => {
         <div className="fixed top-7 left-5 md:px-5 lg:px-32">
           <Link href="/">
             <Image
-              src={jec}
+              src="/images/jec.png"
               alt="Jean Emmanuel Cadet"
               width={300}
+              height={21}
               className="hover:scale-105 duration-300"
             />
           </Link>
@@ -121,10 +120,20 @@ const Navbar = () => {
                 <div className="mx-auto left-0 right-0 w-20 border border-white shadow-2xl"></div>
               </div>
               <div className="absolute bottom-0 right-0">
-                <Image src={bullet} alt="bullet-point" width={90} />
+                <Image
+                  src="/images/bullet.png"
+                  alt="bullet-point"
+                  width={90}
+                  height={90}
+                />
               </div>
               <div className="absolute bottom-0 left-0">
-                <Image src={bullet} alt="bullet-point" width={90} />
+                <Image
+                  src="/images/bullet.png"
+                  alt="bullet-point"
+                  width={90}
+                  height={90}
+                />
               </div>
             </div>
           </nav>

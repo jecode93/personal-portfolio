@@ -1,6 +1,6 @@
 import './globals.css';
-import { nunito } from './js/fonts';
-import Navbar from './components/menu';
+import { nunito } from "@/js/fonts";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: 'Full-Stack Software Engineer | Jean Emmanuel Cadet',
