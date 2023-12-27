@@ -43,6 +43,7 @@ const Navbar = () => {
               alt="Jean Emmanuel Cadet"
               width={300}
               height={21}
+              priority
               className="hover:scale-105 duration-300"
             />
           </Link>
