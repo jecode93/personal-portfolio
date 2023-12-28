@@ -4,7 +4,7 @@ export const hero = [
     title: "Experienced Full-stack",
     title2: "Software Engineer",
     desc1:
-      "From frontend to backend mastery, I thrive in turning complex ideas into elegant, user-centric applications.",
+      "From Front-end to Back-end mastery, I thrive in turning complex ideas into elegant, user-centric applications.",
     desc2:
       "Let's embark on a journey to explore the endless possibilities of code...",
   },
@@ -29,7 +29,7 @@ export const aboutme = [
   {
     title: "I'm Jean Emmanuel Cadet",
     paragraph:
-      "I'm a Full-stack software engineer who specializes in using Javascript, React/Redux, Next.js, Ruby and Ruby on Rails to build software solutions for small and larger businesses.",
+      "I'm a Full-stack software engineer who specializes in using Javascript, React & Redux, Next.js, Ruby and Ruby on Rails to build software solutions for small and larger businesses.",
     paragraph2:
       "I'm currently completing coursework at Microverse, a full-time remote software development program that allows devs from all over the world to use pair programming and project building to teach development.",
     paragraph3:

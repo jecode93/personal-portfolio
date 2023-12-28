@@ -6,5 +6,5 @@
   "editor.cursorBlinking": "smooth",
   "editor.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
-  "editor.cursorStyle": "underline"
+  "editor.cursorStyle": "line"
 }
