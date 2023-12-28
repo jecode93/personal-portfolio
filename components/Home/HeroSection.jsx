@@ -32,7 +32,7 @@ const Hero = () => {
       <div className="hidden mb-10 md:flex gap-5 md:divide-x">
         {infosHero.map((info, index) => (
           <div className="mb-5 md:mb-0 px-5 " key={index}>
-            <h3 className="font-bold mb-1">{info.text}</h3>
+            <h2 className="font-bold mb-1">{info.text}</h2>
             {info.text === "Email" && (
               <a href={`mailto:${info.content}`} className="text-gray">
                 {info.content}
