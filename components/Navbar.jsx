@@ -112,7 +112,7 @@ const Navbar = () => {
                       key={index}
                       className="text-2xl hover:-translate-y-2 duration-300"
                     >
-                      <a href={social.link} target="_blank">
+                      <a href={social.link} target="_blank" aria-label={social.aria}>
                         {social.icon}
                       </a>
                     </li>
