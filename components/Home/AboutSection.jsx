@@ -19,9 +19,9 @@ const About = () => {
         <div className="flex flex-col justify-start lg:w-1/2">
           {aboutme.map((about, index) => (
             <div key={index}>
-              <h3 className="text-xl md:text-2xl mb-3 text-orange-500">
+              <h1 className="text-xl md:text-2xl mb-3 text-orange-500">
                 Who am I?
-              </h3>
+              </h1>
               <h2 className="text-xl md:text-2xl lg:text-3xl mb-4 font-bold tracking-widest">
                 {about.title}
               </h2>
@@ -33,7 +33,7 @@ const About = () => {
           ))}
           <Link
             href="/about"
-            className="w-fit mt-8 hover:scale-105 md:text-xl font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300"
+            className="w-fit mt-8 hover:scale-105 md:text-xl font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300 rounded-full"
           >
             Read more...
           </Link>
