@@ -5,7 +5,7 @@ import { aboutme } from "@/js/data/home";
 
 const About = () => {
   return (
-    <section id="about" className="about px-5 lg:px-32 py-28 bg-noise">
+    <section id="about" className="about px-5 lg:px-32 py-20 bg-noise">
       <div className="flex flex-col lg:flex-row items-center gap-10 md:px-5">
         <div className="flex justify-center items-center lg:w-1/2">
           <Image
