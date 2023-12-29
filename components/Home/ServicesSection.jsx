@@ -28,7 +28,7 @@ const ServicesSection = () => {
             <Link href="/services">
               <Image src={service.icon} width={70} height={70} alt={service.title} className='mb-10 w-12 md:w-16'/>
               <h2 className="font-bold text-xl md:text-2xl mb-5">{service.title}</h2>
-              <p className='opacity-60 mb-10'>{service.description}</p>
+              <p className='opacity-60 mb-10 md:text-xl'>{service.description}</p>
               <p className='text-xl font-bold text-orange-500'>${service.price}/h</p>
             </Link>
           </div>
