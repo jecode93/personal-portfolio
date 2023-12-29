@@ -1,13 +1,15 @@
 import Hero from "@/components/Home/HeroSection";
 import About from "@/components/Home/AboutSection";
+import ServicesSection from "@/components/Home/ServicesSection";
 
 export default function Home() {
   return (
     <>
-      {/* <main> */}
+      <main>
         <Hero /> {/* Hero section */}
         <About /> {/* About section */}
-      {/* </main> */}
+        <ServicesSection /> {/* About section */}
+      </main>
     </>
   );
 }

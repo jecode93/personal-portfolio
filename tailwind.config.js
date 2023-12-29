@@ -17,9 +17,10 @@ module.exports = {
         700: '#b2420b',
       },
       slate: '#94a3b8',
-      blue: '#001f3f',
+      blue: '#022144',
       darkblue: '#001B36',
       gray: '#888',
+      green: '#00b300'
     },
     extend: {
       backgroundImage: {
