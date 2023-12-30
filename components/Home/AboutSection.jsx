@@ -25,7 +25,7 @@ const About = () => {
                   <span class="relative inline-flex rounded-full h-3 w-3 bg-green"></span>
                 </span>
                 <p className="underline text-slate tracking-widest">
-                  I'm available for work!
+                  I&apos;m available for work!
                 </p>
               </div>
             </div>
