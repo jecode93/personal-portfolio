@@ -34,9 +34,9 @@ const About = () => {
         <div className="flex flex-col justify-start lg:w-1/2">
           {aboutme.map((about, index) => (
             <div key={index}>
-              <h3 className="text-xl md:text-2xl mb-7 text-orange-500">
+              <h1 className="text-xl md:text-2xl mb-7 text-orange-500">
                 Who am I?
-              </h3>
+              </h1>
               <h2 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold tracking-widest">
                 {about.title}
               </h2>
