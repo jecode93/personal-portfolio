@@ -7,8 +7,8 @@ const Footer = () => {
     <>
       <footer>
         <div className="border border-slate" />
-        <div className="text-center opacity-40 py-5 px-5">
-          <p className="md:text-xl tracking-widest">
+        <div className="text-center py-5 px-5">
+          <p className="md:text-xl opacity-40 tracking-widest">
             Copyright © {currentYear}. All right reserved
           </p>
         </div>
