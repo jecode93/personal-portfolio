@@ -140,10 +140,6 @@ You can deploy this project using:
 - [ ] **[Rails Backend]**
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
