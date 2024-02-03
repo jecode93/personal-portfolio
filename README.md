@@ -119,8 +119,6 @@ You can deploy this project using:
 
 - [Live Demo Link will be available soon](https://jeanemmanuelcadet.vercel.app)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## Authors
 
