@@ -110,8 +110,6 @@ You can deploy this project using:
 - [Vercel](https://vercel.com/)
 - [Netlify](https://www.netlify.com/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- LIVE DEMO -->
 
