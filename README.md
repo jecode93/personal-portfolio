@@ -6,7 +6,7 @@
 - [PERSONAL PORTFOLIO](#personal-portfolio)
 - [📗 Table of Contents](#-table-of-contents)
   - [Built With](#built-with)
-    - [Tech Stack ](#tech-stack-)
+  - [Tech Stack ](#tech-stack-)
   - [Key Features ](#key-features-)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
@@ -34,7 +34,7 @@
 - Swipper js
 - Tailwind CSS
 
-### Tech Stack <a name="tech-stack"></a>
+## Tech Stack <a name="tech-stack"></a>
 
 > 
 
