@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { services } from '@/js/data/services'
+import { services } from "@/js/data/home/services";
 import Link from 'next/link';
 
 const ServicesSection = () => {
