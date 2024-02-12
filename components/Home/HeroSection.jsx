@@ -1,5 +1,5 @@
 import React from 'react'
-import { hero, infosHero } from "@/js/data/home";
+import { hero, infosHero } from "@/js/data/home/home";
 import Link from 'next/link';
 
 const Hero = () => {
