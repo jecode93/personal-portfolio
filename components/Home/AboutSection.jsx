@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
-import { aboutme } from "@/js/data/home";
+import { aboutme } from "@/js/data/home/home";
 
 const About = () => {
   return (
