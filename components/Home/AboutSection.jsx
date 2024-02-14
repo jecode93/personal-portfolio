@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 import { aboutme } from "@/js/data/home/home";
+import me from "@/public//images/me.jpg";
+import ButtonComponent from "../ButtonComponent";
 
 const About = () => {
   return (
@@ -13,7 +15,7 @@ const About = () => {
             <div className="w-full h-[93%] absolute border border-slate rounded opacity-50"></div>
             <div className="text-center flex flex-col justify-center items-center md:p-5">
               <Image
-                src="/images/me.jpg"
+                src={me}
                 className="w-full md:w-[500px] mb-4 rounded"
                 alt="Jean Emmanuel Cadet"
                 width={500}
@@ -43,15 +45,9 @@ const About = () => {
               <p className="md:text-xl tracking-widest mb-5">
                 {about.paragraph}
               </p>
-              <p className="md:text-xl tracking-widest">{about.paragraph2}</p>
             </div>
           ))}
-          <Link
-            href="/about"
-            className="w-fit mt-8 hover:scale-105 md:text-xl font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300 rounded-full"
-          >
-            Read more...
-          </Link>
+          <ButtonComponent path="/about" text="Read more..." />
         </div>
       </div>
     </section>
