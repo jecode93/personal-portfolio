@@ -1,6 +1,6 @@
 import React from 'react'
 import { hero, infosHero } from "@/js/data/home/home";
-import Link from 'next/link';
+import ButtonComponent from '../ButtonComponent';
 
 const Hero = () => {
   return (
@@ -22,12 +22,7 @@ const Hero = () => {
             <p className="mb-7 md:text-xl">{text.desc2}</p>
           </div>
         ))}
-        <Link
-          href="/contact"
-          className="md:hidden w-fit hover:scale-105 font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300 rounded-full"
-        >
-          Contact me
-        </Link>
+        <ButtonComponent path="/contact" text="Contact me" />
       </div>
       <div className="hidden mb-10 md:flex gap-5 md:divide-x">
         {infosHero.map((info, index) => (
