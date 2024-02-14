@@ -4,10 +4,11 @@ import { services } from "@/js/data/home/services";
 import Link from 'next/link';
 import SectionTitle from '../SectionTitle';
 import bullet from "@/public/images/bullet.png";
+import SectionsComponent from '../SectionsComponent';
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="px-5 md:px-10 lg:px-32 py-20 relative">
+    <SectionsComponent id="services" otherClasses="">
       <div className="z-0">
         <Image
           src={bullet}
@@ -45,7 +46,7 @@ const ServicesSection = () => {
           </div>
         ))}
       </div>
-    </section>
+    </SectionsComponent>
   );
 }
 
