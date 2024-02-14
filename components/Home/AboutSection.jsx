@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react'
 import { aboutme } from "@/js/data/home/home";
 import me from "@/public//images/me.jpg";
