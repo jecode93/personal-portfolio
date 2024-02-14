@@ -20,6 +20,7 @@ const PortfolioSection = () => {
           <div key={portfolio.id} className="bg-darkblue rounded">
             <Image
               src={portfolio.image}
+              alt={portfolio.title}
               width={500}
               height={500}
               className="mb-3 rounded-t w-full"
