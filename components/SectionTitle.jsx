@@ -8,7 +8,7 @@ const SectionTitle = ({ title, text }) => {
       </h2>
       <div className="mb-20">
         <h1 className="font-bold text-3xl md:text-5xl mb-5">{text}</h1>
-        <div className="w-20 md:w-40 border" />
+        <div className="w-20 md:w-40 border opacity-40" />
       </div>
     </>
   );
