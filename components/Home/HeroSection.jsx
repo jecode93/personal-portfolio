@@ -12,14 +12,12 @@ const Hero = () => {
         {hero.map((text, index) => (
           <div key={index}>
             <p className="text-white mb-3 md:text-xl">{text.subTitle}</p>
-            <h1 className="text-2xl mb-5 md:text-6xl font-black md:leading-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-orange-500">
-              <span>{text.title}</span> <br />
-              <span>{text.title2}</span>
+            <h1 className="text-2xl mb-5 md:text-6xl font-black md:leading-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-orange-500 description">
+              <span>{text.title}</span>
             </h1>
 
             <div className="border w-20 md:w-40 mb-7 text-gray" />
-            <p className="mb-3 md:text-xl">{text.desc1}</p>
-            <p className="mb-7 md:text-xl">{text.desc2}</p>
+            <p className="mb-3 md:text-xl description">{text.description}</p>
           </div>
         ))}
         <ButtonComponent path="/contact" text="Contact me" />
