@@ -29,15 +29,15 @@ export const portfolios = [
 • When clicked on a country it displays all the metrics of that country's capital regarding weather.`,
     stack: "JavaScript • React • Redux • Tailwind CSS",
   },
-  {
-    id: 4,
-    title: "InvesTO",
-    image: "/portfolio/bookcar.jpg",
-    link: "https://github.com/jecode93/budget-app",
-    description:
-      "InvesTO is a mobile web application where you can manage your budget: you have a list of transactions associated with a category so that you can see how much money you spend and on what.",
-    stack: "Ruby • Ruby on Rails • PostgreSQL • Tailwind CSS",
-  },
+  // {
+  //   id: 4,
+  //   title: "InvesTO",
+  //   image: "/portfolio/bookcar.jpg",
+  //   link: "https://github.com/jecode93/budget-app",
+  //   description:
+  //     "InvesTO is a mobile web application where you can manage your budget: you have a list of transactions associated with a category so that you can see how much money you spend and on what.",
+  //   stack: "Ruby • Ruby on Rails • PostgreSQL • Tailwind CSS",
+  // },
   {
     id: 5,
     title: "Leaderboard",
