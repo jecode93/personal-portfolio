@@ -7,7 +7,7 @@ import SectionsComponent from '../SectionsComponent';
 
 const About = () => {
   return (
-    <SectionsComponent id="about" otherClasses="bg-noise">
+    <SectionsComponent id="about" otherClasses="bg-trait bg-no-repeat bg-right">
       <div className="flex flex-col lg:flex-row items-center gap-10 md:px-5">
         <div className="flex justify-center items-center lg:w-1/2 2xl:w-1/3 p-5">
           <div className="flex justify-center items-center w-full relative p-7">
