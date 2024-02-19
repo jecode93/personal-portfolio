@@ -45,10 +45,12 @@ const PopupComponent = ({isVisible, onClose, content}) => {
             <div className="my-7">
               <h1 className="text-2xl md:text-4xl">Technologies:</h1>
               <div className="grid grid-cols-2 gap-2 my-7">
-                {content.stack.map((item) => (
-                  <p className="bg-blue p-1 flex justify-center rounded">
-                    <span className="opacity-70">{item}</span>
-                  </p>
+                {content.stack.map((item, index) => (
+                  <div key={index}>
+                    <p className="bg-blue p-1 flex justify-center rounded">
+                      <span className="opacity-70">{item}</span>
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>
