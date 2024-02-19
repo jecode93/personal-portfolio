@@ -3,7 +3,7 @@ import React from 'react'
 const SectionTitle = ({ title, text }) => {
   return (
     <>
-      <h2 className="uppercase text-slate text-[50px] md:-mb-6 font-black tracking-widest md:text-[100px] lg:text-[150px]">
+      <h2 className="uppercase text-bluethin text-[50px] md:-mb-6 font-black tracking-widest md:text-[100px] lg:text-[150px]">
         {title}
       </h2>
       <div className="mb-20">
