@@ -16,10 +16,10 @@ const PopupComponent = ({isVisible, onClose, content}) => {
         {/* End background */}
 
         {/* Container */}
-        <div className="p-5 md:p-16 overflow-auto fixed flex flex-col top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[80%] md:w-[80%] lg:w-[50%] h-[85%] bg-darkblue z-50 rounded">
+        <div className="fixed flex flex-col top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[80%] md:w-[80%] lg:w-[50%] h-[70%] lg:h-[80%] bg-darkblue z-50 rounded">
           {/* Close buton */}
           <div
-            className="absolute top-5 right-5 cursor-pointer text-white text-3xl font-extrabold duration-500"
+            className="fixed top-3 right-3 cursor-pointer text-white text-3xl font-extrabold duration-500"
             onClick={onClose}
           >
             <span>
@@ -27,7 +27,7 @@ const PopupComponent = ({isVisible, onClose, content}) => {
             </span>
           </div>
           {/* End close buton */}
-          <div className="Content">
+          <div className="p-5 md:p-16 content overflow-auto">
             <h1 className="text-2xl md:text-4xl mt-5 md:mt-0 mb-5">
               {content.title}
             </h1>
