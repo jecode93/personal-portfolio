@@ -29,8 +29,8 @@ const Navbar = () => {
 
   return (
     <header
-      className={`px-5 py-5 fixed h-20 z-40 duration-300 ${
-        isScrolled ? "bg-darkblue duration-300 w-full" : ""
+      className={`px-5 py-5 fixed h-20 z-40 ${
+        isScrolled ? "bg-darkblue w-full drop-shadow-xl" : ""
       }`}
     >
       {/* Mobile logo and icons */}
@@ -67,6 +67,7 @@ const Navbar = () => {
             ? "fixed w-screen h-screen top-0 left-0 right-0 backdrop-blur-sm"
             : ""
         }`}
+        onClick={handleClick}
       ></div>
       {/* End Blur background */}
 
@@ -112,7 +113,11 @@ const Navbar = () => {
                       key={index}
                       className="text-2xl hover:-translate-y-2 duration-300"
                     >
-                      <a href={social.link} target="_blank" aria-label={social.aria}>
+                      <a
+                        href={social.link}
+                        target="_blank"
+                        aria-label={social.aria}
+                      >
                         {social.icon}
                       </a>
                     </li>
