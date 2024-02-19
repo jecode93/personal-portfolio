@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <header
       className={`px-5 py-5 fixed h-20 z-40 ${
-        isScrolled ? "bg-darkblue w-full drop-shadow-xl" : ""
+        isScrolled ? "bg-darkblue w-full" : ""
       }`}
     >
       {/* Mobile logo and icons */}
