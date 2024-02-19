@@ -5,8 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { menu, socials } from "@/js/data/menu";
 import { MdClose } from "react-icons/md";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -94,14 +96,16 @@ const Navbar = () => {
                   Menu
                 </h2>
                 <ul className="menu-items" onClick={handleClick}>
-                  {menu.map((data, index) => (
+                  {menu.map((data, index) => {
+                    const isActive = pathname === data.path;
+                    return (
                     <li
                       key={index}
                       className="mb-5 md:text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 duration-300 tracking-widest"
                     >
-                      <Link href={data.path}>{data.name}</Link>
+                      <Link href={data.path} className={`${isActive ? "text-orange-500" : ""}`}>{data.name}</Link>
                     </li>
-                  ))}
+                  )})}
                 </ul>
               </div>
 
