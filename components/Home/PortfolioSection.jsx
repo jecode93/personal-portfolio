@@ -28,8 +28,9 @@ const PortfolioSection = () => {
       <SectionTitle title="Portfolio" text="Featured Projects" />
       <Swiper
         breakpoints={{
-          390: {
+          360: {
             slidesPerView: 1,
+            spaceBetween: 20,
           },
           768: {
             slidesPerView: 2,
@@ -64,7 +65,7 @@ const PortfolioSection = () => {
                 className="mb-3 rounded-t w-full"
               />
               <div className="p-3">
-                <h1 className="text-2xl">{portfolio.title}</h1>
+                <h1 className="text-xl">{portfolio.title}</h1>
               </div>
             </div>
           </SwiperSlide>
