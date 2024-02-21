@@ -36,7 +36,7 @@ const ServicesSection = () => {
               <h2 className="font-bold text-xl md:text-2xl mb-5">
                 {service.title}
               </h2>
-              <p className="opacity-60 mb-10 md:text-xl">
+              <p className="text-degrade mb-10 md:text-xl">
                 {service.description}
               </p>
               <p className="text-xl font-bold text-orange-500">
