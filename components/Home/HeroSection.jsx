@@ -31,7 +31,7 @@ const Hero = () => {
           {socials.map((social, index) => (
             <li
               key={index}
-              className="text-2xl lg:text-3xl hover:-translate-y-2 duration-300"
+              className="text-2xl hover:-translate-y-2 duration-300"
             >
               <a href={social.link} target="_blank" aria-label={social.aria}>
                 {social.icon}
