@@ -26,6 +26,7 @@ Empowering Car Owners:
 Beyond Convenience:
 
 Car Book transcends a simple booking platform, fostering a community built on trust and transparency. It empowers both renters and owners, saving time, simplifying the process, and offering a seamless experience for all.`,
+    resume: "Streamlined car rentals for renters.",
     stack: [
       "JavaScript",
       "React",
@@ -48,6 +49,7 @@ Car Book transcends a simple booking platform, fostering a community built on tr
 • Join captivating missions: Discover a curated selection of thrilling space missions and become an active participant in pushing the boundaries of human exploration.
 
 STH transcends a simple booking platform, fostering a vibrant community of space enthusiasts united by a shared passion for discovery.`,
+    resume: "Explore & book rockets, join space missions.",
     stack: ["JavaScript", "React", "Redux", "API Integration", "CSS"],
   },
   {
@@ -66,6 +68,7 @@ Key Features:
 Beyond Information:
 
 This user-friendly app empowers you to stay informed and make informed decisions, whether planning a trip, preparing for outdoor activities, or simply staying curious about the ever-changing world around you.`,
+    resume: "Explore global weather & real-time details.",
     stack: ["JavaScript", "React", "Redux", "Tailwind CSS"],
   },
   // {
@@ -78,7 +81,7 @@ This user-friendly app empowers you to stay informed and make informed decisions
   //   stack: ["Ruby", "Ruby on Rails", "PostgreSQL", "Tailwind CSS"],
   // },
   {
-    id: 5,
+    id: 4,
     title: "Leaderboard",
     image: "/portfolio/leaderboard.jpg",
     link: "https://leaderboard-jecode93.netlify.app/",
@@ -95,10 +98,11 @@ Key Features:
 Beyond Scores:
 
 This project transcends a simple score display, fostering a sense of competition and community among users striving to reach the top.`,
+    resume: "Add scores, and asynchronous data fetching.",
     stack: ["HTML", "CSS", "JavaScript", "Webpack", "SCSS"],
   },
   {
-    id: 6,
+    id: 5,
     title: "Math-magician",
     image: "/portfolio/math-magicians.jpg",
     link: "https://math-magicians-dk01.onrender.com/calculator",
@@ -109,10 +113,11 @@ This project transcends a simple score display, fostering a sense of competition
 • Daily Dose of Inspiration: Discover a new thought-provoking math quote each day, sparking your curiosity and igniting your fascination with the beauty and power of numbers.
 
 Math Magicians goes beyond a simple calculator, fostering a love for mathematics and encouraging exploration in a fun and engaging way.`,
+    resume: "Easy calculations & daily quotes inspiration.",
     stack: ["JavaScript", "React", "Redux", "PostgreSQL", "CSS"],
   },
   {
-    id: 7,
+    id: 6,
     title: "Idas Boiserie",
     image: "/portfolio/idas.jpg",
     link: "https://idasboiserie.com/",
@@ -127,10 +132,11 @@ Key Features:
 Beyond Functionality:
 
 This website transcends a simple online store, fostering a lasting connection between your client and their audience. It serves as a powerful tool to build brand recognition, cultivate customer loyalty, and drive successful sales.`,
+    resume: "Client's portfolio & seamless product sales.",
     stack: ["WordPress", "Elementor Page Builder"],
   },
   {
-    id: 8,
+    id: 7,
     title: "Clin D'oeil Info",
     image: "/portfolio/cdi.jpg",
     link: "https://clindoeilinfo.com/",
@@ -145,15 +151,17 @@ This website transcends a simple online store, fostering a lasting connection be
 Beyond the Headlines:
 
 This blog serves not only as a source of information but also as a platform for open dialogue and critical thinking. It empowers readers to engage with the news, form informed opinions, and participate in meaningful discussions.`,
+    resume: "News blog with national & international coverage.",
     stack: ["WordPress", "Elementor Page Builder"],
   },
   {
-    id: 9,
+    id: 8,
     title: "Personal Portfolio",
     image: "/portfolio/personal.jpg",
     link: "https://jeanemmanuelcadet.vercel.com/",
     description:
       "How can I list the projects I have already done without putting my project in it, it was a challenge for me to create this website from scratch, which gives me more opportunities to prove my abilities to take a project from scratch to completion.",
+    resume: "Showcase projects & skills built from scratch.",
     stack: ["JavaScript", "React", "Next.js", "Talwind CSS"],
   },
 ];
