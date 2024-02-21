@@ -54,7 +54,7 @@ const PortfolioSection = () => {
         {portfolios.map((portfolio) => (
           <SwiperSlide key={portfolio.id} className="duration-500">
             <div
-              className="bg-darkblue rounded hover:cursor-pointer duration-200 max-w-sm"
+              className="flex flex-col justify-between bg-darkblue rounded hover:cursor-pointer duration-200 max-w-md"
               onClick={() => showModal(portfolio.id)}
             >
               <Image
@@ -66,6 +66,7 @@ const PortfolioSection = () => {
               />
               <div className="p-3">
                 <h1 className="text-xl">{portfolio.title}</h1>
+                <p className='opacity-60 mt-3'>{portfolio.resume}</p>
               </div>
             </div>
           </SwiperSlide>
