@@ -1,5 +1,6 @@
 import React from 'react'
 import { hero, infosHero } from "@/js/data/home/home";
+import { socials } from '@/js/data/menu';
 import ButtonComponent from '../ButtonComponent';
 
 const Hero = () => {
@@ -11,37 +12,35 @@ const Hero = () => {
       <div className="flex flex-col px-5 tracking-widest leading-7 justify-center lg:w-[75%] h-full pt-16">
         {hero.map((text, index) => (
           <div key={index}>
-            <p className="text-white mb-3 md:text-xl">{text.subTitle}</p>
-            <h1 className="text-2xl mb-5 md:text-6xl font-black md:leading-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-orange-500 description">
+            <p className="text-lg text-white md:text-2xl">{text.subTitle}</p>
+            <h1 className="text-3xl my-3 md:text-6xl font-black md:leading-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-orange-500 description">
               <span>{text.title}</span>
             </h1>
 
-            <div className="border w-20 md:w-40 mb-7 text-gray" />
-            <p className="mb-3 md:text-xl description">{text.description}</p>
+            {/* <div className="border w-16 md:w-30 mb-7 text-gray" /> */}
+            <p className="mb-10 text-lg md:text-2xl description">
+              {text.description}
+            </p>
           </div>
         ))}
         <ButtonComponent path="/contact" text="Contact me" />
       </div>
-      <div className="hidden mb-10 md:flex gap-5 md:divide-x">
-        {infosHero.map((info, index) => (
-          <div className="mb-5 md:mb-0 px-5 " key={index}>
-            <h2 className="font-bold mb-1">{info.text}</h2>
-            {info.text === "Email" && (
-              <a href={`mailto:${info.content}`} className="text-gray">
-                {info.content}
+      {/* Social section */}
+      <div className="socials-links px-5">
+        <ul className="flex gap-4 justify-center items-center left-0 right-0 mb-10">
+          {socials.map((social, index) => (
+            <li
+              key={index}
+              className="text-2xl lg:text-3xl hover:-translate-y-2 duration-300"
+            >
+              <a href={social.link} target="_blank" aria-label={social.aria}>
+                {social.icon}
               </a>
-            )}
-            {info.text === "Phone" && (
-              <a href={`tel:${info.content}`} className="text-gray">
-                {info.content}
-              </a>
-            )}
-            {info.text === "Work location" && (
-              <p className="text-gray">{info.content}</p>
-            )}
-          </div>
-        ))}
+            </li>
+          ))}
+        </ul>
       </div>
+      {/* End Social section */}
     </section>
   );
 }

@@ -1,10 +1,9 @@
 export const hero = [
   {
-    subTitle: "Welcome to my digital space where innovation meets expertise.",
-    title: `Experienced Full-stack 
+    subTitle: "Welcome to my digital space.",
+    title: `I am a Full-stack
 Software Engineer`,
-    description:
-      `From Front-end to Back-end mastery, I thrive in turning complex ideas into elegant, user-centric applications. \r\n\nLet's embark on a journey to explore the endless possibilities of code...`,
+    description: `I design, build, and deploy innovative software solutions for small and larger businesses.`,
   },
 ];
 
@@ -26,7 +25,8 @@ export const infosHero = [
 export const aboutme = [
   {
     title: "I'm Jean Emmanuel Cadet",
-    paragraph:
-      "I'm a Full-stack software engineer who specializes in using JavaScript, React & Redux, Next.js, Ruby, Ruby on Rails, RESTful API development, and PostgreSQL to build software solutions for small and larger businesses.",
+    description: `A Full-stack software engineer who specializes in building software solutions for small and larger businesses using Front-end technologies like (JavaScript, TypeScript, React, Redux, and Next.js), Back-end technologies like (Ruby, Ruby on Rails, and NestJS), and Databases like (PostgreSQL, MySQL, and MongoDB).
+      
+I bridge the gap between front-end and back-end development, bringing ideas to life with seamless user experiences and robust functionality.`,
   },
 ];

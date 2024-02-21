@@ -1,4 +1,4 @@
-import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsFacebook, BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
 export const menu = [
@@ -27,14 +27,19 @@ export const socials = [
     aria: "Go to my GitHub profile",
   },
   {
-    link: "https://www.linkedin.com/in/jean-emmanuel-cadet/",
+    link: "https://www.linkedin.com/in/jean-emmanuel-cadet",
     icon: <BsLinkedin />,
     aria: "Go to my LinkedIn",
   },
   {
-    link: "https://www.facebook.com/jeanemmanuelcadet07",
+    link: "https://www.facebook.com/jecode93",
     icon: <BsFacebook />,
     aria: "Go to my Facebook page",
+  },
+  {
+    link: "https://www.instagram.com/jecode93",
+    icon: <BsInstagram />,
+    aria: "Go to my Instagram page",
   },
   {
     link: "https://twitter.com/jecode93",

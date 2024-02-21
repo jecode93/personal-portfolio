@@ -42,8 +42,8 @@ const About = () => {
               <h2 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold tracking-widest">
                 {about.title}
               </h2>
-              <p className="md:text-xl tracking-widest mb-5">
-                {about.paragraph}
+              <p className="md:text-xl tracking-widest mb-5 description">
+                {about.description}
               </p>
             </div>
           ))}
