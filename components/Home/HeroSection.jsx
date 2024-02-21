@@ -13,7 +13,7 @@ const Hero = () => {
         {hero.map((text, index) => (
           <div key={index}>
             <p className="text-lg text-white md:text-2xl">{text.subTitle}</p>
-            <h1 className="text-3xl my-3 md:text-6xl font-black md:leading-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-orange-500 description">
+            <h1 className="text-3xl my-3 md:text-6xl font-black md:leading-tight text-orange-500 description">
               <span>{text.title}</span>
             </h1>
 
