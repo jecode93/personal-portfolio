@@ -1,6 +1,6 @@
 import React from 'react'
-import { hero, infosHero } from "@/js/data/home";
-import Link from 'next/link';
+import { hero, infosHero } from "@/js/data/home/home";
+import ButtonComponent from '../ButtonComponent';
 
 const Hero = () => {
   return (
@@ -12,22 +12,15 @@ const Hero = () => {
         {hero.map((text, index) => (
           <div key={index}>
             <p className="text-white mb-3 md:text-xl">{text.subTitle}</p>
-            <h1 className="text-2xl mb-5 md:text-6xl font-black md:leading-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-orange-500">
-              <span>{text.title}</span> <br />
-              <span>{text.title2}</span>
+            <h1 className="text-2xl mb-5 md:text-6xl font-black md:leading-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-orange-500 description">
+              <span>{text.title}</span>
             </h1>
 
             <div className="border w-20 md:w-40 mb-7 text-gray" />
-            <p className="mb-3 md:text-xl">{text.desc1}</p>
-            <p className="mb-7 md:text-xl">{text.desc2}</p>
+            <p className="mb-3 md:text-xl description">{text.description}</p>
           </div>
         ))}
-        <Link
-          href="/contact"
-          className="md:hidden w-fit hover:scale-105 font-bold bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 px-5 py-2 duration-300 rounded-full"
-        >
-          Contact me
-        </Link>
+        <ButtonComponent path="/contact" text="Contact me" />
       </div>
       <div className="hidden mb-10 md:flex gap-5 md:divide-x">
         {infosHero.map((info, index) => (

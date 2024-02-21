@@ -5,8 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { menu, socials } from "@/js/data/menu";
 import { MdClose } from "react-icons/md";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -29,8 +31,8 @@ const Navbar = () => {
 
   return (
     <header
-      className={`px-5 py-5 fixed h-20 z-40 duration-300 ${
-        isScrolled ? "bg-darkblue duration-300 w-full" : ""
+      className={`px-5 py-5 fixed h-20 z-40 ${
+        isScrolled ? "bg-darkblue w-full" : ""
       }`}
     >
       {/* Mobile logo and icons */}
@@ -67,6 +69,7 @@ const Navbar = () => {
             ? "fixed w-screen h-screen top-0 left-0 right-0 backdrop-blur-sm"
             : ""
         }`}
+        onClick={handleClick}
       ></div>
       {/* End Blur background */}
 
@@ -93,14 +96,16 @@ const Navbar = () => {
                   Menu
                 </h2>
                 <ul className="menu-items" onClick={handleClick}>
-                  {menu.map((data, index) => (
+                  {menu.map((data, index) => {
+                    const isActive = pathname === data.path;
+                    return (
                     <li
                       key={index}
                       className="mb-5 md:text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 duration-300 tracking-widest"
                     >
-                      <Link href={data.path}>{data.name}</Link>
+                      <Link href={data.path} className={`${isActive ? "text-orange-500" : ""}`}>{data.name}</Link>
                     </li>
-                  ))}
+                  )})}
                 </ul>
               </div>
 
@@ -112,7 +117,11 @@ const Navbar = () => {
                       key={index}
                       className="text-2xl hover:-translate-y-2 duration-300"
                     >
-                      <a href={social.link} target="_blank" aria-label={social.aria}>
+                      <a
+                        href={social.link}
+                        target="_blank"
+                        aria-label={social.aria}
+                      >
                         {social.icon}
                       </a>
                     </li>
