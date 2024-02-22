@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="border border-slate" />
+        <div className="border border-degrade" />
         <div className="text-center py-5 px-5">
-          <p className="md:text-xl opacity-60 tracking-widest">
+          <p className="text-xs md:text-sm text-degrade tracking-widest">
             Copyright © 2023 - {currentYear}. All right reserved
           </p>
         </div>

@@ -22,6 +22,7 @@ module.exports = {
       bluethin: "#003A73",
       gray: "#888",
       green: "#00b300",
+      degrade: "#ffffff99",
     },
     extend: {
       backgroundImage: {

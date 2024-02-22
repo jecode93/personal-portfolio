@@ -10,35 +10,17 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = window.scrollY > 50;
-      setIsScrolled(scrolled);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const handleClick = () => {
     setIsOpen((open) => !open);
   };
 
   return (
-    <header
-      className={`px-5 py-5 fixed h-20 z-40 ${
-        isScrolled ? "bg-darkblue w-full" : ""
-      }`}
-    >
+    <header className={`px-5 z-40 relative`}>
       {/* Mobile logo and icons */}
       <div className="flex justify-between items-center">
         {/* Mobile icon */}
-        <div className="fixed top-7 left-5 md:px-5 lg:px-32">
+        <div className="absolute top-7 left-5 md:px-5 lg:px-32">
           <Link href="/">
             <Image
               src="/images/jec.png"
@@ -51,12 +33,17 @@ const Navbar = () => {
           </Link>
         </div>
         <div
-          className="hamburger fixed top-5 right-5 cursor-pointer flex flex-col items-end justify-around w-10 h-10 rounded p-1"
+          className="fixed top-5 right-5 cursor-pointer rounded p-1 mt-1 md:mt-0"
           onClick={handleClick}
         >
-          <div className="line-1 border-2 border-orange-500 rounded"></div>
-          <div className="line-2 border-2 border-orange-500 rounded"></div>
-          <div className="line-3 border-2 border-orange-500 rounded"></div>
+          <div className="flex justify-center items-center gap-1">
+            <p className="hidden md:block font-bold text-degrade">Menu</p>
+            <div className="hamburger flex flex-col items-end justify-around w-10 h-6">
+              <div className="line-1 border-2 border-orange-500 rounded"></div>
+              <div className="line-2 border-2 border-orange-500 rounded"></div>
+              <div className="line-3 border-2 border-orange-500 rounded"></div>
+            </div>
+          </div>
         </div>
         {/* End Mobile icon */}
       </div>
@@ -99,13 +86,19 @@ const Navbar = () => {
                   {menu.map((data, index) => {
                     const isActive = pathname === data.path;
                     return (
-                    <li
-                      key={index}
-                      className="mb-5 md:text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 duration-300 tracking-widest"
-                    >
-                      <Link href={data.path} className={`${isActive ? "text-orange-500" : ""}`}>{data.name}</Link>
-                    </li>
-                  )})}
+                      <li
+                        key={index}
+                        className="mb-5 md:text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 duration-300 tracking-widest"
+                      >
+                        <Link
+                          href={data.path}
+                          className={`${isActive ? "text-orange-500" : ""}`}
+                        >
+                          {data.name}
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
 

@@ -1,4 +1,5 @@
 import './globals.css';
+import '@/components/styles/selection.css';
 import { nunito } from "@/js/fonts";
 import Navbar from "@/components/Navbar";
 import Footer from '@/components/Footer';

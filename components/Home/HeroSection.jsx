@@ -13,7 +13,7 @@ const Hero = () => {
         {hero.map((text, index) => (
           <div key={index}>
             <p className="text-lg text-white md:text-2xl">{text.subTitle}</p>
-            <h1 className="text-3xl my-3 md:text-6xl font-black md:leading-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-orange-500 description">
+            <h1 className="text-3xl my-3 md:text-6xl font-black md:leading-tight text-orange-500 description">
               <span>{text.title}</span>
             </h1>
 
@@ -31,7 +31,7 @@ const Hero = () => {
           {socials.map((social, index) => (
             <li
               key={index}
-              className="text-2xl lg:text-3xl hover:-translate-y-2 duration-300"
+              className="text-2xl hover:-translate-y-2 duration-300"
             >
               <a href={social.link} target="_blank" aria-label={social.aria}>
                 {social.icon}
