@@ -7,7 +7,7 @@ const PopupComponent = ({isVisible, onClose, content}) => {
   
   return (
     <>
-      <div className="relative z-50">
+      <div className="relative">
         {/* Background */}
         <div
           className="fixed flex justify-center top-0 bottom-0 left-0 bg-black w-full h-full opacity-70"
