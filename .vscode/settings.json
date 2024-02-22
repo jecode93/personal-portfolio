@@ -1,0 +1,10 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.fontSize": 14,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.list.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.cursorStyle": "line"
+}
