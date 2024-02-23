@@ -39,9 +39,9 @@ const ServicesSection = () => {
               <p className="text-degrade mb-10 md:text-xl">
                 {service.description}
               </p>
-              <p className="text-xl font-bold text-orange-500">
+              {/* <p className="text-xl font-bold text-orange-500">
                 ${service.price}/h
-              </p>
+              </p> */}
             </Link>
           </div>
         ))}
