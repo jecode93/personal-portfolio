@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 import { aboutme } from "@/js/data/home/home";
 import me from "@/public//images/me.jpg";
 import ButtonComponent from "../ButtonComponent";
-import SectionsComponent from '../SectionsComponent';
+import SectionsComponent from "../SectionsComponent";
 
 const About = () => {
   return (
@@ -52,6 +52,6 @@ const About = () => {
       </div>
     </SectionsComponent>
   );
-}
+};
 
 export default About;

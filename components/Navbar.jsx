@@ -28,7 +28,7 @@ const Navbar = () => {
               width={300}
               height={21}
               priority
-              className="hover:scale-105 duration-300"
+              className="hover:scale-105 duration-300 w-72"
             />
           </Link>
         </div>

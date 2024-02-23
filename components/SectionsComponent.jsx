@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const SectionsComponent = ({ id, otherClasses, children }) => {
   return (
@@ -9,6 +9,6 @@ const SectionsComponent = ({ id, otherClasses, children }) => {
       {children}
     </section>
   );
-}
+};
 
 export default SectionsComponent;

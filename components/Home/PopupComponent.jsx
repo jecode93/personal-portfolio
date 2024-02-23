@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 import { MdClose } from "react-icons/md";
 
-const PopupComponent = ({isVisible, onClose, content}) => {
+const PopupComponent = ({ isVisible, onClose, content }) => {
   if (!isVisible) return null;
-  
+
   return (
     <>
       <div className="relative">
@@ -60,6 +60,6 @@ const PopupComponent = ({isVisible, onClose, content}) => {
       </div>
     </>
   );
-}
+};
 
 export default PopupComponent;

@@ -1,15 +1,15 @@
-"use client"
-import React, { useState } from 'react'
-import SectionTitle from '../SectionTitle';
-import SectionsComponent from '../SectionsComponent';
-import { portfolios } from '@/js/data/home/portfolio';
-import Image from 'next/image';
+"use client";
+import React, { useState } from "react";
+import SectionTitle from "../SectionTitle";
+import SectionsComponent from "../SectionsComponent";
+import { portfolios } from "@/js/data/home/portfolio";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
+import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { Autoplay, FreeMode, Pagination } from 'swiper/modules'
-import PopupComponent from './PopupComponent';
+import { Autoplay, FreeMode, Pagination } from "swiper/modules";
+import PopupComponent from "./PopupComponent";
 
 const PortfolioSection = () => {
   const [open, setOpen] = useState(false);
@@ -22,7 +22,7 @@ const PortfolioSection = () => {
       setCurrentPopup(popupData);
     }
   };
-  
+
   return (
     <SectionsComponent id="portfolio" otherClasses="">
       <SectionTitle title="Portfolio" text="Featured Projects" />
@@ -81,6 +81,6 @@ const PortfolioSection = () => {
       </Swiper>
     </SectionsComponent>
   );
-}
+};
 
 export default PortfolioSection;

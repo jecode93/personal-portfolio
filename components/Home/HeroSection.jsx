@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 import { hero, infosHero } from "@/js/data/home/home";
-import { socials } from '@/js/data/menu';
-import ButtonComponent from '../ButtonComponent';
+import { socials } from "@/js/data/menu";
+import ButtonComponent from "../ButtonComponent";
 
 const Hero = () => {
   return (
@@ -43,6 +43,6 @@ const Hero = () => {
       {/* End Social section */}
     </section>
   );
-}
+};
 
 export default Hero;

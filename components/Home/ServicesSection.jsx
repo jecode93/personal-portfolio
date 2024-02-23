@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 import { services } from "@/js/data/home/services";
-import Link from 'next/link';
-import SectionTitle from '../SectionTitle';
+import Link from "next/link";
+import SectionTitle from "../SectionTitle";
 import bullet from "@/public/images/bullet.png";
-import SectionsComponent from '../SectionsComponent';
+import SectionsComponent from "../SectionsComponent";
 
 const ServicesSection = () => {
   return (
@@ -48,6 +48,6 @@ const ServicesSection = () => {
       </div>
     </SectionsComponent>
   );
-}
+};
 
 export default ServicesSection;
