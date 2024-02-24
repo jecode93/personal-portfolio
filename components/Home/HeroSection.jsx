@@ -1,5 +1,5 @@
 import React from "react";
-import { hero, infosHero } from "@/js/data/home/home";
+import { hero } from "@/js/data/home/home";
 import { socials } from "@/js/data/menu";
 import ButtonComponent from "../ButtonComponent";
 
@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="hero md:px-5 lg:px-32 flex justify-between h-screen flex-col bg-hero bg-cover bg-left md:bg-center bg-no-repeat"
+      className="hero md:px-5 lg:px-32 flex justify-between h-screen flex-col bg-hero bg-cover bg-left md:bg-center bg-no-repeat bg-fixed"
     >
       <div className="flex flex-col px-5 tracking-widest leading-7 justify-center lg:w-[75%] h-full pt-16">
         {hero.map((text, index) => (
@@ -33,7 +33,7 @@ const Hero = () => {
               key={index}
               className="text-2xl hover:-translate-y-2 duration-300"
             >
-              <a href={social.link} target="_blank" aria-label={social.aria}>
+              <a href={social.link} target="_blank" aria-label={social.aria} className="hover:text-orange-500">
                 {social.icon}
               </a>
             </li>
