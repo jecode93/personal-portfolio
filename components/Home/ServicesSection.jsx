@@ -8,7 +8,7 @@ import SectionsComponent from "../SectionsComponent";
 
 const ServicesSection = () => {
   return (
-    <SectionsComponent id="services" otherClasses="">
+    <SectionsComponent id="services">
       <div className="z-0">
         <Image
           src={bullet}
