@@ -2,16 +2,14 @@ import React from "react";
 import { hero } from "@/js/data/home/home";
 import { socials } from "@/js/data/menu";
 import ButtonComponent from "../ButtonComponent";
-import Image from "next/image";
-import heroImage from "@/public/images/hero.webp";
 
 const Hero = () => {
   return (
     <section id="home" className="h-screen">
       <div className="relative">
         <div className="bg-hero w-screen bg-center h-screen bg-cover bg-no-repeat bg-fixed absolute " />
-        <div className="bg-gradient-to-t from-blue to-orange-5 w-screen h-screen absolute z-0"></div>
-        {/* <div className="bg-gradient-to-l from-blue to-orange-5 w-screen h-screen absolute z-0"></div> */}
+        <div className="bg-gradient-to-t from-blue to-orange-5 w-screen h-screen absolute z-0" />
+        <div className="bg-gradient-to-r from-blue to-orange-5 w-screen h-screen absolute z-0" />
       </div>
       <div className="md:px-5 lg:px-32 h-screen flex flex-col justify-between">
         <div className="flex flex-col px-5 tracking-widest leading-7 justify-center lg:w-[75%] h-full pt-16 z-20">
