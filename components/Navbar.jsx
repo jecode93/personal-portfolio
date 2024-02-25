@@ -1,11 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./styles/menu.css";
 import Image from "next/image";
 import Link from "next/link";
 import { menu, socials } from "@/js/data/menu";
 import { MdClose } from "react-icons/md";
 import { usePathname } from "next/navigation";
+import bullet from "@/public/images/bullet.svg";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -28,7 +29,7 @@ const Navbar = () => {
               width={300}
               height={21}
               priority
-              className="hover:scale-105 duration-300 w-72"
+              className="hover:scale-105 duration-300 w-64"
             />
           </Link>
         </div>
@@ -123,20 +124,10 @@ const Navbar = () => {
                 <div className="mx-auto left-0 right-0 w-20 border border-white shadow-2xl"></div>
               </div>
               <div className="absolute bottom-0 right-0">
-                <Image
-                  src="/images/bullet.png"
-                  alt="bullet-point"
-                  width={90}
-                  height={90}
-                />
+                <Image src={bullet} alt="bullet-point" width={90} height={90} />
               </div>
               <div className="absolute bottom-0 left-0">
-                <Image
-                  src="/images/bullet.png"
-                  alt="bullet-point"
-                  width={90}
-                  height={90}
-                />
+                <Image src={bullet} alt="bullet-point" width={90} height={90} />
               </div>
             </div>
           </nav>

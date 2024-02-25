@@ -3,7 +3,7 @@ import React from "react";
 import { services } from "@/js/data/home/services";
 import Link from "next/link";
 import SectionTitle from "../SectionTitle";
-import bullet from "@/public/images/bullet.png";
+import bullet from "@/public/images/bullet.svg";
 import SectionsComponent from "../SectionsComponent";
 
 const ServicesSection = () => {
