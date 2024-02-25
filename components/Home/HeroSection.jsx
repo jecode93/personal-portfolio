@@ -2,45 +2,56 @@ import React from "react";
 import { hero } from "@/js/data/home/home";
 import { socials } from "@/js/data/menu";
 import ButtonComponent from "../ButtonComponent";
+import Image from "next/image";
+import heroImage from "@/public/images/hero.webp";
 
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className="hero md:px-5 lg:px-32 flex justify-between h-screen flex-col bg-hero bg-cover bg-left md:bg-center bg-no-repeat bg-fixed"
-    >
-      <div className="flex flex-col px-5 tracking-widest leading-7 justify-center lg:w-[75%] h-full pt-16">
-        {hero.map((text, index) => (
-          <div key={index}>
-            <p className="text-lg text-white md:text-2xl">{text.subTitle}</p>
-            <h1 className="text-3xl my-3 md:text-6xl font-black md:leading-tight text-orange-500 description">
-              <span>{text.title}</span>
-            </h1>
+    <section id="home" className="h-screen">
+      <div className="relative">
+        <div className="bg-hero w-screen bg-left h-screen bg-cover md:bg-center bg-no-repeat bg-fixed absolute " />
+        <div className="bg-gradient-to-t from-blue to-orange-5 w-screen h-screen absolute z-0"></div>
+        {/* <div className="bg-gradient-to-l from-blue to-orange-5 w-screen h-screen absolute z-0"></div> */}
+      </div>
+      <div className="md:px-5 lg:px-32 h-screen flex flex-col justify-between">
+        <div className="flex flex-col px-5 tracking-widest leading-7 justify-center lg:w-[75%] h-full pt-16 z-20">
+          {hero.map((text, index) => (
+            <div key={index}>
+              <p className="text-lg text-white md:text-2xl">{text.subTitle}</p>
+              <h1 className="text-3xl my-3 md:text-6xl font-black md:leading-tight text-orange-500 description">
+                <span>{text.title}</span>
+              </h1>
 
-            {/* <div className="border w-16 md:w-30 mb-7 text-gray" /> */}
-            <p className="mb-10 text-lg md:text-2xl description">
-              {text.description}
-            </p>
-          </div>
-        ))}
-        <ButtonComponent path="/contact" text="Contact me" />
-      </div>
-      {/* Social section */}
-      <div className="socials-links px-5">
-        <ul className="flex gap-4 justify-center items-center left-0 right-0 mb-10">
-          {socials.map((social, index) => (
-            <li
-              key={index}
-              className="text-2xl hover:-translate-y-2 duration-300"
-            >
-              <a href={social.link} target="_blank" aria-label={social.aria} className="hover:text-orange-500">
-                {social.icon}
-              </a>
-            </li>
+              {/* <div className="border w-16 md:w-30 mb-7 text-gray" /> */}
+              <p className="mb-10 text-lg md:text-2xl description">
+                {text.description}
+              </p>
+            </div>
           ))}
-        </ul>
+          <ButtonComponent path="/contact" text="Contact me" />
+        </div>
+        {/* Social section */}
+        <div className="socials-links px-5 z-20">
+          <ul className="flex gap-4 justify-center items-center left-0 right-0 mb-10">
+            {socials.map((social, index) => (
+              <li
+                key={index}
+                className="text-2xl hover:-translate-y-2 duration-300"
+              >
+                <a
+                  href={social.link}
+                  target="_blank"
+                  aria-label={social.aria}
+                  className="hover:text-orange-500"
+                >
+                  {social.icon}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        {/* End Social section */}
       </div>
-      {/* End Social section */}
     </section>
   );
 };
