@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section id="home" className="h-screen">
       <div className="relative">
-        <div className="bg-hero w-screen bg-left h-screen bg-cover md:bg-center bg-no-repeat bg-fixed absolute " />
+        <div className="bg-hero w-screen bg-center h-screen bg-cover bg-no-repeat bg-fixed absolute " />
         <div className="bg-gradient-to-t from-blue to-orange-5 w-screen h-screen absolute z-0"></div>
         {/* <div className="bg-gradient-to-l from-blue to-orange-5 w-screen h-screen absolute z-0"></div> */}
       </div>
