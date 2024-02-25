@@ -9,9 +9,6 @@ const Hero = () => {
       id="home"
       className="h-screen bg-hero w-screen bg-center bg-cover bg-no-repeat bg-fixed"
     >
-      <div className="relative">
-        <div className="bg-gradient-to-t from-blue w-screen h-screen absolute z-0" />
-      </div>
       <div className="md:px-5 lg:px-32 h-screen flex flex-col justify-between">
         <div className="flex flex-col px-5 tracking-widest leading-7 justify-center lg:w-[75%] h-full pt-16 z-20">
           {hero.map((text, index) => (
