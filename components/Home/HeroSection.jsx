@@ -7,11 +7,10 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-screen bg-hero-mobile bg-center md:bg-hero-large w-screen bg-cover bg-no-repeat bg-fixed"
+      className="w-screen h-screen bg-hero-mobile md:bg-hero-large lg:bg-center bg-cover bg-no-repeat bg-fixed"
     >
       <div className="bg-gradient-to-t from-blue w-screen h-screen absolute" />
-      <div className="bg-gradient-to-l from-blue w-screen h-screen absolute" />
-      <div className="bg-gradient-to-b from-blue w-screen h-screen absolute md:hidden" />
+      <div className="bg-gradient-to-r from-blue w-screen h-screen absolute" />
       <div className="md:px-5 lg:px-32 h-screen flex flex-col justify-between">
         <div className="flex flex-col px-5 tracking-widest leading-7 justify-center lg:w-[75%] h-full pt-16 z-20">
           {hero.map((text, index) => (

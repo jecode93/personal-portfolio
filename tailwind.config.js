@@ -28,7 +28,7 @@ module.exports = {
       backgroundImage: {
         trait: 'url("/images/trait.webp")',
         "hero-mobile": 'url("/images/hero-mobile.webp")',
-        "hero-large": 'url("/images/hero-large.webp")',
+        "hero-large": 'url("/images/desktop.jpg")',
       },
     },
   },
