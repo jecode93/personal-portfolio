@@ -27,7 +27,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         trait: 'url("/images/trait.webp")',
-        hero: 'url("/images/hero.webp")',
+        "hero-mobile": 'url("/images/hero-mobile.webp")',
+        "hero-large": 'url("/images/hero-large.webp")',
       },
     },
   },
