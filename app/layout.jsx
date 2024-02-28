@@ -7,9 +7,49 @@ import "@/components/styles/description.css";
 
 
 export const metadata = {
-  title: "Full-Stack Software Engineer | Jean Emmanuel Cadet",
+  title: {
+    default: "Full-stack Software Engineer | Jean Emmanuel Cadet",
+    template: "%s | Jean Emmanuel Cadet",
+  },
   description:
-    "I am a Full-Stack Software Engineer with more than 3 years of experience in web development. I am proficient in all aspects of the development process, from Front-end to Back-end mastery, I thrive in turning complex ideas into elegant, user-centric applications.",
+    "I'm a Full-stack software engineer with over 3 years of experience building innovative and user-friendly web applications using React, Node.js, and Ruby on Rails. I'm passionate about helping small businesses grow online and have a proven track record of increasing user engagement by 20%.",
+  keywords: [
+    "Full-stack developer",
+    "Software engineer",
+    "Web developer",
+    "Front-end developer",
+    "Back-end developer",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Ruby on Rails",
+    "MySQL",
+    "PostgreSQL",
+    "MongoDB",
+    "APIs",
+    "APIs development",
+    "REST APIs",
+    "AWS",
+    "Small business solutions",
+    "Enterprise software development",
+    "E-commerce development",
+    "Custom software development",
+    "Web application development",
+    "Mobile app development",
+    "SaaS development",
+    "User experience (UX)",
+    "User interface (UI) design",
+    "Agile development",
+    "Scalable solutions",
+    "Healthcare",
+    "Finance",
+    "Education",
+    "Web development",
+    "Database design and management",
+  ],
 };
 
 export default function RootLayout({ children }) {

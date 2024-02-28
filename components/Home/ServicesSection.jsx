@@ -1,14 +1,14 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 import { services } from "@/js/data/home/services";
-import Link from 'next/link';
-import SectionTitle from '../SectionTitle';
-import bullet from "@/public/images/bullet.png";
-import SectionsComponent from '../SectionsComponent';
+import Link from "next/link";
+import SectionTitle from "../SectionTitle";
+import bullet from "@/public/images/bullet.svg";
+import SectionsComponent from "../SectionsComponent";
 
 const ServicesSection = () => {
   return (
-    <SectionsComponent id="services" otherClasses="">
+    <SectionsComponent id="services">
       <div className="z-0">
         <Image
           src={bullet}
@@ -36,18 +36,18 @@ const ServicesSection = () => {
               <h2 className="font-bold text-xl md:text-2xl mb-5">
                 {service.title}
               </h2>
-              <p className="text-degrade mb-10 md:text-xl">
+              <p className="text-degrade text-lg mb-10 md:text-xl">
                 {service.description}
               </p>
-              <p className="text-xl font-bold text-orange-500">
+              {/* <p className="text-xl font-bold text-orange-500">
                 ${service.price}/h
-              </p>
+              </p> */}
             </Link>
           </div>
         ))}
       </div>
     </SectionsComponent>
   );
-}
+};
 
 export default ServicesSection;

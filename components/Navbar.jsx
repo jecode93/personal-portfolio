@@ -1,11 +1,13 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./styles/menu.css";
 import Image from "next/image";
 import Link from "next/link";
-import { menu, socials } from "@/js/data/menu";
+import { menu } from "@/js/data/menu";
 import { MdClose } from "react-icons/md";
 import { usePathname } from "next/navigation";
+import bullet from "@/public/images/bullet.svg";
+import SocialComponent from "./SocialComponent";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -16,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className={`px-5 z-40 relative`}>
+    <header className={`px-5 z-30 relative`}>
       {/* Mobile logo and icons */}
       <div className="flex justify-between items-center">
         {/* Mobile icon */}
@@ -28,7 +30,7 @@ const Navbar = () => {
               width={300}
               height={21}
               priority
-              className="hover:scale-105 duration-300"
+              className="hover:scale-105 duration-300 w-64"
             />
           </Link>
         </div>
@@ -65,7 +67,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "right-0" : "-right-[100%]"
-          } fixed top-0 bottom-0 bg-darkblue w-full md:w-[48%] h-screen duration-300`}
+          } fixed top-0 bottom-0 bg-darkblue w-full md:w-[60%] h-screen duration-300`}
         >
           <nav className="h-full">
             <div
@@ -104,39 +106,14 @@ const Navbar = () => {
 
               {/* Social section */}
               <div className="socials-links z-40">
-                <ul className="flex gap-4 justify-center items-center left-0 right-0 mb-10">
-                  {socials.map((social, index) => (
-                    <li
-                      key={index}
-                      className="text-2xl hover:-translate-y-2 duration-300"
-                    >
-                      <a
-                        href={social.link}
-                        target="_blank"
-                        aria-label={social.aria}
-                      >
-                        {social.icon}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mx-auto left-0 right-0 w-20 border border-white shadow-2xl"></div>
+                <SocialComponent />
+                <div className="mx-auto left-0 right-0 w-20 border border-white shadow-2xl mt-10"></div>
               </div>
               <div className="absolute bottom-0 right-0">
-                <Image
-                  src="/images/bullet.png"
-                  alt="bullet-point"
-                  width={90}
-                  height={90}
-                />
+                <Image src={bullet} alt="bullet-point" width={90} height={90} />
               </div>
               <div className="absolute bottom-0 left-0">
-                <Image
-                  src="/images/bullet.png"
-                  alt="bullet-point"
-                  width={90}
-                  height={90}
-                />
+                <Image src={bullet} alt="bullet-point" width={90} height={90} />
               </div>
             </div>
           </nav>
