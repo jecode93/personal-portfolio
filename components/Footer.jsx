@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="md:flex justify-between items-center text-center py-7 px-5 md:px-10 lg:px-32">
-          <p className="mb-5 md:mb-0 text-sm md:text-md text-degrade tracking-widest">
+        <div className="flex flex-col-reverse gap-7 md:flex-row justify-between items-center text-center py-7 px-5 md:px-10 lg:px-32">
+          <p className="text-sm md:text-md text-degrade tracking-widest">
             Copyright © 2023 - {currentYear}. All right reserved
           </p>
           <SocialComponent />
