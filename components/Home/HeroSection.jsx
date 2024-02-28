@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="bg-gradient-to-t from-blue w-screen h-screen absolute" />
       <div className="bg-gradient-to-r from-blue w-screen h-screen absolute" />
       <div className="md:px-5 lg:px-32 h-screen flex flex-col justify-between">
-        <div className="flex flex-col px-5 tracking-widest leading-7 justify-center lg:w-[75%] h-full pt-16 z-20">
+        <div className="flex flex-col px-5 tracking-widest leading-7 justify-center lg:w-[75%] h-full pt-16 z-10">
           {hero.map((text, index) => (
             <div key={index}>
               <p className="text-lg text-white md:text-2xl">{text.subTitle}</p>
@@ -29,7 +29,7 @@ const Hero = () => {
           <ButtonComponent path="/contact" text="Contact me" />
         </div>
         {/* Social section */}
-        <div className="socials-links px-5 z-20">
+        <div className="socials-links px-5 z-10">
           <ul className="flex gap-4 justify-center items-center left-0 right-0 mb-10">
             {socials.map((social, index) => (
               <li
