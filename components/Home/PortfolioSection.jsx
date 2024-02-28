@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { Autoplay, FreeMode, Pagination } from "swiper/modules";
+import { Autoplay, FreeMode } from "swiper/modules";
 import PopupComponent from "./PopupComponent";
 
 const PortfolioSection = () => {
@@ -42,8 +42,7 @@ const PortfolioSection = () => {
           },
         }}
         freeMode={true}
-        pagination={{ clickable: true }}
-        modules={[Autoplay, FreeMode, Pagination]}
+        modules={[Autoplay, FreeMode]}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
