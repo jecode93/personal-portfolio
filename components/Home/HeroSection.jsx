@@ -2,6 +2,7 @@ import React from "react";
 import { hero } from "@/js/data/home/home";
 import { socials } from "@/js/data/menu";
 import ButtonComponent from "../ButtonComponent";
+import SocialComponent from "../SocialComponent";
 
 const Hero = () => {
   return (
@@ -27,24 +28,8 @@ const Hero = () => {
           <ButtonComponent path="/contact" text="Contact me" />
         </div>
         {/* Social section */}
-        <div className="socials-links px-5 z-10">
-          <ul className="flex gap-4 justify-center items-center left-0 right-0 mb-10">
-            {socials.map((social, index) => (
-              <li
-                key={index}
-                className="text-2xl hover:-translate-y-2 duration-300"
-              >
-                <a
-                  href={social.link}
-                  target="_blank"
-                  aria-label={social.aria}
-                  className="hover:text-orange-500"
-                >
-                  {social.icon}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div className="socials-links px-5 z-10 mb-10">
+          <SocialComponent />
         </div>
         {/* End Social section */}
       </div>
