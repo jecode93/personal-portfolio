@@ -11,12 +11,12 @@ const About = () => {
       <div className="flex flex-col lg:flex-row items-center gap-10 md:px-5">
         <div className="flex justify-center items-center lg:w-1/2 2xl:w-1/3 p-5">
           <div className="flex justify-center items-center w-full relative p-7">
-            <div className="h-full w-[93%] absolute border border-slate rounded opacity-50"></div>
-            <div className="w-full h-[93%] absolute border border-slate rounded opacity-50"></div>
-            <div className="text-center flex flex-col justify-center items-center md:p-5">
+            <div className="h-full w-[93%] absolute border border-slate opacity-50"></div>
+            <div className="w-full h-[93%] absolute border border-slate opacity-50"></div>
+            <div className="text-center flex flex-col justify-center items-center md:p-3">
               <Image
                 src={me}
-                className="w-full md:w-[500px] mb-4 rounded"
+                className="w-full md:w-[500px] mb-4"
                 alt="Jean Emmanuel Cadet"
                 width={500}
                 height={500}
@@ -47,7 +47,7 @@ const About = () => {
               </p>
             </div>
           ))}
-          <ButtonComponent path="/about" text="Read more..." />
+          <ButtonComponent path="/about" text="Read more" />
         </div>
       </div>
     </SectionsComponent>
