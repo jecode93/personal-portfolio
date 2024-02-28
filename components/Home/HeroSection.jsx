@@ -19,8 +19,6 @@ const Hero = () => {
               <h1 className="text-3xl my-3 md:text-6xl font-black md:leading-tight text-orange-500 description">
                 <span>{text.title}</span>
               </h1>
-
-              {/* <div className="border w-16 md:w-30 mb-7 text-gray" /> */}
               <p className="mb-10 text-lg md:text-2xl description">
                 {text.description}
               </p>
