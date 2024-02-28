@@ -6,7 +6,7 @@ const Cta = () => {
   return (
     <SectionsComponent
       id="call_to_action"
-      otherClasses="bg-orange-500 text-center text-blue"
+      otherClasses="bg-orange-500 text-center text-blue py-32"
     >
       <h2 className="text-3xl md:text-5xl font-extrabold text-blue">
         Let&apos;s Build it. Together.
