@@ -2,7 +2,7 @@ export const portfolios = [
   {
     id: 1,
     title: "Car Booking System",
-    image: "/portfolio/bookcar.jpg",
+    image: "/portfolio/bookcar.webp",
     link: "https://final-capstone-frontend-3l0g.onrender.com/",
     description: `
 Car Book revolutionizes car rentals, bridging the gap between renters and owners with a user-centric platform.
@@ -40,7 +40,7 @@ Car Book transcends a simple booking platform, fostering a community built on tr
   {
     id: 2,
     title: "Space Travelers Hub",
-    image: "/portfolio/falcon.jpg",
+    image: "/portfolio/falcon.webp",
     link: "https://space-travelers-hub-uro6.onrender.com/",
     description: `Space Travelers' Hub (STH) is a dynamic single-page application (SPA) that ignites your dreams of space exploration. Powered by real-time data from the SpaceX API, STH empowers you to:
 
@@ -55,7 +55,7 @@ STH transcends a simple booking platform, fostering a vibrant community of space
   {
     id: 3,
     title: "Country Weather App",
-    image: "/portfolio/weather.jpg",
+    image: "/portfolio/weather.webp",
     link: "https://react-capstone-project-git-dev-jecode93.vercel.app/",
     description: `This captivating single-page application (SPA) caters to every weather enthusiast, providing a comprehensive and convenient platform to explore a world of meteorological data.
 
@@ -74,7 +74,7 @@ This user-friendly app empowers you to stay informed and make informed decisions
   // {
   //   id: 4,
   //   title: "InvesTO",
-  //   image: "/portfolio/bookcar.jpg",
+  //   image: "/portfolio/bookcar.webp",
   //   link: "https://github.com/jecode93/budget-app",
   //   description:
   //     "InvesTO is a mobile web application where you can manage your budget: you have a list of transactions associated with a category so that you can see how much money you spend and on what.",
@@ -83,7 +83,7 @@ This user-friendly app empowers you to stay informed and make informed decisions
   {
     id: 4,
     title: "Leaderboard",
-    image: "/portfolio/leaderboard.jpg",
+    image: "/portfolio/leaderboard.webp",
     link: "https://leaderboard-jecode93.netlify.app/",
     description: `This compelling JavaScript project, built with cutting-edge Webpack and ES6 features, unveils a dynamic leaderboard experience. It seamlessly retrieves data from the Leaderboard API using the power of asynchronous operations (async/await), ensuring a smooth and efficient user experience.
 
@@ -104,7 +104,7 @@ This project transcends a simple score display, fostering a sense of competition
   {
     id: 5,
     title: "Math-magician",
-    image: "/portfolio/math-magicians.jpg",
+    image: "/portfolio/math-magicians.webp",
     link: "https://math-magicians-dk01.onrender.com/calculator",
     description: `Math Magicians is a captivating single-page application (SPA) designed to ignite your passion for mathematics. This interactive platform caters to learners of all levels, offering two key features:
 
@@ -119,7 +119,7 @@ Math Magicians goes beyond a simple calculator, fostering a love for mathematics
   {
     id: 6,
     title: "Idas Boiserie",
-    image: "/portfolio/idas.jpg",
+    image: "/portfolio/idas.webp",
     link: "https://idasboiserie.com/",
     description: `This website serves as a captivating platform, meticulously crafted to showcase your client's exceptional work and seamlessly facilitate product sales. It caters to both potential clients and loyal customers, offering a comprehensive and engaging experience.
 
@@ -138,7 +138,7 @@ This website transcends a simple online store, fostering a lasting connection be
   {
     id: 7,
     title: "Clin D'oeil Info",
-    image: "/portfolio/cdi.jpg",
+    image: "/portfolio/cdi.webp",
     link: "https://clindoeilinfo.com/",
     description: `Three years ago, I created a dynamic platform to empower informed citizens, and this client's news blog stands as a testament to that vision. This comprehensive platform transcends a simple news feed, offering a robust suite of features:
 
@@ -157,8 +157,8 @@ This blog serves not only as a source of information but also as a platform for 
   {
     id: 8,
     title: "Personal Portfolio",
-    image: "/portfolio/personal.jpg",
-    link: "https://jeanemmanuelcadet.vercel.com/",
+    image: "/portfolio/personal.webp",
+    link: "https://jeanemmanuelcadet.com/",
     description:
       "How can I list the projects I have already done without putting my project in it, it was a challenge for me to create this website from scratch, which gives me more opportunities to prove my abilities to take a project from scratch to completion.",
     resume: "Showcase projects & skills built from scratch.",
