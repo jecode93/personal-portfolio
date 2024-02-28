@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const SectionTitle = ({ title, text }) => {
   return (
@@ -12,6 +12,6 @@ const SectionTitle = ({ title, text }) => {
       </div>
     </>
   );
-}
+};
 
-export default SectionTitle
+export default SectionTitle;

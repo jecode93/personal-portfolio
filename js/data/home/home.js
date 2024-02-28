@@ -3,7 +3,7 @@ export const hero = [
     subTitle: "Welcome to my digital space.",
     title: `I am a Full-stack
 Software Engineer`,
-    description: `I design, build, and deploy innovative software solutions for small and larger businesses.`,
+    description: `I design, build, and deploy innovative software solutions for businesses of all sizes.`,
   },
 ];
 

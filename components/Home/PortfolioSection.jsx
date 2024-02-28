@@ -1,15 +1,15 @@
-"use client"
-import React, { useState } from 'react'
-import SectionTitle from '../SectionTitle';
-import SectionsComponent from '../SectionsComponent';
-import { portfolios } from '@/js/data/home/portfolio';
-import Image from 'next/image';
+"use client";
+import React, { useState } from "react";
+import SectionTitle from "../SectionTitle";
+import SectionsComponent from "../SectionsComponent";
+import { portfolios } from "@/js/data/home/portfolio";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
+import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { Autoplay, FreeMode, Pagination } from 'swiper/modules'
-import PopupComponent from './PopupComponent';
+import { Autoplay, FreeMode } from "swiper/modules";
+import PopupComponent from "./PopupComponent";
 
 const PortfolioSection = () => {
   const [open, setOpen] = useState(false);
@@ -22,9 +22,9 @@ const PortfolioSection = () => {
       setCurrentPopup(popupData);
     }
   };
-  
+
   return (
-    <SectionsComponent id="portfolio" otherClasses="">
+    <SectionsComponent id="portfolio" otherClasses="z-20">
       <SectionTitle title="Portfolio" text="Featured Projects" />
       <Swiper
         breakpoints={{
@@ -42,8 +42,7 @@ const PortfolioSection = () => {
           },
         }}
         freeMode={true}
-        pagination={{ clickable: true }}
-        modules={[Autoplay, FreeMode, Pagination]}
+        modules={[Autoplay, FreeMode]}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
@@ -54,7 +53,7 @@ const PortfolioSection = () => {
         {portfolios.map((portfolio) => (
           <SwiperSlide key={portfolio.id} className="duration-500">
             <div
-              className="flex flex-col justify-between bg-darkblue rounded-t-lg hover:cursor-pointer duration-200 max-w-md h-[330px] lg:h-[290px]"
+              className="flex flex-col justify-between bg-darkblue rounded-t-lg hover:cursor-pointer duration-200 max-w-md h-[330px] lg:h-full"
               onClick={() => showModal(portfolio.id)}
             >
               <Image
@@ -81,6 +80,6 @@ const PortfolioSection = () => {
       </Swiper>
     </SectionsComponent>
   );
-}
+};
 
 export default PortfolioSection;

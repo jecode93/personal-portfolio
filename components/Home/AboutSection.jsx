@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 import { aboutme } from "@/js/data/home/home";
 import me from "@/public//images/me.jpg";
 import ButtonComponent from "../ButtonComponent";
-import SectionsComponent from '../SectionsComponent';
+import SectionsComponent from "../SectionsComponent";
 
 const About = () => {
   return (
@@ -42,7 +42,7 @@ const About = () => {
               <h2 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold tracking-widest">
                 {about.title}
               </h2>
-              <p className="md:text-xl tracking-widest mb-5 text-degrade description">
+              <p className="text-lg md:text-xl tracking-widest mb-5 text-degrade description">
                 {about.description}
               </p>
             </div>
@@ -52,6 +52,6 @@ const About = () => {
       </div>
     </SectionsComponent>
   );
-}
+};
 
 export default About;

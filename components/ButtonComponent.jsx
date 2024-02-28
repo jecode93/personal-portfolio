@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 const ButtonComponent = ({ path, text }) => {
   return (
@@ -10,6 +10,6 @@ const ButtonComponent = ({ path, text }) => {
       {text}
     </Link>
   );
-}
+};
 
 export default ButtonComponent;
