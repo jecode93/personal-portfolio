@@ -11,7 +11,7 @@ const Cta = () => {
       <h2 className="text-3xl md:text-5xl font-extrabold text-blue">
         Let&apos;s Build it. Together.
       </h2>
-      <p className="my-7 md:mx-5 lg:mx-32 md:text-xl tracking-wider">
+      <p className="my-7 md:mx-5 lg:mx-32 text-lg md:text-xl tracking-wider">
         As a seasoned full-stack software engineer, I bring innovation and
         proficiency to every project I undertake. Whether you&apos;re a startup
         in need of a dynamic web application or an established enterprise
