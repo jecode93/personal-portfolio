@@ -7,7 +7,7 @@ const PopupComponent = ({ isVisible, onClose, content }) => {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative z-50">
         {/* Background */}
         <div
           className="fixed flex justify-center top-0 bottom-0 left-0 bg-black w-full h-full opacity-70"
@@ -16,10 +16,10 @@ const PopupComponent = ({ isVisible, onClose, content }) => {
         {/* End background */}
 
         {/* Container */}
-        <div className="fixed flex flex-col top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[80%] h-[80%] bg-darkblue z-40">
+        <div className="fixed flex flex-col top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[80%] h-[80%] bg-darkblue">
           {/* Close buton */}
           <div
-            className="fixed top-3 right-3 cursor-pointer text-white text-3xl font-extrabold duration-500 z"
+            className="fixed top-3 right-3 cursor-pointer text-white text-3xl font-extrabold duration-500"
             onClick={onClose}
           >
             <span>
