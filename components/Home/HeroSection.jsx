@@ -1,6 +1,5 @@
 import React from "react";
 import { hero } from "@/js/data/home/home";
-import { socials } from "@/js/data/menu";
 import ButtonComponent from "../ButtonComponent";
 import SocialComponent from "../SocialComponent";
 
@@ -13,7 +12,7 @@ const Hero = () => {
       <div className="bg-gradient-to-t from-blue w-screen h-screen absolute" />
       <div className="bg-gradient-to-r from-blue w-screen h-screen absolute" />
       <div className="md:px-5 lg:px-32 h-screen flex flex-col justify-between">
-        <div className="flex flex-col px-5 tracking-widest leading-7 justify-center lg:w-[75%] h-full pt-16 z-10">
+        <div className="flex flex-col px-5 tracking-widest leading-7 justify-center lg:w-[75%] h-full pt-16 z-0">
           {hero.map((text, index) => (
             <div key={index}>
               <p className="text-lg text-white md:text-2xl">{text.subTitle}</p>
@@ -28,7 +27,7 @@ const Hero = () => {
           <ButtonComponent path="/contact" text="Contact me" />
         </div>
         {/* Social section */}
-        <div className="socials-links px-5 z-10 mb-10">
+        <div className="socials-links px-5 z-0 mb-10">
           <SocialComponent />
         </div>
         {/* End Social section */}
