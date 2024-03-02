@@ -1,17 +1,17 @@
-import React from 'react'
-import SectionsComponent from '../SectionsComponent';
+import React from "react";
+import SectionsComponent from "../SectionsComponent";
 import Link from "next/link";
 
 const Cta = () => {
   return (
     <SectionsComponent
       id="call_to_action"
-      otherClasses="bg-orange-500 text-center text-blue py-32"
+      otherClasses="bg-orange-500 text-center text-blue"
     >
-      <h2 className="text-3xl md:text-5xl font-extrabold text-blue">
+      <h2 className="text-3xl md:text-5xl font-extrabold">
         Let&apos;s Build it. Together.
       </h2>
-      <p className="my-7 md:mx-5 lg:mx-32 text-lg md:text-xl tracking-wider">
+      <p className="my-7 md:mx-5 lg:mx-24 text-lg md:text-xl tracking-wider">
         As a seasoned full-stack software engineer, I bring innovation and
         proficiency to every project I undertake. Whether you&apos;re a startup
         in need of a dynamic web application or an established enterprise
@@ -21,7 +21,7 @@ const Cta = () => {
       </p>
       <Link
         href="contact"
-        className="px-3 py-2 bg-blue text-sm font-bold text-white uppercase hover:bg-bluethin duration-300 rounded"
+        className="px-3 py-2 bg-blue text-xs md:text-sm font-bold text-white uppercase hover:text-blue duration-300 btn41-43 btn-41"
       >
         Start today
       </Link>

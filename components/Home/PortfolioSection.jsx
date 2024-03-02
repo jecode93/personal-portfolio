@@ -24,7 +24,7 @@ const PortfolioSection = () => {
   };
 
   return (
-    <SectionsComponent id="portfolio" otherClasses="z-20">
+    <SectionsComponent id="portfolio">
       <SectionTitle title="Portfolio" text="Featured Projects" />
       <Swiper
         breakpoints={{
@@ -70,14 +70,14 @@ const PortfolioSection = () => {
             </div>
           </SwiperSlide>
         ))}
-        {currentPopup && (
-          <PopupComponent
-            isVisible={open}
-            onClose={() => setOpen(false)}
-            content={currentPopup}
-          />
-        )}
       </Swiper>
+      {currentPopup && (
+        <PopupComponent
+          isVisible={open}
+          onClose={() => setOpen(false)}
+          content={currentPopup}
+        />
+      )}
     </SectionsComponent>
   );
 };
