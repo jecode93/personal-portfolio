@@ -70,14 +70,14 @@ const PortfolioSection = () => {
             </div>
           </SwiperSlide>
         ))}
-        {currentPopup && (
-          <PopupComponent
-            isVisible={open}
-            onClose={() => setOpen(false)}
-            content={currentPopup}
-          />
-        )}
       </Swiper>
+      {currentPopup && (
+        <PopupComponent
+          isVisible={open}
+          onClose={() => setOpen(false)}
+          content={currentPopup}
+        />
+      )}
     </SectionsComponent>
   );
 };
