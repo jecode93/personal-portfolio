@@ -24,7 +24,7 @@ const PortfolioSection = () => {
   };
 
   return (
-    <SectionsComponent id="portfolio" otherClasses="z-20">
+    <SectionsComponent id="portfolio" otherClasses="z-10">
       <SectionTitle title="Portfolio" text="Featured Projects" />
       <Swiper
         breakpoints={{
