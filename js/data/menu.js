@@ -1,4 +1,10 @@
-import { BsFacebook, BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
+import {
+  BsFacebook,
+  BsLinkedin,
+  BsGithub,
+  BsInstagram,
+  BsWhatsapp,
+} from "react-icons/bs";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
 export const menu = [
@@ -21,6 +27,11 @@ export const menu = [
 ];
 
 export const socials = [
+  {
+    link: "https://wa.me/50947801268",
+    icon: <BsWhatsapp />,
+    aria: "Go to my X page, formely twitter",
+  },
   {
     link: "https://github.com/jecode93",
     icon: <BsGithub />,
