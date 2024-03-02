@@ -16,7 +16,7 @@ const PopupComponent = ({ isVisible, onClose, content }) => {
         {/* End background */}
 
         {/* Container */}
-        <div className="fixed flex flex-col top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[80%] h-[80%] bg-darkblue">
+        <div className="fixed flex flex-col top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[80%] h-[80%] bg-darkblue z-30">
           {/* Close buton */}
           <div
             className="fixed top-3 right-3 cursor-pointer text-white text-3xl font-extrabold duration-500"
