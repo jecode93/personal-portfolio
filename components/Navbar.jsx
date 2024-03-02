@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className={`px-5 z-30 relative`}>
+    <header className={`px-5 z-10 relative`}>
       {/* Mobile logo and icons */}
       <div className="flex justify-between items-center">
         {/* Mobile icon */}
