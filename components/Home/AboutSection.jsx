@@ -42,12 +42,12 @@ const About = () => {
               <h2 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold tracking-widest">
                 {about.title}
               </h2>
-              <p className="text-lg md:text-xl tracking-widest mb-5 text-degrade description">
+              <p className="text-lg tracking-wide text-justify mb-5 text-degrade description">
                 {about.description}
               </p>
             </div>
           ))}
-          <ButtonComponent path="/about" text="Read more" />
+          <ButtonComponent path="about" text="Read more" />
         </div>
       </div>
     </SectionsComponent>
