@@ -39,7 +39,7 @@ const About = () => {
               <h1 className="text-xl md:text-2xl mb-7 text-orange-500">
                 Who am I?
               </h1>
-              <h2 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold tracking-widest">
+              <h2 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold tracking-wide">
                 {about.title}
               </h2>
               <p className="text-lg tracking-wide text-justify mb-5 text-degrade description">
