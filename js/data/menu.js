@@ -5,7 +5,7 @@ import {
   BsInstagram,
   BsWhatsapp,
 } from "react-icons/bs";
-import { FaSquareXTwitter } from "react-icons/fa6";
+// import { FaSquareXTwitter } from "react-icons/fa6";
 
 export const menu = [
   {
