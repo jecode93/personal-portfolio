@@ -47,7 +47,7 @@ const About = () => {
               </p>
             </div>
           ))}
-          <ButtonComponent path="about" text="Read more" />
+          <ButtonComponent path="about" text="Read more about me" />
         </div>
       </div>
     </SectionsComponent>
