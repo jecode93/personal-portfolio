@@ -4,20 +4,20 @@ export const services = [
     title: "Web development",
     description:
       "From landing pages to complex applications, I create custom web solutions that engage your audience",
-    price: 40,
+    price: "55.00",
   },
   {
     icon: "/icons/api.svg",
     title: "API development",
     description:
       "Connect your systems & unlock data with secure, scalable APIs tailored to your needs.",
-    price: 50,
+    price: "60.00",
   },
   {
     icon: "/icons/database.svg",
     title: "Database design and management",
     description:
       "Design & manage robust databases that store & organize your critical data efficiently.",
-    price: 45,
+    price: "65.00",
   },
 ];

@@ -39,7 +39,7 @@ const PopupComponent = ({ isVisible, onClose, content }) => {
               className="w-full rounded-md"
             />
             <div className="border border-degrade my-7" />
-            <p className="text-degrade leading-6 tracking-widest description">
+            <p className="text-degrade text-lg tracking-wide text-justify description">
               {content.description}
             </p>
             <div className="my-7">
