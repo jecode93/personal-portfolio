@@ -11,13 +11,16 @@ const Cta = () => {
       <h2 className="text-3xl md:text-5xl font-extrabold">
         Let&apos;s Build it. Together.
       </h2>
-      <p className="my-7 md:mx-5 lg:mx-24 text-lg md:text-xl tracking-wider">
+      <p className="my-7 md:mx-5 lg:mx-24 text-lg md:text-xl tracking-wide">
         As a seasoned full-stack software engineer, I bring innovation and
         proficiency to every project I undertake. Whether you&apos;re a startup
         in need of a dynamic web application or an established enterprise
         seeking cutting-edge software solutions, I&apos;m here to turn your
-        vision into reality. Let&apos;s collaborate to create tailored solutions
-        that exceed your expectations and propel your business forward.
+        vision into reality.
+        <br />
+        <br />
+        Let&apos;s collaborate to create tailored solutions that exceed your
+        expectations and propel your business forward.
       </p>
       <Link
         href="contact"

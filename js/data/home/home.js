@@ -24,8 +24,8 @@ export const infosHero = [
 
 export const aboutme = [
   {
-    title: "I'm Jean Emmanuel Cadet",
-    description: `A Full-stack software engineer who specializes in building software solutions for small and larger businesses using Front-end technologies like (JavaScript, TypeScript, React, Redux, and Next.js), Back-end technologies like (Ruby, Ruby on Rails, and NestJS), and Databases like (PostgreSQL, MySQL, and MongoDB).
+    title: "I'm Jean Emmanuel CADET",
+    description: `A Full-stack software engineer who specializes in building software solutions for businesses of all sizes using Front-end technologies like (JavaScript, TypeScript, React, Redux, and Next.js), Back-end technologies like (Ruby, Ruby on Rails, and NestJS), and Databases like (PostgreSQL, MySQL, and MongoDB).
       
 I bridge the gap between front-end and back-end development, bringing ideas to life with seamless user experiences and robust functionality.`,
   },

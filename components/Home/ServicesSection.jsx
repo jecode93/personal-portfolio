@@ -25,7 +25,7 @@ const ServicesSection = () => {
             key={index}
             className="bg-darkblue p-5 md:p-10 flex flex-col justify-between rounded"
           >
-            <Link href="/services">
+            <Link href="services">
               <Image
                 src={service.icon}
                 width={70}
@@ -39,9 +39,9 @@ const ServicesSection = () => {
               <p className="text-degrade text-lg mb-10 md:text-xl">
                 {service.description}
               </p>
-              {/* <p className="text-xl font-bold text-orange-500">
+              <p className="text-xl font-bold text-orange-500 tracking-wide">
                 ${service.price}/h
-              </p> */}
+              </p>
             </Link>
           </div>
         ))}

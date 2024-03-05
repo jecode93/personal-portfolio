@@ -5,7 +5,7 @@ import {
   BsInstagram,
   BsWhatsapp,
 } from "react-icons/bs";
-import { FaSquareXTwitter } from "react-icons/fa6";
+// import { FaSquareXTwitter } from "react-icons/fa6";
 
 export const menu = [
   {
@@ -52,9 +52,9 @@ export const socials = [
     icon: <BsInstagram />,
     aria: "Go to my Instagram page",
   },
-  {
-    link: "https://twitter.com/jecode93",
-    icon: <FaSquareXTwitter />,
-    aria: "Go to my X page, formely twitter",
-  },
+  // {
+  //   link: "https://twitter.com/jecode93",
+  //   icon: <FaSquareXTwitter />,
+  //   aria: "Go to my X page, formely twitter",
+  // },
 ];
