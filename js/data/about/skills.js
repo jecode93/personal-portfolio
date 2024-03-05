@@ -21,7 +21,7 @@ export const skills = [
   },
   {
     id: 5,
-    title: "MySQL / PostgreSQL / MongoDB",
+    title: "MySQL / PostgreSQL",
     percentage: "80",
   },
   {
