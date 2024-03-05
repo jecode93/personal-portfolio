@@ -2,7 +2,7 @@ import React from "react";
 import SectionsComponent from "../SectionsComponent";
 import SectionTitle from "../SectionTitle";
 import { experiences } from "@/js/data/about/experience";
-import ExperiencesCard from "../experiencesCard";
+import ExperiencesCard from "../ExperiencesCard";
 
 const Experiences = () => {
   return (
