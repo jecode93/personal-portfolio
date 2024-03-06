@@ -1,7 +1,7 @@
-import { Nunito, Rubik } from "next/font/google";
+import { Montserrat, Rubik } from "next/font/google";
 
-export const nunito = Nunito({
-  weight: ["400", "700", "900"],
+export const montserrat = Montserrat({
+  weight: ["400", "700","800", "900"],
   subsets: ["latin"],
   display: "swap",
 });
