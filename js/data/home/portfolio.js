@@ -54,7 +54,7 @@ STH transcends a simple booking platform, fostering a vibrant community of space
   },
   {
     id: 3,
-    title: "Country Weather App",
+    title: "Country Weather",
     image: "/portfolio/weather.webp",
     link: "https://react-capstone-project-git-dev-jecode93.vercel.app/",
     description: `This captivating single-page application (SPA) caters to every weather enthusiast, providing a comprehensive and convenient platform to explore a world of meteorological data.
@@ -98,7 +98,7 @@ Key Features:
 Beyond Scores:
 
 This project transcends a simple score display, fostering a sense of competition and community among users striving to reach the top.`,
-    resume: "Add scores, and asynchronous data fetching.",
+    resume: "Add scores, and data fetching.",
     stack: ["HTML", "CSS", "JavaScript", "Webpack", "SCSS"],
   },
   {
