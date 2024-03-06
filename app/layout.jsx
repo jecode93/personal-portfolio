@@ -1,11 +1,10 @@
 import './globals.css';
 import '@/components/styles/selection.css';
 import "@/components/styles/button.css";
-import { nunito } from "@/js/fonts";
+import { montserrat } from "@/js/fonts";
 import Navbar from "@/components/Navbar";
-import Footer from '@/components/Footer';
+import Footer from "@/components/Footer";
 import "@/components/styles/description.css";
-
 
 export const metadata = {
   title: {
@@ -56,7 +55,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${nunito.className} bg-blue text-white`}>
+      <body className={`${montserrat.className} bg-blue text-white`}>
         <Navbar />
         <div>{children}</div>
         <Footer />
