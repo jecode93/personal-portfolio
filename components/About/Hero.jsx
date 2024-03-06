@@ -9,7 +9,7 @@ import SocialComponent from "../SocialComponent";
 const Hero = () => {
   return (
     <SectionsComponent id="about-me" otherClasses="pt-40">
-      <SectionTitle title="About Me" text="What to Know" />
+      <SectionTitle title="About me" text="What to Know" />
       <div className="flex flex-col-reverse items-center lg:flex-row justify-between gap-10">
         <div className="flex justify-start lg:w-1/2">
           {aboutMe.map((about, index) => (
