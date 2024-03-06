@@ -8,6 +8,7 @@ import { MdClose } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import bullet from "@/public/images/bullet.svg";
 import SocialComponent from "./SocialComponent";
+import { rubik } from "@/js/fonts";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -24,14 +25,19 @@ const Navbar = () => {
         {/* Mobile icon */}
         <div className="absolute top-7 left-5 md:px-5 lg:px-32">
           <Link href="/">
-            <Image
+            {/* <Image
               src="/images/jec.png"
               alt="Jean Emmanuel Cadet"
               width={300}
               height={21}
               priority
               className="hover:scale-105 duration-300 w-64"
-            />
+            /> */}
+            <p
+              className={`${rubik.className} text-orange-500 text-xl md:text-2xl`}
+            >
+              @jecode93<span className="cursor w-0">|</span>
+            </p>
           </Link>
         </div>
         <div
