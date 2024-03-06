@@ -8,7 +8,6 @@ import { MdClose } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import bullet from "@/public/images/bullet.svg";
 import SocialComponent from "./SocialComponent";
-import { rubik } from "@/js/fonts";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -34,7 +33,7 @@ const Navbar = () => {
               className="hover:scale-105 duration-300 w-64"
             /> */}
             <p
-              className={`${rubik.className} text-orange-500 text-xl md:text-2xl`}
+              className="text-orange-500 text-xl md:text-2xl"
             >
               @jecode93<span className="cursor w-0">|</span>
             </p>
@@ -45,7 +44,7 @@ const Navbar = () => {
           onClick={handleClick}
         >
           <div className="flex justify-center items-center gap-1">
-            <p className="hidden md:block font-bold text-degrade">Menu</p>
+            <p className="hidden md:block text-degrade">Menu</p>
             <div className="hamburger flex flex-col items-end justify-around w-10 h-6">
               <div className="line-1 border-2 border-orange-500 rounded"></div>
               <div className="line-2 border-2 border-orange-500 rounded"></div>
