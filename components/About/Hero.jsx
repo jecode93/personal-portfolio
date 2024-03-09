@@ -9,8 +9,8 @@ import SocialComponent from "../SocialComponent";
 const Hero = () => {
   return (
     <SectionsComponent id="about-me" otherClasses="pt-40">
-      <SectionTitle title="About me" text="What to Know" />
-      <div className="flex flex-col-reverse items-center lg:flex-row justify-between gap-10">
+      <SectionTitle title="About Me" text="What to Know" />
+      <div className="flex flex-col items-center lg:flex-row justify-between gap-10">
         <div className="flex justify-start lg:w-1/2">
           {aboutMe.map((about, index) => (
             <div key={index}>
@@ -32,7 +32,7 @@ const Hero = () => {
           <div className="flex flex-col items-center">
             <Image
               src={me}
-              className="w-full md:w-[500px] mb-4"
+              className="w-full md:w-[500px] lg:w-[400px] mb-4"
               alt="Jean Emmanuel Cadet"
               width={500}
               height={500}
