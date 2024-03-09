@@ -19,26 +19,41 @@ const Navbar = () => {
 
   return (
     <header className={`px-5 z-10 relative`}>
-      {/* Mobile logo and icons */}
-      <div className="flex justify-between items-center">
-        {/* Mobile icon */}
-        <div className="absolute top-7 left-5 md:px-5 lg:px-32">
-          <Link href="/">
-            {/* <Image
-              src="/images/jec.png"
-              alt="Jean Emmanuel Cadet"
-              width={300}
-              height={21}
-              priority
-              className="hover:scale-105 duration-300 w-64"
-            /> */}
-            <p
-              className="text-orange-500 text-xl md:text-2xl"
-            >
-              @jecode93<span className="cursor w-0">|</span>
-            </p>
-          </Link>
+      <div className="absolute flex justify-between w-full top-7 left- md:px-5 lg:px-32">
+        {/* logo */}
+        <Link href="/">
+          <p className="text-orange-500 tracking-wide text-xl">
+            @jecode93<span className="cursor w-0">|</span>
+          </p>
+        </Link>
+        {/* End logo */}
+
+        {/* Desktop menu */}
+        <div className="hidden lg:block">
+          <ul className="menu-items flex gap-5">
+            {menu.map((data, index) => {
+              const isActive = pathname === data.path;
+              return (
+                <li
+                  key={index}
+                  className="md:2xl font-medium hover:text-orange-500 duration-300 tracking-wide"
+                >
+                  <Link
+                    href={data.path}
+                    className={`${isActive ? "text-orange-500" : ""}`}
+                  >
+                    {data.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
+        {/* End Desktop menu */}
+      </div>
+
+      <div className="lg:hidden flex justify-between items-center">
+        {/* Mobile icon */}
         <div
           className="fixed top-5 right-5 cursor-pointer rounded p-1 mt-1 md:mt-0"
           onClick={handleClick}
@@ -54,7 +69,6 @@ const Navbar = () => {
         </div>
         {/* End Mobile icon */}
       </div>
-      {/* End mobile logo and icons */}
 
       {/* Blur background */}
       <div
