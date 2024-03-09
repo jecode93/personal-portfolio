@@ -6,7 +6,7 @@ const ApproachCard = ({ content }) => {
       <span className="text-2xl font-bold bg-orange-500 text-darkblue px-2">
         {content.id}
       </span>
-      <h2 className="font-bold text-xl md:text-2xl my-4">{content.title}</h2>
+      <h2 className="font-bold text-xl lg:text-2xl my-4">{content.title}</h2>
       <p className="text-degrade text-lg md:text-justify">
         {content.description}
       </p>
