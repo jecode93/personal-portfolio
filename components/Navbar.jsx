@@ -72,7 +72,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "right-0" : "-right-[100%]"
-          } fixed top-0 bottom-0 bg-darkblue w-full md:w-[60%] h-screen duration-300`}
+          } fixed top-0 bottom-0 bg-darkblue w-full md:w-[60%] h-screen duration-100`}
         >
           <nav className="h-full">
             <div
