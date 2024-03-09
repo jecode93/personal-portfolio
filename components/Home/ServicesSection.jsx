@@ -25,7 +25,7 @@ const ServicesSection = () => {
             key={index}
             className="bg-darkblue p-5 md:p-10 flex flex-col justify-between rounded"
           >
-            <Link href="services">
+            <Link href={service.href}>
               <Image
                 src={service.icon}
                 width={70}
