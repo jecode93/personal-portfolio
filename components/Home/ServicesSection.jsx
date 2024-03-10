@@ -33,13 +33,13 @@ const ServicesSection = () => {
                 alt={service.title}
                 className="mb-10 w-12 md:w-16"
               />
-              <h2 className="font-bold text-xl md:text-2xl mb-5">
+              <h2 className="font-medium text-xl md:text-xl mb-5">
                 {service.title}
               </h2>
               <p className="text-degrade text-lg mb-10">
                 {service.description}
               </p>
-              <p className="text-xl font-bold text-orange-500 tracking-wide">
+              <p className="text-xl font-medium text-orange-500 tracking-wide">
                 ${service.price}/h
               </p>
             </Link>

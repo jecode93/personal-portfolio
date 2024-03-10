@@ -21,7 +21,7 @@ const Hero = () => {
                 href="Jean_Emmanuel_Resume.pdf"
                 target="_blank"
                 aria-label="Download my resume"
-                className="px-3 py-2 my-5 border border-white bg-blue text-xs md:text-sm font-bold text-white uppercase hover:text-blue duration-300 btn41-43 btn-41"
+                className="px-3 py-2 my-5 border border-white bg-blue text-xs md:text-sm font-medium text-white uppercase hover:text-blue duration-300 btn41-43 btn-41"
               >
                 Download Resume
               </a>
@@ -38,7 +38,7 @@ const Hero = () => {
               height={500}
             />
             <div className="text-center">
-              <p className="text-xl md:text-2xl lg:text-3xl font-bold tracking-widest">
+              <p className="text-xl md:text-2xl lg:text-3xl font-semibold tracking-wide">
                 Jean Emmanuel CADET
               </p>
               <p className="text-lg md:text-xl text-degrade my-3">

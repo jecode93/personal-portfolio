@@ -5,7 +5,7 @@ const ExperiencesCard = ({ content }) => {
     <div className="bg-darkblue p-5">
       <div className="flex justify-between mb-5">
         <div>
-          <h2 className="font-bold text-xl lg:text-2xl uppercase">{content.company}</h2>
+          <h2 className="font-medium text-xl lg:text-2xl uppercase">{content.company}</h2>
           <p className="text-degrade text-lg">{content.role}</p>
         </div>
         <span className="text-degrade text-sm text-orange-500 tracking-wide">
