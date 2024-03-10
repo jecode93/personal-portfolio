@@ -11,7 +11,7 @@ const Hero = () => {
     >
       <div className="bg-gradient-to-t from-blue w-screen h-screen absolute" />
       <div className="bg-gradient-to-r from-blue w-screen h-screen absolute" />
-      <div className="md:px-5 lg:px-32 h-screen flex flex-col justify-between">
+      <div className="md:px-5 lg:px-32 2xl:px-80 h-screen flex flex-col justify-between">
         <div className="flex flex-col px-5 tracking-wide leading-7 justify-center lg:w-[75%] h-full pt-16 z-0">
           {hero.map((text, index) => (
             <div key={index}>

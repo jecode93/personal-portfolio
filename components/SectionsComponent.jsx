@@ -4,7 +4,7 @@ const SectionsComponent = ({ id, otherClasses, children }) => {
   return (
     <section
       id={id}
-      className={`px-5 md:px-10 lg:px-32 py-20 relative ${otherClasses}`}
+      className={`px-5 md:px-10 lg:px-32 2xl:px-80 py-20 relative ${otherClasses}`}
     >
       {children}
     </section>

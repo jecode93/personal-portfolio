@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <header className={`px-5 z-10 relative`}>
-      <div className="absolute flex justify-between lg:w-full top-7 left- md:px-5 lg:px-32">
+      <div className="absolute flex justify-between lg:w-full top-7 left- md:px-5 lg:px-32 2xl:px-80">
         {/* logo */}
         <Link href="/">
           <p className="text-orange-500 tracking-wide text-xl">
