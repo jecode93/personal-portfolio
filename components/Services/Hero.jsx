@@ -4,7 +4,7 @@ import SectionTitle from '../SectionTitle';
 
 const Hero = () => {
   return (
-    <SectionsComponent id="services" otherClasses="pt-60 -mb-20">
+    <SectionsComponent id="services" otherClasses="pt-32 md:pt-48 -mb-20">
       <SectionTitle title="Services" text="What I Build" />
       <div>
         <p className="tracking-wide text-lg text-degrade text-justify">
