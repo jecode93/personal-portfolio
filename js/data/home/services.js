@@ -2,6 +2,7 @@ export const services = [
   {
     icon: "/icons/web.svg",
     title: "Web development",
+    href: 'services#web',
     description:
       "From landing pages to complex applications, I create custom web solutions that engage your audience",
     price: "55.00",
@@ -9,6 +10,7 @@ export const services = [
   {
     icon: "/icons/api.svg",
     title: "API development",
+    href: 'services#api',
     description:
       "Connect your systems & unlock data with secure, scalable APIs tailored to your needs.",
     price: "60.00",
@@ -16,6 +18,7 @@ export const services = [
   {
     icon: "/icons/database.svg",
     title: "Database design and management",
+    href: 'services#database',
     description:
       "Design & manage robust databases that store & organize your critical data efficiently.",
     price: "65.00",

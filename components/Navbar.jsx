@@ -19,27 +19,49 @@ const Navbar = () => {
 
   return (
     <header className={`px-5 z-10 relative`}>
-      {/* Mobile logo and icons */}
-      <div className="flex justify-between items-center">
-        {/* Mobile icon */}
-        <div className="absolute top-7 left-5 md:px-5 lg:px-32">
+      <div className="relative">
+        <div className="absolute flex justify-between w-full top-7 md:px-5 lg:px-32 2xl:px-80">
+          {/* logo */}
           <Link href="/">
-            <Image
-              src="/images/jec.png"
-              alt="Jean Emmanuel Cadet"
-              width={300}
-              height={21}
-              priority
-              className="hover:scale-105 duration-300 w-64"
-            />
+            <p className="text-orange-500 tracking-wide text-xl">
+              @jecode93<span className="cursor w-0">|</span>
+            </p>
           </Link>
+          {/* End logo */}
+
+          {/* Desktop menu */}
+          <div className="hidden lg:block">
+            <ul className="menu-items flex gap-5">
+              {menu.map((data, index) => {
+                const isActive = pathname === data.path;
+                return (
+                  <li
+                    key={index}
+                    className="md:2xl font-medium hover:text-orange-500 duration-300 tracking-wide"
+                  >
+                    <Link
+                      href={data.path}
+                      className={`${isActive ? "text-orange-500" : ""}`}
+                    >
+                      {data.name}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          {/* End Desktop menu */}
         </div>
+      </div>
+
+      <div className="lg:hidden flex justify-between items-center">
+        {/* Mobile icon */}
         <div
           className="fixed top-5 right-5 cursor-pointer rounded p-1 mt-1 md:mt-0"
           onClick={handleClick}
         >
           <div className="flex justify-center items-center gap-1">
-            <p className="hidden md:block font-bold text-degrade">Menu</p>
+            <p className="hidden md:block text-degrade">Menu</p>
             <div className="hamburger flex flex-col items-end justify-around w-10 h-6">
               <div className="line-1 border-2 border-orange-500 rounded"></div>
               <div className="line-2 border-2 border-orange-500 rounded"></div>
@@ -49,7 +71,6 @@ const Navbar = () => {
         </div>
         {/* End Mobile icon */}
       </div>
-      {/* End mobile logo and icons */}
 
       {/* Blur background */}
       <div
@@ -67,7 +88,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "right-0" : "-right-[100%]"
-          } fixed top-0 bottom-0 bg-darkblue w-full md:w-[60%] h-screen duration-300`}
+          } fixed top-0 bottom-0 bg-darkblue w-full md:w-[60%] h-screen duration-100`}
         >
           <nav className="h-full">
             <div
