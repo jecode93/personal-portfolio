@@ -1,7 +1,7 @@
-import Cta from '@/components/Home/Cta';
-import Hero from '@/components/Services/Hero';
+import Cta from "@/components/Cta";
+import Hero from "@/components/Services/Hero";
 import ServicesSection from "@/components/Services/Services";
-import React from 'react';
+import React from "react";
 
 export const metadata = {
   title: "Services",
@@ -17,6 +17,6 @@ const Services = () => {
       <Cta />
     </main>
   );
-}
+};
 
 export default Services;
