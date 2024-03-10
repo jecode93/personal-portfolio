@@ -19,37 +19,39 @@ const Navbar = () => {
 
   return (
     <header className={`px-5 z-10 relative`}>
-      <div className="absolute flex justify-between lg:w-full top-7 left- md:px-5 lg:px-32 2xl:px-80">
-        {/* logo */}
-        <Link href="/">
-          <p className="text-orange-500 tracking-wide text-xl">
-            @jecode93<span className="cursor w-0">|</span>
-          </p>
-        </Link>
-        {/* End logo */}
+      <div className="relative">
+        <div className="absolute flex justify-between w-full top-7 md:px-5 lg:px-32 2xl:px-80">
+          {/* logo */}
+          <Link href="/">
+            <p className="text-orange-500 tracking-wide text-xl">
+              @jecode93<span className="cursor w-0">|</span>
+            </p>
+          </Link>
+          {/* End logo */}
 
-        {/* Desktop menu */}
-        <div className="hidden lg:block">
-          <ul className="menu-items flex gap-5">
-            {menu.map((data, index) => {
-              const isActive = pathname === data.path;
-              return (
-                <li
-                  key={index}
-                  className="md:2xl font-medium hover:text-orange-500 duration-300 tracking-wide"
-                >
-                  <Link
-                    href={data.path}
-                    className={`${isActive ? "text-orange-500" : ""}`}
+          {/* Desktop menu */}
+          <div className="hidden lg:block">
+            <ul className="menu-items flex gap-5">
+              {menu.map((data, index) => {
+                const isActive = pathname === data.path;
+                return (
+                  <li
+                    key={index}
+                    className="md:2xl font-medium hover:text-orange-500 duration-300 tracking-wide"
                   >
-                    {data.name}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+                    <Link
+                      href={data.path}
+                      className={`${isActive ? "text-orange-500" : ""}`}
+                    >
+                      {data.name}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          {/* End Desktop menu */}
         </div>
-        {/* End Desktop menu */}
       </div>
 
       <div className="lg:hidden flex justify-between items-center">
