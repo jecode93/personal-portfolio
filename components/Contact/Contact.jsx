@@ -2,8 +2,8 @@ import React from "react";
 import SectionsComponent from "../SectionsComponent";
 import SectionTitle from "../SectionTitle";
 import ContactForm from "../ContactForm";
-import { TfiEmail } from "react-icons/tfi";
-import { MdOutlineLocalPhone } from "react-icons/md";
+import { infos } from "@/js/data/contact/info";
+import InfoCard from "../infoCard";
 
 const ContactSection = () => {
   return (
@@ -18,37 +18,9 @@ const ContactSection = () => {
             to learn how I can solve your problem and shape your future.
           </h2>
           <div>
-            {/* Mail */}
-            <div className="mb-3">
-              <p className="flex items-center gap-3 text-md">
-                <span className="text-orange-500">
-                  <TfiEmail />
-                </span>
-                <a href="mailto:contact@jeanemmanuelcadet.com">
-                  contact@jeanemmanuelcadet.com
-                </a>
-              </p>
-            </div>
-
-            {/* Phone 1 */}
-            <div className="mb-3">
-              <p className="flex items-center gap-3 text-md">
-                <span className="text-orange-500">
-                  <MdOutlineLocalPhone />
-                </span>
-                <a href="tel:+1 (267) 529 6040">+1 (267) 529 6040</a>
-              </p>
-            </div>
-
-            {/* Phone 2 */}
-            <div className="mb-3">
-              <p className="flex items-center gap-3 text-md">
-                <span className="text-orange-500">
-                  <MdOutlineLocalPhone />
-                </span>
-                <a href="tel:+(509) 4780 1268">+(509) 4780 1268</a>
-              </p>
-            </div>
+            {infos.map((info) => (
+              <InfoCard key={info.id} content={info} />
+            ))}
           </div>
         </div>
         <div className="lg:w-[60%] mb-10">
