@@ -3,7 +3,7 @@ import SectionsComponent from "../SectionsComponent";
 import SectionTitle from "../SectionTitle";
 import ContactForm from "../ContactForm";
 import { infos } from "@/js/data/contact/info";
-import InfoCard from "../infoCard";
+import InfoCard from "../InfoCard";
 
 const ContactSection = () => {
   return (
