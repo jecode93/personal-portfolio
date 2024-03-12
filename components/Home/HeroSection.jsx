@@ -15,13 +15,11 @@ const Hero = () => {
         <div className="flex flex-col px-5 tracking-wide leading-7 justify-center lg:w-[75%] h-full pt-16 z-0">
           {hero.map((text, index) => (
             <div key={index}>
-              <p className="text-lg text-white md:text-xl">{text.subTitle}</p>
-              <h1 className="text-3xl my-3 md:text-6xl font-bold md:leading-tight text-orange-500 description">
+              <p className="text-white md:text-lg">{text.subTitle}</p>
+              <h1 className="text-3xl my-3 md:text-5xl font-bold md:leading-tight text-orange-500 description">
                 <span>{text.title}</span>
               </h1>
-              <p className="mb-10 text-lg md:text-xl description">
-                {text.description}
-              </p>
+              <p className="mb-10 md:text-lg description">{text.description}</p>
             </div>
           ))}
           <ButtonComponent path="/contact" text="Contact me" />

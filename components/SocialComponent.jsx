@@ -9,7 +9,7 @@ const SocialComponent = () => {
           {socials.map((social, index) => (
             <li
               key={index}
-              className="text-lg hover:-translate-y-2 duration-300"
+              className="text-xl hover:-translate-y-2 duration-300"
             >
               <a
                 href={social.link}

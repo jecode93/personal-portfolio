@@ -42,7 +42,7 @@ const About = () => {
               <h2 className="text-xl md:text-2xl lg:text-3xl mb-5 font-semibold tracking-wide">
                 {about.title}
               </h2>
-              <p className="text-lg tracking-wide text-justify mb-5 text-degrade description">
+              <p className="tracking-wide text-justify mb-5 text-degrade description">
                 {about.description}
               </p>
             </div>

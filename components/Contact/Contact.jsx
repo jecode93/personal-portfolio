@@ -11,7 +11,7 @@ const ContactSection = () => {
       <SectionTitle title="Contact Me" text="Shape your future with Me" />
       <div className="lg:flex justify-center gap-20">
         <div className="lg:w-[40%] mb-10">
-          <h2 className="text-lg tracking-wide text-degrade text-justify mb-5">
+          <h2 className="tracking-wide text-degrade text-justify mb-5">
             <span className="font-bold">
               Email, call, or complete the form{" "}
             </span>

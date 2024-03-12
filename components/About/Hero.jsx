@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="flex justify-start lg:w-1/2">
           {aboutMe.map((about, index) => (
             <div key={index}>
-              <p className="description text-lg tracking-wide text-degrade text-justify">
+              <p className="description tracking-wide text-degrade text-justify">
                 {about.description}
               </p>
               <a
@@ -38,10 +38,10 @@ const Hero = () => {
               height={500}
             />
             <div className="text-center">
-              <p className="text-xl md:text-2xl lg:text-3xl font-semibold tracking-wide">
+              <p className="text-xl lg:text-2xl font-semibold tracking-wide">
                 Jean Emmanuel CADET
               </p>
-              <p className="text-lg md:text-xl text-degrade my-3">
+              <p className="md:text-lg text-degrade my-3">
                 Full-stack Software Engineer
               </p>
               <SocialComponent />

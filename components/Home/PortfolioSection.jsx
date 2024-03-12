@@ -64,7 +64,7 @@ const PortfolioSection = () => {
                 className="mb-3 rounded-t-lg w-full"
               />
               <div className="p-3">
-                <h1 className="text-xl">{portfolio.title}</h1>
+                <h1 className="text-lg">{portfolio.title}</h1>
                 <p className="text-degrade mt-3">{portfolio.resume}</p>
               </div>
             </div>
