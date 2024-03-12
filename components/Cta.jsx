@@ -8,7 +8,7 @@ const Cta = () => {
       id="call_to_action"
       otherClasses="bg-orange-500 text-center text-blue"
     >
-      <h2 className="text-2xl md:text-4xl font-bold">
+      <h2 className="text-xl md:text-4xl 2xl:text-5xl font-bold uppercase">
         Let&apos;s Build it. Together.
       </h2>
       <p className="my-7 md:mx-5 lg:mx-24 tracking-wide">
