@@ -37,7 +37,7 @@ const Navbar = () => {
                 return (
                   <li
                     key={index}
-                    className="2xl:text-2xl font-medium hover:text-orange-500 duration-300 tracking-wide"
+                    className="font-medium hover:text-orange-500 duration-300 tracking-wide"
                   >
                     <Link
                       href={data.path}
