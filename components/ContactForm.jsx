@@ -42,6 +42,7 @@ const ContactForm = () => {
       );
       reset();
     } catch (error) {
+      console.log(error);
       setSuccessMessage(
         "Error sending email: Try again later!"
       );
