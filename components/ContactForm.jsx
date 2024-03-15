@@ -16,12 +16,12 @@ const ContactForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      const resend = new Resend(process.env.API_KEY)
+      const resend = new Resend(process.env.NEXT_PUBLIC_API_KEY)
       
       // Email content
       const mailOptions = {
-        from: process.env.SMTP_EMAIL,
-        to: process.env.SMTP_RECIPIENT,
+        from: process.env.NEXT_PUBLIC_SMTP_EMAIL,
+        to: process.env.NEXT_PUBLIC_SMTP_RECIPIENT,
         subject: "New Contact Form Submission | Jean Emmanuel Cadet",
         html: `
         <p>Name: ${data.name}</p>
