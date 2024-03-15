@@ -15,7 +15,37 @@ const ContactForm = () => {
   const [successMessage, setSuccessMessage] = useState(null);
 
   const onSubmit = async (data) => {
-    
+    try {
+      const resend = new Resend(process.env.API_KEY)
+      
+      // Email content
+      const mailOptions = {
+        from: process.env.SMTP_EMAIL,
+        to: process.env.SMTP_RECIPIENT,
+        subject: "New Contact Form Submission | Jean Emmanuel Cadet",
+        html: `
+        <p>Name: ${data.name}</p>
+        <p>Company: ${data.company}</p>
+        <p>Email: ${data.email}</p>
+        <p>Phone: ${data.phone}</p>
+        <p>Message: ${data.message}</p>
+        <p>Service need: ${data.reason.join(", ")}</p>
+        <p>Budget: ${data.budget}</p>
+        `,
+      };
+
+      // Send email
+      await resend.emails.send(mailOptions);
+
+      setSuccessMessage(
+        "Thank you for reaching out to me, and I look forward to assisting you!"
+      );
+      reset();
+    } catch (error) {
+      setSuccessMessage(
+        "Error sending email: Try again later!"
+      );
+    }
   };
 
   return (
