@@ -11,7 +11,7 @@ const InfoCard = ({ content }) => {
         </span>
         <a
           href={linkTo}
-          className="hover:text-degrade duration-300"
+          className="hover:text-darkblue hover:underline duration-300"
         >
           {text}
         </a>
