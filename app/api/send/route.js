@@ -1,41 +1,41 @@
-// pages/api/sendEmail.js
 import nodemailer from "nodemailer";
-import { NextReponse } from 'next/server';
+import { NextResponse } from "next/server";
 
-
-export async function POST(NextRequest) {
-  const data = await NextRequest.json();
+export async function POST(request) {
+  const data = await request.json();
 
   try {
     const transporter = nodemailer.createTransport({
-      // Your SMTP settings
-      host: process.env.NEXT_PUBLIC_SMTP_SERVER,
+      // SMTP settings
+      host: process.env.SMTP_SERVER,
       port: 465,
       secure: true,
       auth: {
-        user: process.env.NEXT_PUBLIC_SMTP_RECIPIENT,
-        pass: process.env.NEXT_PUBLIC_SMTP_PASS,
+        user: process.env.SMTP_RECIPIENT,
+        pass: process.env.SMTP_PASS,
       },
     });
 
     await transporter.sendMail({
-      from: process.env.NEXT_PUBLIC_SMTP_EMAIL,
-      to: process.env.NEXT_PUBLIC_SMTP_RECIPIENT,
-      subject: "New Contact Form Submission",
+      from: process.env.SMTP_EMAIL,
+      to: process.env.SMTP_RECIPIENT,
+      subject: "New Contact Form Submission | Jean Emmanuel Cadet",
       html: `
         <p>Name: ${data.name}</p>
-        <p>Company: ${data.company}</p>
         <p>Email: ${data.email}</p>
         <p>Phone: ${data.phone}</p>
+        <p>Company: ${data.company}</p>
         <p>Message: ${data.message}</p>
         <p>Service need: ${data.reason.join(", ")}</p>
         <p>Budget: ${data.budget}</p>
         `,
     });
 
-    return NextReponse.json({ success: true });
+    return NextResponse.json({status: 200});
   } catch (error) {
-    console.error("Error sending email:", error);
-    return NextReponse.json({ success: false });
+    return NextResponse.json(
+      { error: "Internal Server Error" },
+      { status: 500 }
+    );
   }
 }
