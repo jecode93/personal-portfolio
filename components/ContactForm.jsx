@@ -14,28 +14,30 @@ const ContactForm = () => {
   const [successMessage, setSuccessMessage] = useState(null);
 
   const onSubmit = async (data) => {
-        try {
-          const response = await fetch("/api/send", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-          });
-
-          if (response.ok) {
-            setSuccessMessage(
-              "Thank you for reaching out to me, and I look forward to assisting you!"
-            );
-            reset(); // Reset the form
-          } else {
-            console.error("Failed to send email");
-            setSuccessMessage("Failed to send email. Please try again later.");
-          }
-        } catch (error) {
-          console.error("Error sending email:", error);
-          setSuccessMessage("Failed to send email. Please try again later.");
+    try {
+      await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }).then((response) => {
+        if (response.ok) {
+          setSuccessMessage(
+            "Thank you for reaching out to me, and I look forward to assisting you!"
+          );
+          setTimeout(() => {
+            setSuccessMessage(null)
+          }, 5000);
         }
+      });
+      reset(); // Reset the form
+    } catch (error) {
+      setSuccessMessage("Failed to send email. Please try again later.");
+      setTimeout(() => {
+        setSuccessMessage(null)
+      }, 5000);
+    }
   };
 
   return (
@@ -70,18 +72,6 @@ const ContactForm = () => {
             )}
           </div>
 
-          {/* Company */}
-          <div className="mb-5">
-            <p className="border-b w-full p-2 mb-2">
-              <input
-                type="text"
-                {...register("company")}
-                placeholder="Company"
-                className="w-full"
-              />
-            </p>
-          </div>
-
           {/* Email */}
           <div className="mb-5">
             <p className="border-b w-full p-2 mb-2">
@@ -103,12 +93,24 @@ const ContactForm = () => {
           </div>
 
           {/* Phone */}
-          <div className="mb-12">
+          <div className="mb-5">
             <p className="border-b w-full p-2 mb-2">
               <input
                 type="tel"
                 {...register("phone")}
                 placeholder="Phone number"
+                className="w-full"
+              />
+            </p>
+          </div>
+
+          {/* Company */}
+          <div className="mb-12">
+            <p className="border-b w-full p-2 mb-2">
+              <input
+                type="text"
+                {...register("company")}
+                placeholder="Company"
                 className="w-full"
               />
             </p>
@@ -182,7 +184,7 @@ const ContactForm = () => {
             Submit
           </button>
 
-          {successMessage && <p className="text-[green]">{successMessage}</p>}
+          {successMessage && <p className="text-[green] duration-300">{successMessage}</p>}
         </form>
       </div>
     </section>
