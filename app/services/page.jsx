@@ -1,3 +1,6 @@
+import Cta from '@/components/Home/Cta';
+import Hero from '@/components/Services/Hero';
+import ServicesSection from "@/components/Services/Services";
 import React from 'react';
 
 export const metadata = {
@@ -8,8 +11,12 @@ export const metadata = {
 
 const Services = () => {
   return (
-    <div>Services</div>
-  )
+    <main>
+      <Hero />
+      <ServicesSection />
+      <Cta />
+    </main>
+  );
 }
 
 export default Services;

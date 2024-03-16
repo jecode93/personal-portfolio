@@ -8,10 +8,10 @@ const Cta = () => {
       id="call_to_action"
       otherClasses="bg-orange-500 text-center text-blue"
     >
-      <h2 className="text-3xl md:text-5xl font-extrabold">
+      <h2 className="text-3xl md:text-5xl font-black">
         Let&apos;s Build it. Together.
       </h2>
-      <p className="my-7 md:mx-5 lg:mx-24 text-lg md:text-xl tracking-wide">
+      <p className="my-7 md:mx-5 lg:mx-24 text-lg tracking-wide">
         As a seasoned full-stack software engineer, I bring innovation and
         proficiency to every project I undertake. Whether you&apos;re a startup
         in need of a dynamic web application or an established enterprise
