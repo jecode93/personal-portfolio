@@ -16,11 +16,13 @@ export async function POST(request) {
       },
     });
 
-    await transporter.sendMail({
-      from: process.env.SMTP_EMAIL,
-      to: process.env.SMTP_RECIPIENT,
-      subject: "New Contact Form Submission | Jean Emmanuel Cadet",
-      html: `
+    await new Promise((resolve, reject) => {
+      transporter.sendMail(
+        {
+          from: process.env.SMTP_EMAIL,
+          to: process.env.SMTP_RECIPIENT,
+          subject: "New Contact Form Submission | Jean Emmanuel Cadet",
+          html: `
         <p>Name: ${data.name}</p>
         <p>Email: ${data.email}</p>
         <p>Phone: ${data.phone}</p>
@@ -29,8 +31,18 @@ export async function POST(request) {
         <p>Service need: ${data.reason.join(", ")}</p>
         <p>Budget: ${data.budget}</p>
         `,
+        },
+        (err, info) => {
+          if (err) {
+            console.error(err);
+            reject(err);
+          } else {
+            resolve(info);
+          }
+        }
+      );
     });
-
+    
     return NextResponse.json({status: 200});
   } catch (error) {
     return NextResponse.json(
