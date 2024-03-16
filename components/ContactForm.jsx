@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import InfoCard from "./InfoCard";
 import { infos } from "@/js/data/contact/info";
-import { POST } from "@/app/api/send/route";
+import { Resend } from "resend";
 
 const ContactForm = () => {
   const {
@@ -15,17 +15,33 @@ const ContactForm = () => {
   const [successMessage, setSuccessMessage] = useState(null);
 
   const onSubmit = async (data) => {
-    try {      
+    try {
+      const resend = new Resend(process.env.NEXT_PUBLIC_API_KEY)
+      
       // Email content
-      await POST(data)
+      const mailOptions = {
+        from: process.env.NEXT_PUBLIC_SMTP_EMAIL,
+        to: process.env.NEXT_PUBLIC_SMTP_RECIPIENT,
+        subject: "New Contact Form Submission | Jean Emmanuel Cadet",
+        html: `
+        <p>Name: ${data.name}</p>
+        <p>Company: ${data.company}</p>
+        <p>Email: ${data.email}</p>
+        <p>Phone: ${data.phone}</p>
+        <p>Message: ${data.message}</p>
+        <p>Service need: ${data.reason.join(", ")}</p>
+        <p>Budget: ${data.budget}</p>
+        `,
+      };
 
-      // // Send email
-      // await resend.emails.send(mailOptions);
+      // Send email
+      await resend.emails.send(mailOptions);
 
       setSuccessMessage(
         "Thank you for reaching out to me, and I look forward to assisting you!"
       );
       reset();
+      console.log(process.env.NEXT_PUBLIC_API_KEY);
     } catch (error) {
       console.log(error);
       setSuccessMessage(
