@@ -23,8 +23,8 @@ const About = () => {
               />
               <div className="flex">
                 <span className="relative flex items-center mr-3">
-                  <span class="animate-ping absolute inline-flex h-3 w-full rounded-full bg-green opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-3 w-3 bg-green"></span>
+                  <span className="animate-ping absolute inline-flex h-3 w-full rounded-full bg-green opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-green"></span>
                 </span>
                 <p className="underline text-slate tracking-widest">
                   I&apos;m available for work!
