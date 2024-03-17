@@ -12,10 +12,11 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm();
   const [successMessage, setSuccessMessage] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null);
 
   const onSubmit = async (data) => {
     try {
-      await fetch("/api/send", {
+      await fetch("/api/sendMail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -27,16 +28,16 @@ const ContactForm = () => {
             "Thank you for reaching out to me, and I look forward to assisting you!"
           );
           setTimeout(() => {
-            setSuccessMessage(null)
-          }, 5000);
+            setSuccessMessage(null);
+          }, 10000);
         }
       });
       reset(); // Reset the form
     } catch (error) {
-      setSuccessMessage("Failed to send email. Please try again later.");
+      setErrorMessage("Failed to send email. Please try again later.");
       setTimeout(() => {
-        setSuccessMessage(null)
-      }, 5000);
+        setErrorMessage(null);
+      }, 10000);
     }
   };
 
@@ -164,27 +165,41 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="border w-full p-2 mb-5">
-            <p>
-              <select
-                {...register("budget", { required: true })}
-                className="w-full"
-              >
-                <option>Your budget (USD):</option>
-                <option value="USD $1,500 - $5,000">USD $1,500 - $5,000</option>
-                <option value="USD $5,001 - $10,000">
-                  USD $5,001 - $10,000
-                </option>
-                <option value="USD $10,001 and up">USD $10,001 and up</option>
-              </select>
-            </p>
+          <div className="mb-5">
+            <div className="border w-full p-2 mb-2">
+              <p>
+                <select
+                  {...register("budget", { required: true })}
+                  className="w-full"
+                >
+                  <option value="none" selected disabled>
+                    Your budget (USD) *
+                  </option>
+                  <option value="USD $1,500 - $5,000">
+                    USD $1,500 - $5,000
+                  </option>
+                  <option value="USD $5,001 - $10,000">
+                    USD $5,001 - $10,000
+                  </option>
+                  <option value="USD $10,001 and up">USD $10,001 and up</option>
+                </select>
+              </p>
+            </div>
+            {errors.budget && (
+              <span className="text-error">This field is required</span>
+            )}
           </div>
 
           <button className="w-fit text-xs md:text-sm mt-5 mb-5 font-medium border border-blue text-blue hover:text-white px-3 py-2 uppercase btn41-44 btn-42">
             Submit
           </button>
 
-          {successMessage && <p className="text-[green] duration-300">{successMessage}</p>}
+          {successMessage && (
+            <p className="text-success duration-300">{successMessage}</p>
+          )}
+          {errorMessage && (
+            <p className="text-error duration-300">{errorMessage}</p>
+          )}
         </form>
       </div>
     </section>
