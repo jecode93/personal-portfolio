@@ -19,8 +19,8 @@ export async function POST(request) {
     await new Promise((resolve, reject) => {
       transporter.sendMail(
         {
-          from: process.env.SMTP_EMAIL,
-          to: process.env.SMTP_RECIPIENT,
+          from: `@jecode93 | Personal website <${process.env.SMTP_EMAIL}>`,
+          to: `The owner | <${process.env.SMTP_RECIPIENT}>`,
           subject: "New Contact Form Submission | Jean Emmanuel Cadet",
           html: `
         <p>Name: ${data.name}</p>
@@ -42,11 +42,14 @@ export async function POST(request) {
         }
       );
     });
-    
-    return NextResponse.json({status: 200});
+
+    return NextResponse.json(
+      { message: "Email sent successfully" },
+      { status: 250 }
+    );
   } catch (error) {
     return NextResponse.json(
-      { error: "Internal Server Error" },
+      { message: "Error has occurred!", error },
       { status: 500 }
     );
   }
