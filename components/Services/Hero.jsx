@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <SectionsComponent id="services" otherClasses="pt-32 md:pt-48 -mb-20">
       <SectionTitle title="Services" text="What I Build" />
-      <div>
-        <p className="tracking-wide text-lg text-degrade text-justify">
+      <div className="-mt-7">
+        <p className="tracking-wide text-degrade text-justify">
           I offer a comprehensive range of services designed to bring your
           digital ideas to life and enhance your online presence.
           <br />

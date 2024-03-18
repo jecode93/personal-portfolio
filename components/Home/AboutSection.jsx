@@ -23,8 +23,8 @@ const About = () => {
               />
               <div className="flex">
                 <span className="relative flex items-center mr-3">
-                  <span class="animate-ping absolute inline-flex h-3 w-full rounded-full bg-green opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-3 w-3 bg-green"></span>
+                  <span className="animate-ping absolute inline-flex h-3 w-full rounded-full bg-green opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-green"></span>
                 </span>
                 <p className="underline text-slate tracking-widest">
                   I&apos;m available for work!
@@ -36,13 +36,13 @@ const About = () => {
         <div className="flex flex-col justify-start lg:w-1/2">
           {aboutme.map((about, index) => (
             <div key={index}>
-              <h1 className="text-xl md:text-2xl mb-7 text-orange-500">
+              <h1 className="text-lg md:text-xl mb-7 text-orange-500">
                 Who am I?
               </h1>
-              <h2 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold tracking-wide">
+              <h2 className="text-xl md:text-2xl lg:text-3xl mb-5 font-semibold tracking-wide">
                 {about.title}
               </h2>
-              <p className="text-lg tracking-wide text-justify mb-5 text-degrade description">
+              <p className="tracking-wide text-justify mb-5 text-degrade description">
                 {about.description}
               </p>
             </div>

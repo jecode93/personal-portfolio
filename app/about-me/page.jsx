@@ -2,7 +2,7 @@ import Approach from '@/components/About/Approaches';
 import Experiences from '@/components/About/Experiences';
 import Hero from '@/components/About/Hero';
 import Skills from '@/components/About/Skills';
-import Cta from '@/components/Home/Cta';
+import Cta from "@/components/Cta";
 import React from 'react';
 
 export const metadata = {

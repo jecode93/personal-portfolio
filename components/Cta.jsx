@@ -1,5 +1,5 @@
 import React from "react";
-import SectionsComponent from "../SectionsComponent";
+import SectionsComponent from "./SectionsComponent";
 import Link from "next/link";
 
 const Cta = () => {
@@ -8,10 +8,10 @@ const Cta = () => {
       id="call_to_action"
       otherClasses="bg-orange-500 text-center text-blue"
     >
-      <h2 className="text-3xl md:text-5xl font-black">
+      <h2 className="text-xl md:text-4xl 2xl:text-5xl font-bold uppercase">
         Let&apos;s Build it. Together.
       </h2>
-      <p className="my-7 md:mx-5 lg:mx-24 text-lg tracking-wide">
+      <p className="my-7 md:mx-5 lg:mx-24 tracking-wide">
         As a seasoned full-stack software engineer, I bring innovation and
         proficiency to every project I undertake. Whether you&apos;re a startup
         in need of a dynamic web application or an established enterprise
@@ -24,7 +24,7 @@ const Cta = () => {
       </p>
       <Link
         href="contact"
-        className="px-3 py-2 bg-blue text-xs md:text-sm font-bold text-white uppercase hover:text-blue duration-300 btn41-43 btn-41"
+        className="px-3 py-2 bg-blue text-xs md:text-sm font-medium text-white uppercase hover:text-blue duration-300 btn41-43 btn-41"
       >
         Start today
       </Link>

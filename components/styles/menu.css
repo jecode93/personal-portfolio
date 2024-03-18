@@ -44,3 +44,11 @@
         opacity: 0;
     }
 }
+
+*:focus {
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #022144;
+}
