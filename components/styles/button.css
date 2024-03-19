@@ -29,3 +29,36 @@
   right: 0;
   width: 100%;
 }
+
+
+.btn41-44 {
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-42 {
+  z-index: 1;
+  color: #022144;
+}
+
+.btn-42:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #022144;
+  transition: all 0.3s ease;
+}
+
+.btn-42:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}

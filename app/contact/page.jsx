@@ -1,3 +1,4 @@
+import ContactSection from '@/components/Contact/Contact';
 import React from 'react';
 
 export const metadata = {
@@ -7,7 +8,9 @@ export const metadata = {
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <main>
+      <ContactSection />
+    </main>
   )
 }
 

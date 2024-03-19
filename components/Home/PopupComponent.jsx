@@ -16,7 +16,7 @@ const PopupComponent = ({ isVisible, onClose, content }) => {
         {/* End background */}
 
         {/* Container */}
-        <div className="fixed flex flex-col top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[80%] h-[80%] bg-darkblue z-50">
+        <div className="fixed flex flex-col top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[90%] h-[90%] md:w-[60%] md:h-[90%] bg-darkblue z-50">
           {/* Close buton */}
           <div
             className="fixed top-3 right-3 cursor-pointer text-white text-3xl font-extrabold duration-500"
@@ -28,22 +28,24 @@ const PopupComponent = ({ isVisible, onClose, content }) => {
           </div>
           {/* End close buton */}
           <div className="p-5 md:p-16 content overflow-auto">
-            <h1 className="text-2xl md:text-4xl mt-5 md:mt-0 mb-5">
+            <h1 className="text-xl md:text-2xl mt-5 md:mt-0 mb-5">
               {content.title}
             </h1>
-            <Image
-              src={content.image}
-              width={500}
-              height={500}
-              alt={content.title}
-              className="w-full rounded-md"
-            />
+            <div className="flex justify-center">
+              <Image
+                src={content.image}
+                width={500}
+                height={500}
+                alt={content.title}
+                className="md:w-[70%]"
+              />
+            </div>
             <div className="border border-degrade my-7" />
-            <p className="text-degrade text-lg tracking-wide text-justify description">
+            <p className="text-degrade tracking-wide text-justify description">
               {content.description}
             </p>
             <div className="my-7">
-              <h1 className="text-2xl md:text-4xl">Technologies:</h1>
+              <h1 className="text-xl md:text-2xl">Technologies:</h1>
               <div className="grid grid-cols-2 gap-2 my-7">
                 {content.stack.map((item, index) => (
                   <div key={index}>

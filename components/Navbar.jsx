@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="absolute flex justify-between w-full top-7 md:px-5 lg:px-32 2xl:px-80">
           {/* logo */}
           <Link href="/">
-            <p className="text-orange-500 tracking-wide text-xl">
+            <p className="text-orange-500 tracking-wide text-lg">
               @jecode93<span className="cursor w-0">|</span>
             </p>
           </Link>
@@ -37,7 +37,7 @@ const Navbar = () => {
                 return (
                   <li
                     key={index}
-                    className="md:2xl font-medium hover:text-orange-500 duration-300 tracking-wide"
+                    className="font-medium hover:text-orange-500 duration-300 tracking-wide"
                   >
                     <Link
                       href={data.path}
@@ -111,7 +111,7 @@ const Navbar = () => {
                     return (
                       <li
                         key={index}
-                        className="mb-5 md:text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 duration-300 tracking-widest"
+                        className="mb-5 2xl:text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 duration-300 tracking-widest"
                       >
                         <Link
                           href={data.path}
