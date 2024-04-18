@@ -26,8 +26,7 @@
 
 ## Built With
 
-- HTML
-- CSS
+- Next.js
 
 ### Tech Stack <a name="tech-stack"></a>
 
