@@ -27,6 +27,7 @@
 ## Built With
 
 - Next.js
+- Swipper js
 
 ### Tech Stack <a name="tech-stack"></a>
 
