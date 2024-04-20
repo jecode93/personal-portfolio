@@ -29,6 +29,7 @@
 - Next.js
 - Swipper js
 - Tailwind CSS
+- React Icon
 
 ### Tech Stack <a name="tech-stack"></a>
 
