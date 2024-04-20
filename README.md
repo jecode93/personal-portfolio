@@ -28,6 +28,7 @@
 
 - Next.js
 - Swipper js
+- Tailwind CSS
 
 ### Tech Stack <a name="tech-stack"></a>
 
