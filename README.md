@@ -53,7 +53,7 @@
 <details>
 <summary>Layout</summary>
   <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"></a></li>
   </ul>
 </details>
 
