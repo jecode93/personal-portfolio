@@ -30,7 +30,6 @@
 - Node js
 - Swipper js
 - Tailwind CSS
-- Framer Motion
 
 ### Tech Stack <a name="tech-stack"></a>
 
