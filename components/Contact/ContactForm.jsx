@@ -1,8 +1,8 @@
 "use client";
-import { useState } from "react";
 import { useForm } from "react-hook-form";
-import InfoCard from "./InfoCard";
+import InfoCard from "../InfoCard";
 import { infos } from "@/js/data/contact/info";
+import { successMessage, failedMessage } from "@/js/message";
 
 const ContactForm = () => {
   const {
@@ -11,8 +11,6 @@ const ContactForm = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const [successMessage, setSuccessMessage] = useState(null);
-  const [errorMessage, setErrorMessage] = useState(null);
 
   const onSubmit = async (data) => {
     try {
@@ -24,20 +22,14 @@ const ContactForm = () => {
         body: JSON.stringify(data),
       }).then((response) => {
         if (response.ok) {
-          setSuccessMessage(
+          successMessage(
             "Thank you for reaching out to me, and I look forward to assisting you!"
           );
-          setTimeout(() => {
-            setSuccessMessage(null);
-          }, 10000);
         }
       });
       reset(); // Reset the form
     } catch (error) {
-      setErrorMessage("Failed to send email. Please try again later.");
-      setTimeout(() => {
-        setErrorMessage(null);
-      }, 10000);
+      failedMessage("Failed to send email. Please try again later.");
     }
   };
 
@@ -173,7 +165,7 @@ const ContactForm = () => {
                   className="w-full"
                 >
                   <option value="none" selected disabled>
-                    Your budget (USD) *
+                    Your budget (USD)
                   </option>
                   <option value="USD $1,500 - $5,000">
                     USD $1,500 - $5,000
@@ -193,13 +185,6 @@ const ContactForm = () => {
           <button className="w-fit text-xs md:text-sm mt-5 mb-5 font-medium border border-blue text-blue hover:text-white px-3 py-2 uppercase btn41-44 btn-42">
             Submit
           </button>
-
-          {successMessage && (
-            <p className="text-success duration-300">{successMessage}</p>
-          )}
-          {errorMessage && (
-            <p className="text-error duration-300">{errorMessage}</p>
-          )}
         </form>
       </div>
     </section>
