@@ -1,10 +1,12 @@
-import './globals.css';
-import '@/components/styles/selection.css';
+import "./globals.css";
+import "@/components/styles/selection.css";
 import "@/components/styles/button.css";
+import "react-toastify/dist/ReactToastify.css";
+import "@/components/styles/description.css";
 import { montserrat } from "@/js/fonts";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import "@/components/styles/description.css";
+import { ToastContainer } from "react-toastify";
 
 export const metadata = {
   title: {
@@ -57,7 +59,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${montserrat.className} bg-blue text-white`}>
         <Navbar />
-        <div>{children}</div>
+        <div>
+          <ToastContainer />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
