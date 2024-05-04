@@ -2,7 +2,7 @@ import React from "react";
 import SectionsComponent from "../SectionsComponent";
 import SectionTitle from "../SectionTitle";
 import { skills } from "@/js/data/about/skills";
-import SkillsCard from "../SkillsCard";
+import SkillsCard from "./SkillsCard";
 
 const Skills = () => {
   return (

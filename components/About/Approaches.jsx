@@ -2,7 +2,7 @@ import React from 'react'
 import SectionsComponent from '../SectionsComponent'
 import SectionTitle from '../SectionTitle'
 import { approaches } from '@/js/data/about/approaches';
-import ApproachCard from '../ApproachCard';
+import ApproachCard from './ApproachCard';
 
 const Approach = () => {
   return (
