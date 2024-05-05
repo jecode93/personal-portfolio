@@ -19,7 +19,7 @@ const Hero = () => {
                   {text.title2}
                 </h2>
               </div>
-              <p className="mb-10 md:text-lg description md:w-[50%]">{text.description}</p>
+              <p className="mb-5 md:text-lg description md:w-[50%]">{text.description}</p>
             </div>
           ))}
           <ButtonComponent path="/contact" text="Contact me" />
