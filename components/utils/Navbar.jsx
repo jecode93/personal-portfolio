@@ -80,7 +80,7 @@ const Navbar = () => {
       <div
         className={`${
           isOpen
-            ? "fixed w-screen h-screen top-0 left-0 right-0 backdrop-blur-sm"
+            ? "fixed w-[100%] h-[100%] top-0 left-0 right-0 backdrop-blur-sm"
             : ""
         }`}
         onClick={handleClick}
@@ -92,7 +92,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "right-0" : "-right-[100%]"
-          } fixed top-0 bottom-0 bg-blue w-full md:w-[60%] h-screen duration-100`}
+          } fixed top-0 bottom-0 bg-blue w-full md:w-[60%] h-[100%] duration-100`}
         >
           <nav className="h-full">
             <div
