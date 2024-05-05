@@ -1,5 +1,6 @@
 import "./globals.css";
 import "@/components/styles/selection.css";
+import "@/components/styles/scroll.css";
 import "@/components/styles/button.css";
 import "react-toastify/dist/ReactToastify.css";
 import "@/components/styles/description.css";
@@ -57,7 +58,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-blue text-white`}>
+      <body className={`${montserrat.className} bg-blue text-lightestSlate`}>
         <Navbar />
         <div>
           <ToastContainer />
