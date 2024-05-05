@@ -2,7 +2,7 @@
 import { useForm } from "react-hook-form";
 import InfoCard from "../InfoCard";
 import { infos } from "@/js/data/contact/info";
-import { successMessage, failedMessage } from "@/js/message";
+import { successMessage, failedMessage } from "@/js/toastNotification";
 
 const ContactForm = () => {
   const {
