@@ -5,8 +5,8 @@ import "@/components/styles/button.css";
 import "react-toastify/dist/ReactToastify.css";
 import "@/components/styles/description.css";
 import { montserrat } from "@/js/fonts";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/utils/Navbar";
+import Footer from "@/components/utils/Footer";
 import { ToastContainer } from "react-toastify";
 
 export const metadata = {

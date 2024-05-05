@@ -2,7 +2,7 @@ import Hero from "@/components/Home/HeroSection";
 import About from "@/components/Home/AboutSection";
 import ServicesSection from "@/components/Home/ServicesSection";
 import PortfolioSection from "@/components/Home/PortfolioSection";
-import Cta from "@/components/Cta";
+import Cta from "@/components/utils/Cta";
 
 export default function Home() {
   return (

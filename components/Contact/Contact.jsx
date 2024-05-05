@@ -1,6 +1,6 @@
 import React from "react";
-import SectionsComponent from "../SectionsComponent";
-import SectionTitle from "../SectionTitle";
+import SectionsComponent from "../utils/SectionsComponent";
+import SectionTitle from "../utils/SectionTitle";
 import ContactForm from "./ContactForm";
 
 const ContactSection = () => {

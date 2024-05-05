@@ -1,6 +1,6 @@
 "use client";
 import { useForm } from "react-hook-form";
-import InfoCard from "../InfoCard";
+import InfoCard from "../utils/InfoCard";
 import { infos } from "@/js/data/contact/info";
 import { successMessage, failedMessage } from "@/js/toastNotification";
 
@@ -168,7 +168,7 @@ const ContactForm = () => {
                     Your budget (USD)
                   </option>
                   <option value="USD $1,500 - $5,000">
-                    USD $1,500 - $5,000
+                    USD $1,000 - $5,000
                   </option>
                   <option value="USD $5,001 - $10,000">
                     USD $5,001 - $10,000

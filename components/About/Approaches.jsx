@@ -1,8 +1,8 @@
-import React from 'react'
-import SectionsComponent from '../SectionsComponent'
-import SectionTitle from '../SectionTitle'
-import { approaches } from '@/js/data/about/approaches';
-import ApproachCard from './ApproachCard';
+import React from "react";
+import SectionsComponent from "../utils/SectionsComponent";
+import SectionTitle from "../utils/SectionTitle";
+import { approaches } from "@/js/data/about/approaches";
+import ApproachCard from "./ApproachCard";
 
 const Approach = () => {
   return (
@@ -15,6 +15,6 @@ const Approach = () => {
       </div>
     </SectionsComponent>
   );
-}
+};
 
 export default Approach;

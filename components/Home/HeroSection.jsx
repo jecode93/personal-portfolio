@@ -1,7 +1,7 @@
 import React from "react";
 import { hero } from "@/js/data/home/home";
-import ButtonComponent from "../ButtonComponent";
-import SocialComponent from "../SocialComponent";
+import ButtonComponent from "../utils/ButtonComponent";
+import SocialComponent from "../utils/SocialComponent";
 
 const Hero = () => {
   return (
@@ -19,7 +19,9 @@ const Hero = () => {
                   {text.subTitle}
                 </h2>
               </div>
-              <p className="mb-5 md:text-lg description md:w-[50%]">{text.description}</p>
+              <p className="mb-5 md:text-lg description md:w-[50%]">
+                {text.description}
+              </p>
               <ButtonComponent path="/contact" text="Contact me" />
             </div>
           ))}

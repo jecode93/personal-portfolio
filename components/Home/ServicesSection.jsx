@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { services } from "@/js/data/home/services";
 import Link from "next/link";
-import SectionTitle from "../SectionTitle";
+import SectionTitle from "../utils/SectionTitle";
 import bullet from "@/public/images/bullet.svg";
-import SectionsComponent from "../SectionsComponent";
+import SectionsComponent from "../utils/SectionsComponent";
 
 const ServicesSection = () => {
   return (

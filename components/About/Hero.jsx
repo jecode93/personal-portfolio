@@ -1,9 +1,9 @@
 import React from "react";
-import SectionsComponent from "../SectionsComponent";
-import SectionTitle from "../SectionTitle";
+import SectionsComponent from "../utils/SectionsComponent";
+import SectionTitle from "../utils/SectionTitle";
 import { aboutMe } from "@/js/data/about/about";
-import MyCard from "../MyCard";
-import ResumeButton from "../ResumeButton";
+import MyCard from "../utils/MyCard";
+import ResumeButton from "../utils/ResumeButton";
 
 const Hero = () => {
   return (

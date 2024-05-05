@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import SectionTitle from "../SectionTitle";
-import SectionsComponent from "../SectionsComponent";
+import SectionTitle from "../utils/SectionTitle";
+import SectionsComponent from "../utils/SectionsComponent";
 import { portfolios } from "@/js/data/home/portfolio";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";

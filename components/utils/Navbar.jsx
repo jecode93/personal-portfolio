@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "./styles/menu.css";
+import "../styles/menu.css";
 import Image from "next/image";
 import Link from "next/link";
 import { menu } from "@/js/data/menu";

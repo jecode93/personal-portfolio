@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { aboutme, skillList } from "@/js/data/home/home";
 import me from "@/public//images/me.jpg";
-import ButtonComponent from "../ButtonComponent";
-import SectionsComponent from "../SectionsComponent";
-import SkillListCard from "../SkillListCard";
+import ButtonComponent from "../utils/ButtonComponent";
+import SectionsComponent from "../utils/SectionsComponent";
+import SkillListCard from "../utils/SkillListCard";
 
 const About = () => {
   return (
