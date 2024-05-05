@@ -10,13 +10,13 @@ const Hero = () => {
         <div className="flex flex-col px-5 tracking-wide leading-7 justify-center h-full pt-16 z-0">
           {hero.map((text, index) => (
             <div key={index}>
-              <p className="md:text-lg text-orange-500">{text.subTitle}</p>
+              <p className="md:text-lg text-orange-500">{text.greating}</p>
               <div className="font-bold my-5 description">
                 <h1 className="text-lightestSlate text-3xl md:text-6xl mb-3">
                   {text.title}
                 </h1>
                 <h2 className="text-slate text-3xl md:text-6xl">
-                  {text.title2}
+                  {text.subTitle}
                 </h2>
               </div>
               <p className="mb-5 md:text-lg description md:w-[50%]">{text.description}</p>
