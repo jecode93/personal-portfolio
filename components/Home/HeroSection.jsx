@@ -5,21 +5,21 @@ import SocialComponent from "../SocialComponent";
 
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className="w-[100%] h-screen bg-hero-mobile md:bg-hero-large lg:bg-center bg-cover bg-no-repeat"
-    >
-      <div className="bg-gradient-to-t from-blue w-[100%] h-screen absolute" />
-      <div className="bg-gradient-to-r from-blue w-[100%] h-screen absolute" />
+    <section id="home" className="w-[100%] h-screen text-slate">
       <div className="md:px-5 lg:px-32 2xl:px-80 h-screen flex flex-col justify-between">
-        <div className="flex flex-col px-5 tracking-wide leading-7 justify-center lg:w-[75%] h-full pt-16 z-0">
+        <div className="flex flex-col px-5 tracking-wide leading-7 justify-center h-full pt-16 z-0">
           {hero.map((text, index) => (
             <div key={index}>
-              <p className="text-white md:text-lg">{text.subTitle}</p>
-              <h1 className="text-3xl my-3 md:text-6xl font-bold md:leading-tight text-orange-500 description">
-                <span>{text.title}</span>
-              </h1>
-              <p className="mb-10 md:text-lg description">{text.description}</p>
+              <p className="md:text-lg text-orange-500">{text.subTitle}</p>
+              <div className="font-bold my-5 description">
+                <h1 className="text-lightestSlate text-3xl md:text-6xl mb-3">
+                  {text.title}
+                </h1>
+                <h2 className="text-slate text-3xl md:text-6xl">
+                  {text.title2}
+                </h2>
+              </div>
+              <p className="mb-10 md:text-lg description md:w-[50%]">{text.description}</p>
             </div>
           ))}
           <ButtonComponent path="/contact" text="Contact me" />
