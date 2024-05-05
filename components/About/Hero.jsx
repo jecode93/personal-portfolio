@@ -3,6 +3,7 @@ import SectionsComponent from "../SectionsComponent";
 import SectionTitle from "../SectionTitle";
 import { aboutMe } from "@/js/data/about/about";
 import MyCard from "../MyCard";
+import ResumeButton from "../ResumeButton";
 
 const Hero = () => {
   return (
@@ -15,14 +16,9 @@ const Hero = () => {
               <p className="description tracking-wide text-slate text-justify mb-5">
                 {about.description}
               </p>
-              <a
-                href="Jean_Emmanuel_Resume.pdf"
-                target="_blank"
-                aria-label="Download my resume"
-                className="px-3 py-2 my-5 border border-lightestSlate bg-blue text-xs md:text-sm font-medium text-lightestSlate uppercase hover:text-blue duration-300 btn41-43 btn-41"
-              >
-                Download Resume
-              </a>
+              <div className="lg:hidden my-10">
+                <ResumeButton />
+              </div>
             </div>
           ))}
         </div>

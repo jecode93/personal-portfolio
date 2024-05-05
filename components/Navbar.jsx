@@ -8,6 +8,7 @@ import { MdClose } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import bullet from "@/public/images/bullet.svg";
 import SocialComponent from "./SocialComponent";
+import ResumeButton from "./ResumeButton";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -20,7 +21,7 @@ const Navbar = () => {
   return (
     <header className={`px-5 z-10 relative`}>
       <div className="relative">
-        <div className="absolute flex justify-between w-full top-7 md:px-5 lg:px-32 2xl:px-80">
+        <div className="absolute flex justify-between items-center w-full top-7 md:px-5 lg:px-32 2xl:px-80">
           {/* logo */}
           <Link href="/">
             <p className="text-orange-500 tracking-wide text-lg">
@@ -41,9 +42,7 @@ const Navbar = () => {
                   >
                     <Link
                       href={data.path}
-                      className={`${
-                        isActive ? "text-orange-500" : ""
-                      }`}
+                      className={`${isActive ? "text-orange-500" : ""}`}
                     >
                       {data.name}
                     </Link>
@@ -51,6 +50,9 @@ const Navbar = () => {
                 );
               })}
             </ul>
+          </div>
+          <div className="hidden lg:block">
+            <ResumeButton />
           </div>
           {/* End Desktop menu */}
         </div>
@@ -90,7 +92,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "right-0" : "-right-[100%]"
-          } fixed top-0 bottom-0 bg-darkblue w-full md:w-[60%] h-screen duration-100`}
+          } fixed top-0 bottom-0 bg-blue w-full md:w-[60%] h-screen duration-100`}
         >
           <nav className="h-full">
             <div
@@ -125,6 +127,9 @@ const Navbar = () => {
                     );
                   })}
                 </ul>
+                <div className="my-10">
+                  <ResumeButton />
+                </div>
               </div>
 
               {/* Social section */}
