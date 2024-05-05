@@ -31,18 +31,18 @@ const Navbar = () => {
 
           {/* Desktop menu */}
           <div className="hidden lg:block">
-            <ul className="menu-items flex gap-5">
+            <ul className="menu-items flex gap-10">
               {menu.map((data, index) => {
                 const isActive = pathname === data.path;
                 return (
                   <li
                     key={index}
-                    className="font-medium hover:text-orange-500 duration-300 tracking-wide"
+                    className="hover:text-orange-500 duration-300 tracking-wide"
                   >
                     <Link
                       href={data.path}
                       className={`${
-                        isActive ? "text-orange-500" : "text-lightestSlate"
+                        isActive ? "text-orange-500" : ""
                       }`}
                     >
                       {data.name}
