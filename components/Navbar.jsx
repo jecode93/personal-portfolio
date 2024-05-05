@@ -41,7 +41,9 @@ const Navbar = () => {
                   >
                     <Link
                       href={data.path}
-                      className={`${isActive ? "text-orange-500" : ""}`}
+                      className={`${
+                        isActive ? "text-orange-500" : "text-lightestSlate"
+                      }`}
                     >
                       {data.name}
                     </Link>
@@ -61,7 +63,7 @@ const Navbar = () => {
           onClick={handleClick}
         >
           <div className="flex justify-center items-center gap-1">
-            <p className="hidden md:block text-degrade">Menu</p>
+            <p className="hidden md:block text-lightestSlate">Menu</p>
             <div className="hamburger flex flex-col items-end justify-around w-10 h-6">
               <div className="line-1 border-2 border-orange-500 rounded"></div>
               <div className="line-2 border-2 border-orange-500 rounded"></div>
@@ -92,7 +94,7 @@ const Navbar = () => {
         >
           <nav className="h-full">
             <div
-              className="absolute top-5 right-5 cursor-pointer text-white text-3xl font-extrabold duration-500"
+              className="absolute top-5 right-5 cursor-pointer text-lightestSlate text-3xl font-extrabold duration-500"
               onClick={handleClick}
             >
               <span>
@@ -128,7 +130,7 @@ const Navbar = () => {
               {/* Social section */}
               <div className="socials-links z-40">
                 <SocialComponent />
-                <div className="mx-auto left-0 right-0 w-20 border border-white shadow-2xl mt-10"></div>
+                <div className="mx-auto left-0 right-0 w-20 border border-lightestSlate shadow-2xl mt-10"></div>
               </div>
               <div className="absolute bottom-0 right-0">
                 <Image src={bullet} alt="bullet-point" width={90} height={90} />

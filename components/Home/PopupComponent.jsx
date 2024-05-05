@@ -16,10 +16,10 @@ const PopupComponent = ({ isVisible, onClose, content }) => {
         {/* End background */}
 
         {/* Container */}
-        <div className="fixed flex flex-col top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[90%] h-[90%] md:w-[60%] md:h-[90%] bg-darkblue z-50">
+        <div className="fixed flex flex-col top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[90%] h-[90%] md:w-[60%] md:h-[90%] bg-blue z-50">
           {/* Close buton */}
           <div
-            className="fixed top-3 right-3 cursor-pointer text-white text-3xl font-extrabold duration-500"
+            className="fixed top-3 right-3 cursor-pointer text-lightestSlate text-3xl font-extrabold duration-500"
             onClick={onClose}
           >
             <span>
@@ -41,7 +41,7 @@ const PopupComponent = ({ isVisible, onClose, content }) => {
               />
             </div>
             <div className="border border-degrade my-7" />
-            <p className="text-degrade tracking-wide text-justify description">
+            <p className="text-slate tracking-wide text-justify description">
               {content.description}
             </p>
             <div className="my-7">
@@ -49,8 +49,8 @@ const PopupComponent = ({ isVisible, onClose, content }) => {
               <div className="grid grid-cols-2 gap-2 my-7">
                 {content.stack.map((item, index) => (
                   <div key={index}>
-                    <p className="bg-blue p-1 flex justify-center rounded">
-                      <span className="text-degrade">{item}</span>
+                    <p className="bg-darkblue p-1 flex justify-center rounded">
+                      <span className="text-slate">{item}</span>
                     </p>
                   </div>
                 ))}

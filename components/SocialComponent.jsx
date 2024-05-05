@@ -15,7 +15,7 @@ const SocialComponent = () => {
                 href={social.link}
                 target="_blank"
                 aria-label={social.aria}
-                className="hover:text-orange-500"
+                className="text-orange-500 hover:text-lightestSlate"
               >
                 {social.icon}
               </a>

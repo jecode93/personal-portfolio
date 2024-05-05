@@ -65,7 +65,7 @@ const PortfolioSection = () => {
               />
               <div className="p-3">
                 <h1 className="text-lg">{portfolio.title}</h1>
-                <p className="text-degrade mt-3">{portfolio.resume}</p>
+                <p className="text-slate mt-3">{portfolio.resume}</p>
               </div>
             </div>
           </SwiperSlide>

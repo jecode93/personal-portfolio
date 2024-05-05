@@ -182,7 +182,7 @@ const ContactForm = () => {
             )}
           </div>
 
-          <button className="w-fit text-xs md:text-sm mt-5 mb-5 font-medium border border-blue text-blue hover:text-white px-3 py-2 uppercase btn41-44 btn-42">
+          <button className="w-fit text-xs md:text-sm mt-5 mb-5 font-medium border border-blue text-blue hover:text-lightestSlate px-3 py-2 uppercase btn41-44 btn-42">
             Submit
           </button>
         </form>

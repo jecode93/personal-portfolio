@@ -10,20 +10,18 @@ const ServicesSectionCard = ({ content }) => {
         </h1>
       </div>
       <div>
-        <p className="text-degrade mb-16 text-justify">{content.description}</p>
+        <p className="text-slate mb-16 text-justify">{content.description}</p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
           {content.structure.map((data) => (
             <div key={data.id} className="bg-darkblue p-5">
               <div>
-                <span className="text-xl font-semibold bg-orange-500 text-darkblue px-2">
+                <span className="text-xl font-semibold bg-orange-500 text-blue px-2">
                   {data.id}
                 </span>
                 <h3 className="font-medium text-lg md:text-xl 2xl:text-2xl my-4">
                   {data["st-title"]}
                 </h3>
-                <p className="text-degrade md:text-justify">
-                  {data["st-desc"]}
-                </p>
+                <p className="text-slate md:text-justify">{data["st-desc"]}</p>
               </div>
             </div>
           ))}
