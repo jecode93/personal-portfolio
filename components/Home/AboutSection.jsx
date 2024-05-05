@@ -1,15 +1,16 @@
 import Image from "next/image";
 import React from "react";
-import { aboutme } from "@/js/data/home/home";
+import { aboutme, skillList } from "@/js/data/home/home";
 import me from "@/public//images/me.jpg";
 import ButtonComponent from "../ButtonComponent";
 import SectionsComponent from "../SectionsComponent";
+import SkillListCard from "../SkillListCard";
 
 const About = () => {
   return (
     <SectionsComponent id="about" otherClasses="bg-trait bg-no-repeat bg-right">
       <div className="flex flex-col lg:flex-row items-center gap-10 md:px-5">
-        <div className="flex justify-center items-center lg:w-1/2 2xl:w-1/3 p-5">
+        <div className="flex justify-center items-center lg:w-1/2 p-5">
           <div className="flex justify-center items-center w-full relative p-7">
             <div className="h-full w-[93%] absolute border border-slate opacity-50"></div>
             <div className="w-full h-[93%] absolute border border-slate opacity-50"></div>
@@ -26,7 +27,7 @@ const About = () => {
                   <span className="animate-ping absolute inline-flex h-3 w-full rounded-full bg-green opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-green"></span>
                 </span>
-                <p className="underline text-slate tracking-widest">
+                <p className="underline text-lightestSlate tracking-widest">
                   I&apos;m available for work!
                 </p>
               </div>
@@ -36,17 +37,25 @@ const About = () => {
         <div className="flex flex-col justify-start lg:w-1/2">
           {aboutme.map((about, index) => (
             <div key={index}>
-              <h1 className="text-lg md:text-xl mb-7 text-orange-500">
-                Who am I?
-              </h1>
-              <h2 className="text-xl md:text-2xl lg:text-3xl mb-5 font-semibold tracking-wide">
+              <h1 className="text-lg md:text-xl mb-7 text-slate">Who am I?</h1>
+              <h2 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold tracking-wide">
                 {about.title}
               </h2>
-              <p className="tracking-wide text-justify mb-5 text-degrade description">
+              <p className="tracking-wide text-justify mb-5 text-slate description">
                 {about.description}
               </p>
             </div>
           ))}
+          <p className="text-slate mb-5">
+            Here are a few technologies I have been working with recently:
+          </p>
+          <div className="grid grid-cols-2 gap-1 md:w-[70%] mb-5">
+            {skillList.map((data) => (
+              <div key={data.id}>
+                <SkillListCard content={data} />
+              </div>
+            ))}
+          </div>
           <ButtonComponent path="/about-me" text="Read more about me" />
         </div>
       </div>
