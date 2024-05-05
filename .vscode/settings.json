@@ -6,5 +6,6 @@
   "editor.cursorBlinking": "smooth",
   "editor.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
-  "editor.cursorStyle": "line"
+  "editor.cursorStyle": "line",
+  "editor.fontWeight": "bold"
 }
