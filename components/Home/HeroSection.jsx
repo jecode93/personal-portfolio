@@ -12,10 +12,10 @@ const Hero = () => {
             <div key={index} className="text-center md:text-left">
               <p className="md:text-lg text-orange-500">{text.greating}</p>
               <div className="font-bold my-5 description">
-                <h1 className="text-lightestSlate text-3xl md:text-6xl mb-3 uppercase">
+                <h1 className="text-lightestSlate text-[1.4rem] md:text-6xl mb-3 uppercase">
                   {text.title}
                 </h1>
-                <h2 className="text-slate text-2xl md:text-5xl">
+                <h2 className="text-slate text-[1.4rem] md:text-5xl">
                   {text.subTitle}
                 </h2>
               </div>
