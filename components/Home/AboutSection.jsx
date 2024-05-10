@@ -12,8 +12,8 @@ const About = () => {
       <div className="flex flex-col lg:flex-row items-center gap-10 md:px-5">
         <div className="flex justify-center items-center lg:w-1/2 p-5">
           <div className="flex justify-center items-center w-full relative p-7">
-            <div className="h-full w-[93%] absolute border border-slate opacity-50"></div>
-            <div className="w-full h-[93%] absolute border border-slate opacity-50"></div>
+            <div className="h-full w-[93%] absolute border border-orange-500 opacity-50"></div>
+            <div className="w-full h-[93%] absolute border border-orange-500 opacity-50"></div>
             <div className="text-center flex flex-col justify-center items-center md:p-3">
               <Image
                 src={me}
