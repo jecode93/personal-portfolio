@@ -1,7 +1,7 @@
 export const hero = [
   {
     greating: "Hi, my name is",
-    title: `Jean Emmanuel CADET.`,
+    title: `Jean Emmanuel`,
     subTitle: "I build things for the web.",
     description: `I specialize in designing, building, and deploying innovative software solutions for businesses as a Full-stack software engineer.`,
   },
