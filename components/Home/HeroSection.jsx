@@ -2,6 +2,7 @@ import React from "react";
 import { hero } from "@/js/data/home/home";
 import ButtonComponent from "../utils/ButtonComponent";
 import SocialComponent from "../utils/SocialComponent";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -9,23 +10,46 @@ const Hero = () => {
       <div className="md:px-5 lg:px-32 2xl:px-80 h-screen flex flex-col justify-between">
         <div className="flex flex-col px-5 tracking-wide leading-7 justify-center h-full pt-16 z-0">
           {hero.map((content, index) => (
-            <div key={index} className="text-center md:text-left">
-              <p className="md:text-lg">{content.greating}</p>
-              <div className="font-black my-5 description">
-                <h1 className="text-orange-500 text-[1.4rem] md:text-6xl mb-3 uppercase">
-                  {content.title} <span className="text-lightestSlate">CADET</span>
-                </h1>
-                <h2 className="text-[1.4rem] md:text-5xl">{content.subTitle}</h2>
+            <div
+              key={index}
+              className="flex items-center justify-between gap-16"
+            >
+              <div className="flex flex-col items-start">
+                <div className="text-center lg:text-left mb-7">
+                  <p className="md:text-lg">{content.greating}</p>
+                  <div className="font-extrabold my-5 description">
+                    <h1 className="text-orange-500 text-[1.4rem] mb-3 md:text-3xl lg:text-[3rem] lg:mb-5 uppercase">
+                      {content.title}{" "}
+                      <span className="text-lightestSlate">CADET</span>
+                    </h1>
+                    <h2 className="text-[1.4rem] font-bold md:text-3xl lg:text-[2.5rem]">
+                      {content.subTitle}
+                    </h2>
+                  </div>
+                  <p className="mb-5 md:text-lg description">
+                    {content.description}
+                  </p>
+                  <ButtonComponent path="/contact" text="Contact me" />
+                </div>
+
+                <div className="hidden lg:flex">
+                  <SocialComponent className="lg:text-3xl mr-3" />
+                </div>
               </div>
-              <p className="mb-5 md:text-lg description md:w-[50%]">
-                {content.description}
-              </p>
-              <ButtonComponent path="/contact" text="Contact me" />
+              <div className="hidden lg:flex">
+                <Image
+                  src="/developer.svg"
+                  width={70}
+                  height={70}
+                  alt={content.title}
+                  className="mb-7 w-[50rem]"
+                />
+              </div>
             </div>
           ))}
         </div>
         {/* Social section */}
-        <div className="socials-links px-5 z-0 mb-10">
+        <div className="socials-links lg:hidden text-left px-5 z-0 mb-10">
           <SocialComponent />
         </div>
         {/* End Social section */}
