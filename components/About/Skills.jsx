@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <SectionsComponent id="skills" otherClasses="">
       <SectionTitle title="Technology" text="My Skills" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
         {skills.map((skill) => (
           <SkillsCard key={skill.id} content={skill} />
         ))}
