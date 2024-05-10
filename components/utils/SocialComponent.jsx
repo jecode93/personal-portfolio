@@ -1,7 +1,7 @@
 import React from 'react'
 import { socials } from "@/js/data/menu";
 
-const SocialComponent = () => {
+const SocialComponent = ({className}) => {
   return (
     <>
       {/* Social section */}
@@ -9,7 +9,7 @@ const SocialComponent = () => {
         {socials.map((social, index) => (
           <li
             key={index}
-            className="text-xl transition duration-500 hover:-translate-y-2"
+            className={`text-xl transition duration-500 hover:-translate-y-2 ${className}`}
           >
             <a
               href={social.link}
