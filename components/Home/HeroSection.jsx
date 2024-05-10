@@ -5,22 +5,20 @@ import SocialComponent from "../utils/SocialComponent";
 
 const Hero = () => {
   return (
-    <section id="home" className="w-[100%] h-[100%] text-slate">
+    <section id="home" className="w-[100%] h-[100%] text-lightestSlate">
       <div className="md:px-5 lg:px-32 2xl:px-80 h-screen flex flex-col justify-between">
         <div className="flex flex-col px-5 tracking-wide leading-7 justify-center h-full pt-16 z-0">
-          {hero.map((text, index) => (
+          {hero.map((content, index) => (
             <div key={index} className="text-center md:text-left">
-              <p className="md:text-lg text-orange-500">{text.greating}</p>
-              <div className="font-bold my-5 description">
-                <h1 className="text-lightestSlate text-[1.4rem] md:text-6xl mb-3 uppercase">
-                  {text.title}
+              <p className="md:text-lg">{content.greating}</p>
+              <div className="font-black my-5 description">
+                <h1 className="text-orange-500 text-[1.4rem] md:text-6xl mb-3 uppercase">
+                  {content.title} <span className="text-lightestSlate">CADET</span>
                 </h1>
-                <h2 className="text-slate text-[1.4rem] md:text-5xl">
-                  {text.subTitle}
-                </h2>
+                <h2 className="text-[1.4rem] md:text-5xl">{content.subTitle}</h2>
               </div>
               <p className="mb-5 md:text-lg description md:w-[50%]">
-                {text.description}
+                {content.description}
               </p>
               <ButtonComponent path="/contact" text="Contact me" />
             </div>
