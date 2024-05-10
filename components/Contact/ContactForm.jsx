@@ -1,7 +1,5 @@
 "use client";
 import { useForm } from "react-hook-form";
-import InfoCard from "../utils/InfoCard";
-import { infos } from "@/js/data/contact/info";
 import { successMessage, failedMessage } from "@/js/toastNotification";
 
 const ContactForm = () => {
@@ -35,39 +33,24 @@ const ContactForm = () => {
 
   return (
     <section>
-      <div className="bg-white p-10 text-blue">
-        <div className="mb-10">
-          <h2 className="tracking-wide text-justify mb-5">
-            <span className="font-bold">
-              Email, call, or complete the form{" "}
-            </span>
-            to learn how I can solve your problem and shape your future.
-          </h2>
-          <div>
-            {infos.map((info) => (
-              <InfoCard key={info.id} content={info} />
-            ))}
-          </div>
-        </div>
+      <div className="text-slate">
         <form onSubmit={handleSubmit(onSubmit)}>
-          {/* Name */}
-          <div className="mb-5">
-            <p className="border-b mb-2 p-2">
+          <div className="grid md:grid-cols-2 gap-5 mb-5">
+            {/* Name */}
+            <span>
               <input
                 type="text"
                 {...register("name", { required: true })}
-                placeholder="Name *"
-                className="w-full"
+                placeholder="Full Name *"
+                className="w-full text-white border border-transparent focus:border-orange-500 p-2 rounded bg-darkblue placeholder-slate placeholder-opacity-60 h-14"
               />
-            </p>
-            {errors.name && (
-              <span className="text-error">This field is required</span>
-            )}
-          </div>
+              {errors.name && (
+                <span className="text-error">This field is required</span>
+              )}
+            </span>
 
-          {/* Email */}
-          <div className="mb-5">
-            <p className="border-b w-full p-2 mb-2">
+            {/* Email */}
+            <span>
               <input
                 type="email"
                 {...register("email", {
@@ -75,48 +58,42 @@ const ContactForm = () => {
                   pattern: /^\S+@\S+$/i,
                 })}
                 placeholder="Email *"
-                className="w-full"
+                className="w-full text-white border border-transparent focus:border-orange-500 p-2 rounded bg-darkblue placeholder-slate placeholder-opacity-60 h-14"
               />
-            </p>
-            {errors.email && (
-              <span className="text-error">
-                Please enter a valid email address
-              </span>
-            )}
-          </div>
-
-          {/* Phone */}
-          <div className="mb-5">
-            <p className="border-b w-full p-2 mb-2">
+              {errors.email && (
+                <span className="text-error">
+                  Please enter a valid email address
+                </span>
+              )}
+            </span>
+            {/* Phone */}
+            <span>
               <input
                 type="tel"
                 {...register("phone")}
                 placeholder="Phone number"
-                className="w-full"
+                className="w-full text-white border border-transparent focus:border-orange-500 p-2 rounded bg-darkblue placeholder-slate placeholder-opacity-60 h-14"
               />
-            </p>
-          </div>
+            </span>
 
-          {/* Company */}
-          <div className="mb-12">
-            <p className="border-b w-full p-2 mb-2">
+            {/* Company */}
+            <span>
               <input
                 type="text"
                 {...register("company")}
                 placeholder="Company"
-                className="w-full"
+                className="w-full text-white border border-transparent focus:border-orange-500 p-2 rounded bg-darkblue placeholder-slate placeholder-opacity-60 h-14"
               />
-            </p>
+            </span>
           </div>
-
           {/* Message */}
-          <div className="mb-12">
-            <p className="border border-b w-full p-2 mb-2">
+          <div className="mb-5">
+            <p>
               <textarea
                 rows={5}
                 {...register("message", { required: true })}
                 placeholder="How can I help you propel your business forward? *"
-                className="w-full"
+                className="w-full text-white border border-transparent focus:border-orange-500 p-2 rounded bg-darkblue placeholder-slate placeholder-opacity-60 "
               />
             </p>
             {errors.message && (
@@ -124,9 +101,9 @@ const ContactForm = () => {
             )}
           </div>
 
-          <div className="mb-12">
-            <label>You are looking for:</label>
-            <div className="mt-3 grid md:grid-cols-2 gap-5">
+          <div className="mb-7">
+            <p>You are looking for:</p>
+            <div className="mt-3 grid lg:grid-cols-2 gap-5">
               <label className="px-5 py-2 border rounded-full">
                 <input
                   type="checkbox"
@@ -157,32 +134,27 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="mb-5">
-            <div className="border w-full p-2 mb-2">
-              <p>
-                <select
-                  {...register("budget", { required: true })}
-                  className="w-full"
-                >
-                  <option value="none" selected disabled>
-                    Your budget (USD)
-                  </option>
-                  <option value="USD $1,500 - $5,000">
-                    USD $1,000 - $5,000
-                  </option>
-                  <option value="USD $5,001 - $10,000">
-                    USD $5,001 - $10,000
-                  </option>
-                  <option value="USD $10,001 and up">USD $10,001 and up</option>
-                </select>
-              </p>
-            </div>
+          <div>
+            <p>Your budget?</p>
+            <div className="mt-3 border w-full mb-2">
+              <select
+                {...register("budget", { required: "Select one" })}
+                value="Budget"
+                className="w-full p-2 bg-transparent"
+              >
+                <option value="USD $1,500 - $5,000">USD $1,000 - $5,000</option>
+                <option value="USD $5,001 - $10,000">
+                  USD $5,001 - $10,000
+                </option>
+                <option value="USD $10,001 and up">USD $10,001 and up</option>
+              </select>
             {errors.budget && (
               <span className="text-error">This field is required</span>
             )}
+            </div>
           </div>
 
-          <button className="w-fit text-xs md:text-sm mt-5 mb-5 font-medium border border-blue text-blue hover:text-lightestSlate px-3 py-2 uppercase btn41-44 btn-42">
+          <button className="w-full bg-orange-500 text-xs md:text-sm lg:text-lg mt-5 text-blue hover:text-white hover:-translate-y-1 transition duration-500 px-3 py-2 uppercase font-extrabold">
             Submit
           </button>
         </form>
