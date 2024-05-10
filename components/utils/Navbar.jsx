@@ -31,14 +31,14 @@ const Navbar = () => {
           {/* End logo */}
 
           {/* Desktop menu */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex items-center gap-10">
             <ul className="menu-items flex gap-10">
               {menu.map((data, index) => {
                 const isActive = pathname === data.path;
                 return (
                   <li
                     key={index}
-                    className="hover:text-orange-500 duration-300 tracking-wide"
+                    className="hover:text-orange-500 transition duration-500 tracking-wide"
                   >
                     <Link
                       href={data.path}
@@ -50,9 +50,9 @@ const Navbar = () => {
                 );
               })}
             </ul>
-          </div>
-          <div className="hidden lg:block">
-            <ResumeButton />
+            <div className="hidden lg:block">
+              <ResumeButton />
+            </div>
           </div>
           {/* End Desktop menu */}
         </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
               onClick={handleClick}
             >
               <span>
-                <MdClose className="hover:rotate-180 duration-300" />
+                <MdClose className="hover:rotate-180 transition duration-500" />
               </span>
             </div>
 
@@ -115,7 +115,7 @@ const Navbar = () => {
                     return (
                       <li
                         key={index}
-                        className="mb-5 2xl:text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 duration-300 tracking-widest"
+                        className="mb-5 2xl:text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 transition duration-500 tracking-widest"
                       >
                         <Link
                           href={data.path}

@@ -23,7 +23,7 @@ const PopupComponent = ({ isVisible, onClose, content }) => {
             onClick={onClose}
           >
             <span>
-              <MdClose className="hover:rotate-180 duration-300" />
+              <MdClose className="hover:rotate-180 transition duration-500" />
             </span>
           </div>
           {/* End close buton */}

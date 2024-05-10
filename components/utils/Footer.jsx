@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         <FaArrowUp
           onClick={topFunction}
-          className="absolute right-5 -top-4 text-3xl bg-lightestSlate text-blue p-1 hover:-translate-y-2 duration-300 hover:cursor-pointer"
+          className="absolute right-5 -top-4 text-3xl bg-lightestSlate text-blue p-1 hover:-translate-y-2 transition duration-500 hover:cursor-pointer"
         />
       </footer>
     </>
