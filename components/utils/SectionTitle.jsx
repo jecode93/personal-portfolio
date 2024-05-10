@@ -7,7 +7,7 @@ const SectionTitle = ({ title, text }) => {
         {title}
       </h2>
       <div className="mb-20 flex items-center">
-        <div className="w-12 mr-3 border border-orange-500" />
+        <div className="w-12 mr-3 h-[1px] my-7 bg-orange-500" />
         <h1 className="font-medium text-slate text-lg md:text-xl tracking-wider">
           {text}
         </h1>
