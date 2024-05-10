@@ -18,11 +18,11 @@ const Hero = () => {
                 <div className="text-center lg:text-left mb-7">
                   <p className="md:text-lg">{content.greating}</p>
                   <div className="font-extrabold my-5 description">
-                    <h1 className="text-orange-500 text-[1.4rem] mb-3 md:text-3xl lg:text-[3rem] lg:mb-5 uppercase">
+                    <h1 className="text-orange-500 text-[1.4rem] mb-3 md:text-3xl lg:text-[2.5rem] lg:mb-5 uppercase">
                       {content.title}{" "}
                       <span className="text-lightestSlate">CADET</span>
                     </h1>
-                    <h2 className="text-[1.4rem] font-bold md:text-3xl lg:text-[2.5rem]">
+                    <h2 className="text-[1.4rem] font-semibold md:text-3xl lg:text-[2.1rem]">
                       {content.subTitle}
                     </h2>
                   </div>
