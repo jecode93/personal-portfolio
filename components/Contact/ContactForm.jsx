@@ -138,20 +138,22 @@ const ContactForm = () => {
             <p>Your budget?</p>
             <div className="mt-3 border w-full mb-2">
               <select
-                {...register("budget", { required: "Select one" })}
-                value="Budget"
-                className="w-full p-2 bg-transparent"
+                {...register("budget", { required: true })}
+                className="w-full p-2 bg-transparen"
               >
+                <option selected disabled>
+                  Select your budget (USD)
+                </option>
                 <option value="USD $1,500 - $5,000">USD $1,000 - $5,000</option>
                 <option value="USD $5,001 - $10,000">
                   USD $5,001 - $10,000
                 </option>
                 <option value="USD $10,001 and up">USD $10,001 and up</option>
               </select>
-            {errors.budget && (
-              <span className="text-error">This field is required</span>
-            )}
             </div>
+              {errors.budget && (
+                <span className="text-error">This field is required</span>
+              )}
           </div>
 
           <button className="w-full bg-orange-500 text-xs md:text-sm lg:text-lg mt-5 text-blue hover:text-white hover:-translate-y-1 transition duration-500 px-3 py-2 uppercase font-semibold">
