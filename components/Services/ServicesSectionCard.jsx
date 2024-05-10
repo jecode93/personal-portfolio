@@ -13,7 +13,10 @@ const ServicesSectionCard = ({ content }) => {
         <p className="text-slate mb-16 text-justify">{content.description}</p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
           {content.structure.map((data) => (
-            <div key={data.id} className="bg-darkblue p-5">
+            <div
+              key={data.id}
+              className="bg-darkblue p-5 transition duration-500 border border-transparent hover:border-orange-500 hover:-translate-y-1 rounded"
+            >
               <div>
                 <span className="text-xl font-semibold bg-orange-500 text-blue px-2">
                   {data.id}
