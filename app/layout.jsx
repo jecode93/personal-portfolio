@@ -17,6 +17,10 @@ export const metadata = {
   description:
     "I'm a Full-stack software engineer with over 3 years of experience building innovative and user-friendly web applications using React, Node.js, and Ruby on Rails. I'm passionate about helping small businesses grow online and have a proven track record of increasing user engagement by 20%.",
   keywords: [
+    "Haitian Developer",
+    "Developpeur haitien",
+    "Haiti",
+    "Haitien",
     "Full-stack developer",
     "Software engineer",
     "Web developer",
