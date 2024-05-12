@@ -8,7 +8,7 @@ const InfoCard = ({ content }) => {
         <span className="text-orange-500">{icon}</span>
         <a
           href={linkTo}
-          className="hover:text-darkblue hover:underline transition duration-500 text-sm md:text-base"
+          className="hover:text-orange-500 hover:underline transition duration-500 text-sm md:text-base"
         >
           {text}
         </a>
