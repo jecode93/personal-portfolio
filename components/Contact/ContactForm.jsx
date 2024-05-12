@@ -136,10 +136,10 @@ const ContactForm = () => {
 
           <div>
             <p>Your budget?</p>
-            <div className="mt-3 border w-full mb-2">
+            <div className="mt-3 border w-full mb-2 text-blue">
               <select
                 {...register("budget", { required: true })}
-                className="w-full p-2 bg-transparen"
+                className="w-full p-2"
               >
                 <option selected disabled>
                   Select your budget (USD)
