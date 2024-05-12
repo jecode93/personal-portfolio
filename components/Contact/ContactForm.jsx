@@ -156,7 +156,7 @@ const ContactForm = () => {
               )}
           </div>
 
-          <button className="w-full bg-orange-500 text-xs md:text-sm lg:text-lg mt-5 text-blue hover:text-white hover:-translate-y-1 transition duration-500 px-3 py-2 uppercase font-semibold">
+          <button className="w-full bg-orange-500 text-xs md:text-sm mt-5 text-blue hover:text-white hover:-translate-y-1 transition duration-500 px-3 py-2 uppercase font-medium">
             Send message
           </button>
         </form>
