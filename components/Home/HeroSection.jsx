@@ -15,7 +15,7 @@ const Hero = () => {
               className="flex items-center justify-between gap-16"
             >
               <div className="flex flex-col items-start">
-                <div className="text-center lg:text-left mb-7">
+                <div className="text-center lg:text-left mb-10">
                   <p className="md:text-lg">{content.greating}</p>
                   <div className="font-extrabold my-5 description">
                     <h1 className="text-orange-500 text-[1.4rem] mb-3 md:text-3xl lg:text-[2.5rem] lg:mb-5 uppercase">
