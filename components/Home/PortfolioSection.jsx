@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import SectionTitle from "../SectionTitle";
-import SectionsComponent from "../SectionsComponent";
+import SectionTitle from "../utils/SectionTitle";
+import SectionsComponent from "../utils/SectionsComponent";
 import { portfolios } from "@/js/data/home/portfolio";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -53,7 +53,7 @@ const PortfolioSection = () => {
         {portfolios.map((portfolio) => (
           <SwiperSlide key={portfolio.id} className="duration-500">
             <div
-              className="flex flex-col justify-between bg-darkblue rounded-t-lg hover:cursor-pointer duration-200 max-w-md h-[330px] lg:h-full"
+              className="flex flex-col justify-between bg-darkblue rounded-t-lg hover:cursor-pointer duration-200 max-w-md h-[40%] lg:h-full"
               onClick={() => showModal(portfolio.id)}
             >
               <Image
@@ -65,7 +65,7 @@ const PortfolioSection = () => {
               />
               <div className="p-3">
                 <h1 className="text-lg">{portfolio.title}</h1>
-                <p className="text-degrade mt-3">{portfolio.resume}</p>
+                <p className="text-slate mt-3">{portfolio.resume}</p>
               </div>
             </div>
           </SwiperSlide>

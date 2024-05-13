@@ -1,10 +1,13 @@
-import './globals.css';
-import '@/components/styles/selection.css';
+import "./globals.css";
+import "@/components/styles/selection.css";
+import "@/components/styles/scroll.css";
 import "@/components/styles/button.css";
-import { montserrat } from "@/js/fonts";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import "react-toastify/dist/ReactToastify.css";
 import "@/components/styles/description.css";
+import { montserrat } from "@/js/fonts";
+import Navbar from "@/components/utils/Navbar";
+import Footer from "@/components/utils/Footer";
+import { ToastContainer } from "react-toastify";
 
 export const metadata = {
   title: {
@@ -14,6 +17,10 @@ export const metadata = {
   description:
     "I'm a Full-stack software engineer with over 3 years of experience building innovative and user-friendly web applications using React, Node.js, and Ruby on Rails. I'm passionate about helping small businesses grow online and have a proven track record of increasing user engagement by 20%.",
   keywords: [
+    "Haitian Developer",
+    "Developpeur haitien",
+    "Haiti",
+    "Haitien",
     "Full-stack developer",
     "Software engineer",
     "Web developer",
@@ -55,9 +62,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-blue text-white`}>
+      <body className={`${montserrat.className} bg-blue text-lightestSlate`}>
         <Navbar />
-        <div>{children}</div>
+        <div>
+          <ToastContainer />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

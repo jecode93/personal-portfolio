@@ -1,14 +1,14 @@
 .btn41-43 {
   outline: none !important;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   position: relative;
   display: inline-block;
 }
 
 .btn-41 {
   z-index: 1;
-  color: white;
+  color: #ccd6f6;
 }
 
 .btn-41:after {
@@ -21,7 +21,7 @@
   direction: rtl;
   z-index: -1;
   background: rgb(255, 255, 255);
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .btn-41:hover:after {
@@ -34,7 +34,7 @@
 .btn41-44 {
   outline: none !important;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   position: relative;
   display: inline-block;
 }
@@ -54,7 +54,7 @@
   direction: rtl;
   z-index: -1;
   background: #022144;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .btn-42:hover:after {

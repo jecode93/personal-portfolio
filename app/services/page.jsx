@@ -1,4 +1,4 @@
-import Cta from "@/components/Cta";
+import Cta from "@/components/utils/Cta";
 import Hero from "@/components/Services/Hero";
 import ServicesSection from "@/components/Services/Services";
 import React from "react";

@@ -1,5 +1,7 @@
 export const hero = [
   {
-    services: `I offer a comprehensive range of services designed to bring your digital ideas to life and enhance your online presence. With a strong background in both front-end and back-end development, I am dedicated to delivering robust, scalable, and user-centric solutions tailored to meet your unique business needs.`,
+    services: `I can offer you a wide range of services that are specifically designed to help you bring your digital ideas to life and improve your online presence. 
+
+I have extensive experience in both front-end and back-end development, which allows me to provide you with robust, scalable, and user-friendly solutions that are customized to meet your individual business requirements.`,
   },
 ];
