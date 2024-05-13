@@ -1,8 +1,8 @@
 import React from "react";
-import SectionsComponent from "../SectionsComponent";
-import SectionTitle from "../SectionTitle";
+import SectionsComponent from "../utils/SectionsComponent";
+import SectionTitle from "../utils/SectionTitle";
 import { experiences } from "@/js/data/about/experience";
-import ExperiencesCard from "../ExperiencesCard";
+import ExperiencesCard from "./ExperiencesCard";
 
 const Experiences = () => {
   return (

@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { services } from "@/js/data/home/services";
 import Link from "next/link";
-import SectionTitle from "../SectionTitle";
+import SectionTitle from "../utils/SectionTitle";
 import bullet from "@/public/images/bullet.svg";
-import SectionsComponent from "../SectionsComponent";
+import SectionsComponent from "../utils/SectionsComponent";
 
 const ServicesSection = () => {
   return (
@@ -23,9 +23,9 @@ const ServicesSection = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-darkblue p-5 md:p-10 flex flex-col justify-between rounded"
+            className="bg-darkblue p-5 md:p-10 flex flex-col justify-between rounded transition duration-500 border border-transparent hover:border-orange-500 hover:-translate-y-1"
           >
-            <Link href={service.href}>
+            <Link href={service.href} className="h-full">
               <Image
                 src={service.icon}
                 width={70}
@@ -33,10 +33,10 @@ const ServicesSection = () => {
                 alt={service.title}
                 className="mb-7 w-10"
               />
-              <h2 className="font-medium text-lg lg:text-xl 2xl:text-2xl mb-5">
+              <h2 className="font-medium text-lightestSlate text-lg lg:text-xl 2xl:text-2xl mb-5">
                 {service.title}
               </h2>
-              <p className="text-degrade mb-10">{service.description}</p>
+              <p className="text-slate mb-10">{service.description}</p>
               {/* <p className="text-xl font-medium text-orange-500 tracking-wide">
                 ${service.price}/h
               </p> */}

@@ -16,15 +16,16 @@ module.exports = {
         600: "#d76208",
         700: "#b2420b",
       },
-      slate: "#94a3b8",
-      blue: "#022144",
-      darkblue: "#001B36",
-      bluethin: "#003A73",
+      slate: "#8892b0",
+      lightestSlate: "#ccd6f6",
+      blue: "#0a192f",
+      darkblue: "#112240",
+      bluethin: "#233554",
       gray: "#888",
       green: "#00b300",
       degrade: "#ffffff99",
       error: "red",
-      success: "green"
+      success: "green",
     },
     extend: {
       backgroundImage: {

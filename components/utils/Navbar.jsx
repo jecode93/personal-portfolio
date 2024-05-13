@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "./styles/menu.css";
+import "../styles/menu.css";
 import Image from "next/image";
 import Link from "next/link";
 import { menu } from "@/js/data/menu";
@@ -8,6 +8,7 @@ import { MdClose } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import bullet from "@/public/images/bullet.svg";
 import SocialComponent from "./SocialComponent";
+import ResumeButton from "./ResumeButton";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -20,7 +21,7 @@ const Navbar = () => {
   return (
     <header className={`px-5 z-10 relative`}>
       <div className="relative">
-        <div className="absolute flex justify-between w-full top-7 md:px-5 lg:px-32 2xl:px-80">
+        <div className="absolute flex justify-between items-center w-full top-7 md:px-5 lg:px-32 2xl:px-80">
           {/* logo */}
           <Link href="/">
             <p className="text-orange-500 tracking-wide text-lg">
@@ -30,14 +31,14 @@ const Navbar = () => {
           {/* End logo */}
 
           {/* Desktop menu */}
-          <div className="hidden lg:block">
-            <ul className="menu-items flex gap-5">
+          <div className="hidden lg:flex items-center gap-10">
+            <ul className="menu-items flex gap-10">
               {menu.map((data, index) => {
                 const isActive = pathname === data.path;
                 return (
                   <li
                     key={index}
-                    className="font-medium hover:text-orange-500 duration-300 tracking-wide"
+                    className="hover:text-orange-500 transition duration-500 tracking-wide"
                   >
                     <Link
                       href={data.path}
@@ -49,6 +50,9 @@ const Navbar = () => {
                 );
               })}
             </ul>
+            <div className="hidden lg:block">
+              <ResumeButton />
+            </div>
           </div>
           {/* End Desktop menu */}
         </div>
@@ -61,7 +65,7 @@ const Navbar = () => {
           onClick={handleClick}
         >
           <div className="flex justify-center items-center gap-1">
-            <p className="hidden md:block text-degrade">Menu</p>
+            <p className="hidden md:block text-lightestSlate">Menu</p>
             <div className="hamburger flex flex-col items-end justify-around w-10 h-6">
               <div className="line-1 border-2 border-orange-500 rounded"></div>
               <div className="line-2 border-2 border-orange-500 rounded"></div>
@@ -76,7 +80,7 @@ const Navbar = () => {
       <div
         className={`${
           isOpen
-            ? "fixed w-screen h-screen top-0 left-0 right-0 backdrop-blur-sm"
+            ? "fixed w-[100%] h-[100%] top-0 left-0 right-0 backdrop-blur-sm"
             : ""
         }`}
         onClick={handleClick}
@@ -88,15 +92,15 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "right-0" : "-right-[100%]"
-          } fixed top-0 bottom-0 bg-darkblue w-full md:w-[60%] h-screen duration-100`}
+          } fixed top-0 bottom-0 bg-blue w-full md:w-[60%] h-[100%] duration-100`}
         >
           <nav className="h-full">
             <div
-              className="absolute top-5 right-5 cursor-pointer text-white text-3xl font-extrabold duration-500"
+              className="absolute top-5 right-5 cursor-pointer text-lightestSlate text-3xl font-extrabold duration-500"
               onClick={handleClick}
             >
               <span>
-                <MdClose className="hover:rotate-180 duration-300" />
+                <MdClose className="hover:rotate-180 transition duration-500" />
               </span>
             </div>
 
@@ -111,7 +115,7 @@ const Navbar = () => {
                     return (
                       <li
                         key={index}
-                        className="mb-5 2xl:text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 duration-300 tracking-widest"
+                        className="mb-5 2xl:text-2xl hover:text-orange-500 w-28 hover:-translate-y-1 transition duration-500 tracking-widest"
                       >
                         <Link
                           href={data.path}
@@ -123,12 +127,15 @@ const Navbar = () => {
                     );
                   })}
                 </ul>
+                <div className="my-10">
+                  <ResumeButton />
+                </div>
               </div>
 
               {/* Social section */}
               <div className="socials-links z-40">
                 <SocialComponent />
-                <div className="mx-auto left-0 right-0 w-20 border border-white shadow-2xl mt-10"></div>
+                <div className="mx-auto left-0 right-0 w-20 border border-lightestSlate shadow-2xl mt-10"></div>
               </div>
               <div className="absolute bottom-0 right-0">
                 <Image src={bullet} alt="bullet-point" width={90} height={90} />

@@ -24,7 +24,7 @@ const Cta = () => {
       </p>
       <Link
         href="contact"
-        className="px-3 py-2 bg-blue text-xs md:text-sm font-medium text-white uppercase hover:text-blue duration-300 btn41-43 btn-41"
+        className="px-5 py-2 bg-blue text-xs md:text-sm font-medium text-lightestSlate uppercase hover:text-blue transition duration-500 btn41-43 btn-41"
       >
         Start today
       </Link>
