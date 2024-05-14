@@ -57,6 +57,9 @@ export const metadata = {
     "Web development",
     "Database design and management",
   ],
+  verification: {
+    google: "googleaaa0b948cfc8f63e.html",
+  },
 };
 
 export default function RootLayout({ children }) {
