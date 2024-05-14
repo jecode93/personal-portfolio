@@ -15,7 +15,7 @@ export const metadata = {
     template: "%s | Jean Emmanuel Cadet",
   },
   description:
-    "I'm a Full-stack software engineer with over 3 years of experience building innovative and user-friendly web applications using React, Node.js, and Ruby on Rails. I'm passionate about helping small businesses grow online and have a proven track record of increasing user engagement by 20%.",
+    "I specialize in designing, building, and deploying innovative software solutions for businesses as a Full-stack software engineer.",
   keywords: [
     "Haitian Developer",
     "Developpeur haitien",
@@ -59,6 +59,32 @@ export const metadata = {
   ],
   verification: {
     google: "ZMcCRjRGQaebpGuwh4qs7iBsM_ja9-uXpXAWT3hdEnQ",
+    other: {
+      "google-adsense-account": "ca-pub-1908529121556035",
+    },
+  },
+  openGraph: {
+    title: "Jean Emmanuel Cadet - Full-stack Software Engineer",
+    description:
+      "I specialize in designing, building, and deploying innovative software solutions for businesses as a Full-stack software engineer.",
+    url: "https://www.jeanemmanuelcadet.com",
+    // siteName: "Jean Emmanuel Cadet",
+    images: [
+      {
+        url: "https:/jeanemmanuelcadet.com/social_image.webp", // Must be an absolute URL
+        width: 800,
+        height: 600,
+        alt: "I build things for the web.",
+      },
+      {
+        url: "https:/jeanemmanuelcadet.com/social_image.webp", // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: "I build things for the web.",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
   },
 };
 
