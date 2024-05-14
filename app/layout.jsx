@@ -58,7 +58,7 @@ export const metadata = {
     "Database design and management",
   ],
   verification: {
-    google: "googleaaa0b948cfc8f63e.html",
+    google: "ZMcCRjRGQaebpGuwh4qs7iBsM_ja9-uXpXAWT3hdEnQ",
   },
 };
 
