@@ -134,9 +134,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Mobile version]**
-- [ ] **[Contact form]**
-- [ ] **[Desktop version]**
+- [ ] **[Blog section]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

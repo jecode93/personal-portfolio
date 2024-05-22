@@ -24,7 +24,7 @@ const SkillsCard = ({ content }) => {
         </div> */}
       </div>
       <div>
-        <h2 className="font-medium text-lightestSlate">{content.title}</h2>
+        <h2 className="text-sm md:text-base font-medium text-lightestSlate">{content.title}</h2>
       </div>
     </div>
   );
