@@ -7,7 +7,6 @@
 - [📗 Table of Contents](#-table-of-contents)
   - [Built With](#built-with)
   - [Tech Stack ](#tech-stack-)
-  - [Key Features ](#key-features-)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -59,13 +58,13 @@
   </ul>
 </details>
 
-## Key Features <a name="key-features"></a>
+<!-- ## Key Features <a name="key-features"></a>
 
 > Some useful features
 
 - **[Using Flexbox for the layout]**
 - **[Pure html]**
-- **[Pure css]**
+- **[Pure css]** -->
 
 
 <!-- LIVE DEMO -->
