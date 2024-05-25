@@ -30,6 +30,7 @@
 ## Built With
 
 - Next.js
+- Node js
 - Swipper js
 - Tailwind CSS
 
