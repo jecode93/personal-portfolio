@@ -7,5 +7,7 @@
   "editor.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
   "editor.cursorStyle": "line",
-  "editor.fontWeight": "normal"
+  "editor.fontWeight": "normal",
+  "codesnap.backgroundColor": "#ccd6f6",
+  "codesnap.containerPadding": "5em"
 }
