@@ -4,8 +4,7 @@ export const portfolios = [
     title: "Car Booking System",
     image: "/portfolio/bookcar.webp",
     link: "https://final-capstone-frontend-3l0g.onrender.com/",
-    description: `
-Car Book revolutionizes car rentals, bridging the gap between renters and owners with a user-centric platform.
+    description: `Car Book revolutionizes car rentals, bridging the gap between renters and owners with a user-centric platform.
 
 Streamlined Rentals for Renters:
 
