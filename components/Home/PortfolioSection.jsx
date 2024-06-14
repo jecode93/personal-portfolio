@@ -3,7 +3,6 @@ import React from "react";
 import SectionTitle from "../utils/SectionTitle";
 import SectionsComponent from "../utils/SectionsComponent";
 import { portfolios } from "@/js/data/home/portfolio";
-import Image from "next/image";
 import PortfolioCard from "../utils/PortfolioCard";
 import ButtonComponent from "../utils/ButtonComponent";
 
