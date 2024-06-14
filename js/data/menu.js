@@ -21,6 +21,10 @@ export const menu = [
     path: "/services",
   },
   {
+    name: "Portfolio",
+    path: "/portfolio",
+  },
+  {
     name: "Contact",
     path: "/contact",
   },
