@@ -3,7 +3,7 @@ import React from "react";
 import SectionTitle from "../utils/SectionTitle";
 import SectionsComponent from "../utils/SectionsComponent";
 import { portfolios } from "@/js/data/home/portfolio";
-import PortfolioCard from "../utils/PortfolioCard";
+import PortfolioCard from "../Portfolio/PortfolioCard";
 import ButtonComponent from "../utils/ButtonComponent";
 
 const PortfolioSection = () => {

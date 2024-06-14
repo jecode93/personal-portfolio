@@ -1,6 +1,6 @@
 import React from "react";
 import { portfolios } from "@/js/data/home/portfolio";
-import PortfolioCard from "../utils/PortfolioCard";
+import PortfolioCard from "./PortfolioCard";
 import SectionsComponent from "../utils/SectionsComponent";
 import SectionTitle from "../utils/SectionTitle";
 
