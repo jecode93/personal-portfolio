@@ -9,7 +9,7 @@ const PortfolioCard = ({ content, index }) => {
           index % 2 === 0 ? "" : "md:flex-row-reverse"
         } items-center rounded-lg hover:cursor-pointer duration-500 mb-14`}
       >
-        <div className="p-10 md:border md:border-lightSlate hover:border-orange-500 hover:-translate-y-1 duration-500 rounded-lg">
+        <div className="p-10 md:border md:border-lightSlate transition hover:border-orange-500 hover:-translate-y-1 duration-500 rounded-lg">
           <Image
             src={content.image}
             alt={content.title}
