@@ -28,7 +28,7 @@ const PortfolioDetails = ({ params }) => {
           />
           <PreviewButton title={title} link={link} />
         </div>
-        <div className="p-5 md:p-16 content overflow-auto">
+        <div className="md:p-16 content overflow-auto">
           <p className="text-slate tracking-wide text-justify description">
             {description}
           </p>
