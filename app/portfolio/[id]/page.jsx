@@ -1,3 +1,4 @@
+import ButtonComponent from "@/components/utils/ButtonComponent";
 import Cta from "@/components/utils/Cta";
 import PreviewButton from "@/components/utils/PreviewButton";
 import SectionTitle from "@/components/utils/SectionTitle";
@@ -12,7 +13,30 @@ const PortfolioDetails = ({ params }) => {
   };
 
   const selectedPortfolio = details(params.id);
-  const { title, image, description, resume, stack, link } = selectedPortfolio || {};
+  const { title, image, description, resume, stack, link } =
+    selectedPortfolio || {};
+
+  if (!selectedPortfolio) {
+    return (
+      <>
+        <SectionsComponent
+          id="portfolio-not-found"
+          otherClasses="pt-32 md:pt-48"
+        >
+          <div className="flex flex-col items-center my-5">
+            <p className="text-xl md:text-3xl lg:text-5xl mb-6">
+              Portfolio with id:{" "}
+              <span className="font-bold underline">{params.id}</span> not
+              found
+            </p>
+
+            <ButtonComponent path="/portfolio" text="Go to porfolio page" />
+          </div>
+        </SectionsComponent>
+        <Cta />
+      </>
+    );
+  }
 
   return (
     <>
