@@ -40,7 +40,7 @@ Car Book transcends a simple booking platform, fostering a community built on tr
     id: 2,
     title: "Space Travelers Hub",
     image: "/portfolio/falcon.webp",
-    link: "https://space-travelers-hub-uro6.onrender.com/",
+    link: "https://jecode93-space-travelers-hub.vercel.app",
     description: `Space Travelers' Hub (STH) is a dynamic single-page application (SPA) that ignites your dreams of space exploration. Powered by real-time data from the SpaceX API, STH empowers you to:
 
 • Explore and book rockets: Browse through available SpaceX rockets, delve into their specifications, and seamlessly secure your reservation for an unforgettable celestial journey.
@@ -55,7 +55,7 @@ STH transcends a simple booking platform, fostering a vibrant community of space
     id: 3,
     title: "Country Weather",
     image: "/portfolio/weather.webp",
-    link: "https://react-capstone-project-git-dev-jecode93.vercel.app/",
+    link: "https://jecode93-country-weather.vercel.app/",
     description: `This captivating single-page application (SPA) caters to every weather enthusiast, providing a comprehensive and convenient platform to explore a world of meteorological data.
 
 Key Features:
@@ -104,7 +104,7 @@ This project transcends a simple score display, fostering a sense of competition
     id: 5,
     title: "Math-magician",
     image: "/portfolio/math-magicians.webp",
-    link: "https://math-magicians-dk01.onrender.com/calculator",
+    link: "https://jecode93-math-magicians.vercel.app/calculator",
     description: `Math Magicians is a captivating single-page application (SPA) designed to ignite your passion for mathematics. This interactive platform caters to learners of all levels, offering two key features:
 
 • Effortless Calculations: Perform basic mathematical operations with ease, making it a handy tool for quick calculations or practicing your numerical skills.
