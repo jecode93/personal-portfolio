@@ -52,16 +52,16 @@ const PortfolioDetails = ({ params }) => {
           />
           <PreviewButton title={title} link={link} />
         </div>
-        <div className="md:p-16 content overflow-auto">
+        <div className="md:p-16 content overflow-auto md:bg-darkblue md:shadow-xl rounded">
           <p className="text-slate tracking-wide text-justify description">
             {description}
           </p>
           <div className="my-7">
-            <h1 className="text-xl md:text-2xl">Technologies:</h1>
+            <h1 className="text-xl md:text-2xl font-bold">Technologies:</h1>
             <div className="grid grid-cols-2 gap-2 my-7">
               {stack.map((item, index) => (
                 <div key={index}>
-                  <p className="bg-darkblue p-1 flex justify-center rounded">
+                  <p className="bg-darkblue md:bg-blue p-1 flex justify-center rounded">
                     <span className="text-slate">{item}</span>
                   </p>
                 </div>
