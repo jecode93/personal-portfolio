@@ -6,17 +6,17 @@ export const portfolios = [
     link: "https://final-capstone-frontend-3l0g.onrender.com/",
     description: `Car Book revolutionizes car rentals, bridging the gap between renters and owners with a user-centric platform.
 
-Streamlined Rentals for Renters:
+STREAMLINED RENTALS FOR RENTERS:
 • Effortless Browsing: Explore a diverse selection of cars based on your specific needs, filtering by type, size, and features.
 • Informed Decisions: Make confident choices with detailed car information, high-quality images, and transparent pricing.
 • Seamless Booking: Secure your ideal car with a user-friendly reservation system, ensuring a smooth rental experience.
 
-Empowering Car Owners:
+EMPOWERING CAR OWNERS:
 • Centralized Management: Manage listings, set availability, and track reservations – all from a convenient dashboard.
 • Effortless Listing: Add your car with ease, providing detailed descriptions and captivating photos.
 • Building Trust: Foster transparency with features like car addition/removal and user reviews.
 
-Beyond Convenience:
+BEYOND CONVENIENCE:
 Car Book transcends a simple booking platform, fostering a community built on trust and transparency. It empowers both renters and owners, saving time, simplifying the process, and offering a seamless experience for all.`,
     resume: "Streamlined car rentals for renters.",
     stack: [
@@ -50,11 +50,11 @@ STH transcends a simple booking platform, fostering a vibrant community of space
     link: "https://jecode93-country-weather.vercel.app/",
     description: `This captivating single-page application (SPA) caters to every weather enthusiast, providing a comprehensive and convenient platform to explore a world of meteorological data.
 
-Key Features:
+KEY FEATURES:
 • Global Reach: Delve into weather conditions across the globe, choosing any country to unlock a treasure trove of insights.
 • Granular Details: Dive deeper into each chosen country, accessing real-time weather metrics for its capital city, including temperature, wind speed, humidity, and more.
 
-Beyond Information:
+BEYOND INFORMATION:
 This user-friendly app empowers you to stay informed and make informed decisions, whether planning a trip, preparing for outdoor activities, or simply staying curious about the ever-changing world around you.`,
     resume: "Explore global weather & real-time details.",
     stack: ["JavaScript", "React", "Redux", "Tailwind CSS"],
@@ -75,12 +75,12 @@ This user-friendly app empowers you to stay informed and make informed decisions
     link: "https://leaderboard-jecode93.netlify.app/",
     description: `This compelling JavaScript project, built with cutting-edge Webpack and ES6 features, unveils a dynamic leaderboard experience. It seamlessly retrieves data from the Leaderboard API using the power of asynchronous operations (async/await), ensuring a smooth and efficient user experience.
 
-Key Features:
+KEY FEATURES:
 • Live Score Display: Witness your scores prominently displayed, keeping you motivated and informed about your progress.
 • Modern Tech Stack: Experience the benefits of Webpack and ES6, ensuring a robust and future-proof development foundation.
 • Asynchronous Data Fetching: Enjoy seamless data retrieval from the Leaderboard API, powered by efficient async/await functionality.
 
-Beyond Scores:
+BEYOND SCORES:
 This project transcends a simple score display, fostering a sense of competition and community among users striving to reach the top.`,
     resume: "Add scores, and data fetching.",
     stack: ["HTML", "CSS", "JavaScript", "Webpack", "SCSS"],
@@ -106,11 +106,11 @@ Math Magicians goes beyond a simple calculator, fostering a love for mathematics
     link: "https://idasboiserie.com/",
     description: `This website serves as a captivating platform, meticulously crafted to showcase your client's exceptional work and seamlessly facilitate product sales. It caters to both potential clients and loyal customers, offering a comprehensive and engaging experience.
 
-Key Features:
+KEY FEATURES:
 • Dazzling Portfolio: Immerse visitors in a stunning display of your client's work, highlighting their expertise and creative vision.
 • Seamless Shopping Experience: Navigate a user-friendly interface designed to streamline the product purchasing process, ensuring customer satisfaction.
 
-Beyond Functionality:
+BEYOND FUNCTIONALITY:
 This website transcends a simple online store, fostering a lasting connection between your client and their audience. It serves as a powerful tool to build brand recognition, cultivate customer loyalty, and drive successful sales.`,
     resume: "Client's portfolio & seamless product sales.",
     stack: ["WordPress", "Elementor Page Builder"],
@@ -126,7 +126,7 @@ This website transcends a simple online store, fostering a lasting connection be
 • Content Management Powerhouse: Enjoy the flexibility to create, edit, and delete posts, ensuring the blog remains current and relevant.
 • Collaborative Spirit: Foster a collaborative environment by adding other users to the management team, allowing for diverse perspectives and efficient content creation.
 
-Beyond the Headlines:
+BEYOND THE HEADLINES:
 This blog serves not only as a source of information but also as a platform for open dialogue and critical thinking. It empowers readers to engage with the news, form informed opinions, and participate in meaningful discussions.`,
     resume: "News blog with national & international coverage.",
     stack: ["WordPress", "Elementor Page Builder"],
