@@ -10,7 +10,7 @@ const MyCard = () => {
         src={me}
         className="w-full md:w-[500px] lg:w-[400px] mb-4 rounded"
         alt="Jean Emmanuel Cadet - Software engineer - Haitian Developer"
-        title="Jean Emmanuel Cadet - Software engineer - Haitian Developer"
+        title="Jean Emmanuel Cadet - Full-stack Software Engineer"
         width={500}
         height={500}
       />

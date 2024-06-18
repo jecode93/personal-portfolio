@@ -1,83 +1,24 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import SectionTitle from "../utils/SectionTitle";
 import SectionsComponent from "../utils/SectionsComponent";
 import { portfolios } from "@/js/data/home/portfolio";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-import { Autoplay, FreeMode } from "swiper/modules";
-import PopupComponent from "./PopupComponent";
+import PortfolioCard from "../Portfolio/PortfolioCard";
+import ButtonComponent from "../utils/ButtonComponent";
 
 const PortfolioSection = () => {
-  const [open, setOpen] = useState(false);
-  const [currentPopup, setCurrentPopup] = useState(null);
-
-  const showModal = (popupId) => {
-    setOpen(true);
-    const popupData = portfolios.find((item) => item.id === popupId);
-    if (popupData) {
-      setCurrentPopup(popupData);
-    }
-  };
-
+  const limitedPortfolios = portfolios.slice(0, 3);
   return (
     <SectionsComponent id="portfolio">
       <SectionTitle title="Portfolio" text="Featured Projects" />
-      <Swiper
-        breakpoints={{
-          360: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-        }}
-        freeMode={true}
-        modules={[Autoplay, FreeMode]}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        autoHeight={true}
-        speed={600}
-      >
-        {portfolios.map((portfolio) => (
-          <SwiperSlide key={portfolio.id} className="duration-500">
-            <div
-              className="flex flex-col justify-between bg-darkblue rounded-t-lg hover:cursor-pointer duration-200 max-w-md h-[40%] lg:h-full"
-              onClick={() => showModal(portfolio.id)}
-            >
-              <Image
-                src={portfolio.image}
-                alt={portfolio.title}
-                width={500}
-                height={500}
-                className="mb-3 rounded-t-lg w-full"
-              />
-              <div className="p-3">
-                <h1 className="text-lg">{portfolio.title}</h1>
-                <p className="text-slate mt-3">{portfolio.resume}</p>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      {currentPopup && (
-        <PopupComponent
-          isVisible={open}
-          onClose={() => setOpen(false)}
-          content={currentPopup}
-        />
-      )}
+      {limitedPortfolios.map((portfolio, index) => (
+        <div key={portfolio.id} className="duration-500">
+          <PortfolioCard content={portfolio} index={index} />
+        </div>
+      ))}
+      <div className="flex justify-center">
+        <ButtonComponent path="portfolio" text="View my portfolios" />
+      </div>
     </SectionsComponent>
   );
 };

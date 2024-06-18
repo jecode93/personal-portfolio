@@ -19,7 +19,7 @@ const About = () => {
                 src={me}
                 className="w-full md:w-[500px] mb-4"
                 alt="Jean Emmanuel Cadet - Software engineer - Developpeur haitien"
-                title="Jean Emmanuel Cadet - Software engineer - Developpeur haitien"
+                title="Jean Emmanuel Cadet - Full-stack Software Engineer"
                 width={500}
                 height={500}
               />
