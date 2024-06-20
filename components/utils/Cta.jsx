@@ -1,6 +1,7 @@
 import React from "react";
 import SectionsComponent from "./SectionsComponent";
 import Link from "next/link";
+import { FaChevronRight } from "react-icons/fa";
 
 const Cta = () => {
   return (
@@ -26,7 +27,10 @@ const Cta = () => {
         href="contact"
         className="px-5 py-2 bg-blue text-xs md:text-sm font-medium text-lightestSlate uppercase hover:text-blue transition duration-500 btn41-43 btn-41"
       >
-        Start today
+        <div className="flex gap-3 items-center">
+          <span>Start today</span>
+          <FaChevronRight />
+        </div>
       </Link>
     </SectionsComponent>
   );

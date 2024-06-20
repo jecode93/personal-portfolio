@@ -3,22 +3,24 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [PERSONAL PORTFOLIO](#personal-portfolio)
+- [📗 Table of Contents](#-table-of-contents)
+  - [Built With](#built-with)
+  - [Tech Stack ](#tech-stack-)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [Authors](#authors)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing](#-contributing)
+  - [Show your support](#show-your-support)
+  - [Acknowledgments](#acknowledgments)
+  - [📝 License](#-license)
 
 
 
@@ -31,7 +33,7 @@
 - Swipper js
 - Tailwind CSS
 
-### Tech Stack <a name="tech-stack"></a>
+## Tech Stack <a name="tech-stack"></a>
 
 > 
 
@@ -52,17 +54,17 @@
 <details>
 <summary>Layout</summary>
   <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"></a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a></li>
   </ul>
 </details>
 
-### Key Features <a name="key-features"></a>
+<!-- ## Key Features <a name="key-features"></a>
 
 > Some useful features
 
 - **[Using Flexbox for the layout]**
 - **[Pure html]**
-- **[Pure css]**
+- **[Pure css]** -->
 
 
 <!-- LIVE DEMO -->
@@ -107,38 +109,30 @@ You can deploy this project using:
 - [Vercel](https://vercel.com/)
 - [Netlify](https://www.netlify.com/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link will be available soon]()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [Live Demo Link will be available soon](https://jeanemmanuelcadet.vercel.app)
 
 
 ## Authors
 
-👤 **Author**
-
 👤 **Jean Emmanuel Cadet**
-
 - GitHub: [@jecode93](https://github.com/jecode93)
-- Twitter: [@jecode93](https://twitter.com/jecode93)
 - LinkedIn: [jean-emmanuel-cadet](https://www.linkedin.com/in/jean-emmanuel-cadet/)
+- Facebook: [@jecode93](https://www.facebook.com/jecode93)
+- Instagram: [@jecode93](https://instagram.com/jecode93)
+- Twitter: [@jecode93](https://twitter.com/jecode93)
 
-
+</br>
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Blog section]**
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+- [ ] **[Rails Backend]**
 
 
 ## 🤝 Contributing
