@@ -6,7 +6,6 @@
 - [PERSONAL PORTFOLIO](#personal-portfolio)
 - [📗 Table of Contents](#-table-of-contents)
   - [Built With](#built-with)
-  - [Tech Stack ](#tech-stack-)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -33,31 +32,6 @@
 - Swipper js
 - Tailwind CSS
 
-## Tech Stack <a name="tech-stack"></a>
-
-> 
-
-<details>
-  <summary>Markup Language</summary>
-  <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Style</summary>
-  <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Layout</summary>
-  <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a></li>
-  </ul>
-</details>
-
 <!-- ## Key Features <a name="key-features"></a>
 
 > Some useful features
@@ -78,29 +52,26 @@ To get a local copy up and running follow these simple example steps.
 - Git must be installed on your computer | Download [Git](https://git-scm.com/downloads)
 
 ### Setup
-- Clone the repository
+- Clone the repository using
+```sh
+ git clone https://github.com/jecode93/personal-portfolio.git
+```
 - Open the project folder in Visual Studio Code
-
-### Install
-
-Install this project using:
-
-- cd project directory
-- Git clone [portfolio](https://github.com/jecode93/personal-portfolio.git)
+- Then run
+```sh
+npm install
+```
 
 ### Usage
 
 To run the project, execute the following command:
-
-- Launch index.html file in your browser
-
-
-### Run tests
-
-To run tests, run the following command:
-
-- `npm run test`
-
+```sh
+npm run dev
+```
+And navigate to the provided URL (Don't forget to verify your port)
+```sh
+Example: http://localhost:3000
+```
 
 ### Deployment
 
@@ -108,14 +79,13 @@ You can deploy this project using:
 
 - [Vercel](https://vercel.com/)
 - [Netlify](https://www.netlify.com/)
-
+- [Heroku](https://www.heroku.com/)
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link will be available soon](https://jeanemmanuelcadet.vercel.app)
-
+- [Live link](https://jeanemmanuelcadet.com)
 
 ## Authors
 
@@ -126,7 +96,6 @@ You can deploy this project using:
 - Instagram: [@jecode93](https://instagram.com/jecode93)
 - Twitter: [@jecode93](https://twitter.com/jecode93)
 
-</br>
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
@@ -145,11 +114,13 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
+<!---
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
+-->
 
 ## 📝 License
 
