@@ -26,7 +26,6 @@
 
 - Next.js
 - Node js
-- Swipper js
 - Tailwind CSS
 
 <!-- ## Key Features <a name="key-features"></a>
