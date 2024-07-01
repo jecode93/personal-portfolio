@@ -9,16 +9,13 @@
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Install](#install)
     - [Usage](#usage)
-    - [Run tests](#run-tests)
     - [Deployment](#deployment)
   - [🚀 Live Demo ](#-live-demo-)
   - [Authors](#authors)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing](#-contributing)
   - [Show your support](#show-your-support)
-  - [Acknowledgments](#acknowledgments)
   - [📝 License](#-license)
 
 
