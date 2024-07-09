@@ -4,6 +4,7 @@ import { hero } from "@/js/data/home/home";
 import ButtonComponent from "../utils/ButtonComponent";
 import SocialComponent from "../utils/SocialComponent";
 import Image from "next/image";
+import BookingCalendly from "../utils/BookingCalendly";
 
 const Hero = () => {
   return (
@@ -30,7 +31,13 @@ const Hero = () => {
                   <p className="mb-5 md:text-lg description">
                     {content.description}
                   </p>
-                  <ButtonComponent path="/contact" text="Contact me" />
+                  <div className=" flex flex-col items-center md:gap-3 md:flex-row">
+                    <BookingCalendly
+                      path="/schedule-meeting"
+                      text="Schedule a meeting"
+                    />
+                    <ButtonComponent path="/contact" text="Contact me" />
+                  </div>
                 </div>
 
                 <div className="hidden lg:flex">
