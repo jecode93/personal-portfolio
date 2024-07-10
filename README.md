@@ -60,7 +60,7 @@ npm install
 
 ### Usage
 
-To run the project, copy the `.env.example` file to `.env` file and fill in the necessary values, after that run the following command:
+To run the project, copy the `.env.example` file to `.env` and fill in the necessary values, after that run the following command:
 
 ```sh
 npm run dev
