@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <>
       <footer className="relative">
-        <div className="flex flex-col-reverse gap-7 md:flex-row justify-between items-center text-center py-7 px-5 md:px-10 lg:px-32 2xl:px-80">
+        <div className="flex flex-col-reverse gap-7 md:flex-row justify-between items-center text-center py-7 px-5 md:px-10 lg:px-32 2xl:px-64">
           <p className="text-xs md:text-sm text-slate tracking-wide">
             Copyright © 2023 - {currentYear}. All right reserved
           </p>
