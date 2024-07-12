@@ -1,15 +1,18 @@
 import React from 'react'
 
-const PreviewButton = ({link, title}) => {
+const PreviewButton = ({link, title, text, icon}) => {
   return (
     <>
       <a
         href={link}
         target="_blank"
         aria-label={title}
-        className="px-5 py-2 border border-lightestSlate bg-blue text-xs md:text-sm font-medium text-lightestSlate uppercase hover:text-blue transition duration-500 btn41-43 btn-41"
+        className="px-5 py-2 border border-lightestSlate bg-blue text-xs md:text-sm font-medium text-lightestSlate hover:text-blue transition duration-500 btn41-43 btn-41"
       >
-        Live Demo
+        <div className="flex items-center">
+          <p className="mr-3 tracking-wide">{text}</p>
+          <span className="text-lg">{icon}</span>
+        </div>
       </a>
     </>
   );
