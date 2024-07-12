@@ -31,10 +31,10 @@ const Hero = () => {
                   <p className="mb-5 md:text-lg description">
                     {content.description}
                   </p>
-                  <div className=" flex flex-col items-center md:gap-3 md:flex-row">
+                  <div className="flex flex-col items-center lg:gap-3 lg:flex-row">
                     <BookingCalendly
                       path="/schedule-meeting"
-                      text="Schedule a meeting"
+                      text="Need a consultation"
                     />
                     <ButtonComponent path="/contact" text="Contact me" />
                   </div>
