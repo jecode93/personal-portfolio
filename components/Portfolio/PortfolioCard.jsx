@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import BookingCalendly from "../utils/BookingCalendly";
+import { FaFolderOpen } from "react-icons/fa6";
 
 const PortfolioCard = ({ content, index }) => {
   return (
@@ -32,7 +32,10 @@ const PortfolioCard = ({ content, index }) => {
               {content.description.slice(0, 250) + "..."}
             </p>
             <div className="w-fit text-xs md:text-sm mt-3 bg-orange-500 px-5 py-2 uppercase btn43-43 btn-43">
-              See Project
+              <p className="flex items-center">
+                See Project
+                <FaFolderOpen className="ml-2" />
+              </p>
             </div>
           </div>
         </div>
