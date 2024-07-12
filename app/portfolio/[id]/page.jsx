@@ -50,7 +50,7 @@ const PortfolioDetails = ({ params }) => {
             alt={title}
             width={700}
             height={500}
-            className="rounded lg:w-[60%] mb-5"
+            className="rounded lg:w-[60%] mb-8"
           />
           <div className="flex justify-center items-center gap-5">
             <PreviewButton title={title} link={link} text="See live" icon={<FiExternalLink/>}/>
