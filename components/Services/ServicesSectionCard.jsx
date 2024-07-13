@@ -15,7 +15,7 @@ const ServicesSectionCard = ({ content }) => {
           {content.structure.map((data) => (
             <div
               key={data.id}
-              className="bg-darkblue p-5 transition duration-500 border border-transparent hover:border-orange-500 hover:-translate-y-1 rounded"
+              className="bg-darkblue p-5 transition duration-500 border border-transparent hover:border-orange-500 hover:-translate-y-1 rounded shadow-lg"
             >
               <div>
                 <span className="text-xl font-semibold bg-orange-500 text-blue px-2">
