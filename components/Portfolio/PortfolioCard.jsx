@@ -7,7 +7,7 @@ const PortfolioCard = ({ content, index }) => {
   return (
     <div
       key={content.id}
-      className="duration-500 divide-x mb-20 bg-darkblue rounded-md lg:p-6 flex items-center transition hover:border-orange-500 hover:-translate-y-1 shadow-lg"
+      className="duration-500 divide-x mb-20 bg-darkblue rounded-md lg:p-6 flex items-center transition hover:-translate-y-1 shadow-lg"
     >
       <Link href={`portfolio/${content.id}`}>
         <div
@@ -15,7 +15,7 @@ const PortfolioCard = ({ content, index }) => {
             index % 2 === 0 ? "" : "lg:flex-row-reverse"
           } items-center hover:cursor-pointer duration-500 gap-10 pb-5 lg:pb-0`}
         >
-          <div className="transition hover:border-orange-500 hover:-translate-y-1 duration-500 rounded-lg">
+          <div className="lg:w-[50%]">
             <Image
               src={content.image}
               alt={content.title}
