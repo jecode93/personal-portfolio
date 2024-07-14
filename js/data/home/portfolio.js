@@ -69,7 +69,7 @@ Math Magicians goes beyond a simple calculator, fostering a love for mathematics
     title: "Idas Boiserie",
     image: "/portfolio/idas.webp",
     link: "https://idasboiserie.com/",
-    github: "",
+    github: "https://idasboiserie.com/",
     description: `This website serves as a captivating platform, meticulously crafted to showcase your client's exceptional work and seamlessly facilitate product sales. It caters to both potential clients and loyal customers, offering a comprehensive and engaging experience.
 
 KEY FEATURES:
@@ -86,7 +86,7 @@ This website transcends a simple online store, fostering a lasting connection be
     title: "Clin D'oeil Info",
     image: "/portfolio/cdi.webp",
     link: "https://clindoeilinfo.com/",
-    github: "",
+    github: "https://clindoeilinfo.com/",
     description: `Three years ago, I created a dynamic platform to empower informed citizens, and this client's news blog stands as a testament to that vision. This comprehensive platform transcends a simple news feed, offering a robust suite of features:
 
 • National and International News: Stay abreast of current events, both locally and globally, with access to a diverse range of news articles.
