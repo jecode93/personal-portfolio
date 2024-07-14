@@ -2,7 +2,7 @@ import React from "react";
 
 const ExperiencesCard = ({ content }) => {
   return (
-    <div className="bg-darkblue p-5 transition duration-500 border border-transparent hover:border-orange-500 hover:-translate-y-1 rounded">
+    <div className="bg-darkblue p-5 transition duration-500 border border-transparent hover:border-orange-500 hover:-translate-y-1 rounded shadow-lg">
       <div className="flex justify-between items-center mb-5">
         <div>
           <h2 className="font-medium text-lg lg:text-xl ">{content.company}</h2>

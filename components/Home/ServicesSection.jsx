@@ -23,7 +23,7 @@ const ServicesSection = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-darkblue p-5 md:p-10 flex flex-col justify-between rounded transition duration-500 border border-transparent hover:border-orange-500 hover:-translate-y-1"
+            className="bg-darkblue p-5 md:p-10 flex flex-col justify-between rounded transition duration-500 border border-transparent hover:border-orange-500 hover:-translate-y-1 shadow-lg"
           >
             <Link href={service.href} className="h-full">
               <Image

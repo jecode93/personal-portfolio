@@ -5,10 +5,35 @@
   position: relative;
   display: inline-block;
 }
+.btn43-43 {
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+  display: inline-block;
+} 
 
 .btn-41 {
   z-index: 1;
   color: #ccd6f6;
+}
+
+.btn-43 {
+  z-index: 1;
+  color: #022144;
+}
+
+.btn-43:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  transition: all 0.5s ease;
 }
 
 .btn-41:after {
@@ -58,6 +83,12 @@
 }
 
 .btn-42:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-43:hover:after {
   left: auto;
   right: 0;
   width: 100%;
