@@ -5,7 +5,7 @@ const SkillsCard = ({ content }) => {
   return (
     <div
       key={content.id}
-      className="bg-darkblue p-5 flex flex-col justify-center items-center rounded transition duration-500 border border-transparent hover:border-orange-500 hover:-translate-y-1"
+      className="bg-darkblue p-5 flex flex-col justify-center items-center rounded transition duration-500 border border-transparent hover:border-orange-500 hover:-translate-y-1 shadow-lg"
     >
       <div>
         {/* <div className="text-xl">{content.percentage} %</div> */}

@@ -1,3 +1,4 @@
+import BookingCalendly from "@/components/utils/BookingCalendly";
 import ButtonComponent from "@/components/utils/ButtonComponent";
 import Cta from "@/components/utils/Cta";
 import PreviewButton from "@/components/utils/PreviewButton";
@@ -6,6 +7,8 @@ import SectionsComponent from "@/components/utils/SectionsComponent";
 import { portfolios } from "@/js/data/home/portfolio";
 import Image from "next/image";
 import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
 const PortfolioDetails = ({ params }) => {
   const details = (id) => {
@@ -13,7 +16,7 @@ const PortfolioDetails = ({ params }) => {
   };
 
   const selectedPortfolio = details(params.id);
-  const { title, image, description, resume, stack, link } =
+  const { title, image, description, resume, stack, link, github} =
     selectedPortfolio || {};
 
   if (!selectedPortfolio) {
@@ -26,8 +29,7 @@ const PortfolioDetails = ({ params }) => {
           <div className="flex flex-col items-center my-5">
             <p className="text-xl md:text-3xl lg:text-5xl mb-6">
               Portfolio with id:{" "}
-              <span className="font-bold underline">{params.id}</span> not
-              found
+              <span className="font-bold underline">{params.id}</span> not found
             </p>
 
             <ButtonComponent path="/portfolio" text="Go to porfolio page" />
@@ -46,11 +48,14 @@ const PortfolioDetails = ({ params }) => {
           <Image
             src={image}
             alt={title}
-            width={500}
+            width={700}
             height={500}
-            className="rounded md:w-[40%] mb-5"
+            className="rounded lg:w-[60%] mb-8"
           />
-          <PreviewButton title={title} link={link} />
+          <div className="flex justify-center items-center gap-5">
+            <PreviewButton title={title} link={link} text="See live" icon={<FiExternalLink/>}/>
+            <PreviewButton title={title} link={github} text="See source" icon={<FaGithub/>}/>
+          </div>
         </div>
         <div className="md:p-16 content overflow-auto md:bg-darkblue md:shadow-xl rounded">
           <p className="text-slate tracking-wide text-justify description">

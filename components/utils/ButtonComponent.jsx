@@ -7,9 +7,9 @@ const ButtonComponent = ({ path, text }) => {
     <div>
       <Link
         href={path}
-        className="w-fit text-xs md:text-sm mt-5 font-medium border border-lightestSlate text-lightestSlate hover:text-blue px-5 py-2 uppercase btn41-43 btn-41"
+        className="w-fit text-xs md:text-sm mt-5 border border-lightestSlate text-lightestSlate hover:text-blue px-5 py-2 uppercase btn41-43 btn-41"
       >
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-2 items-center">
           {text}
           <FaChevronRight />
         </div>

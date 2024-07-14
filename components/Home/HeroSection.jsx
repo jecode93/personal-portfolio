@@ -4,11 +4,12 @@ import { hero } from "@/js/data/home/home";
 import ButtonComponent from "../utils/ButtonComponent";
 import SocialComponent from "../utils/SocialComponent";
 import Image from "next/image";
+import BookingCalendly from "../utils/BookingCalendly";
 
 const Hero = () => {
   return (
     <section id="home" className="w-[100%] h-[100%] text-lightestSlate">
-      <div className="md:px-5 lg:px-32 2xl:px-80 h-screen flex flex-col justify-between">
+      <div className="md:px-5 lg:px-32 2xl:px-64 h-screen flex flex-col justify-between">
         <div className="flex flex-col px-5 tracking-wide leading-7 justify-center h-full pt-16 z-0">
           {hero.map((content, index) => (
             <div
@@ -30,7 +31,13 @@ const Hero = () => {
                   <p className="mb-5 md:text-lg description">
                     {content.description}
                   </p>
-                  <ButtonComponent path="/contact" text="Contact me" />
+                  <div className="flex flex-col items-center lg:gap-3 lg:flex-row">
+                    <BookingCalendly
+                      path="/schedule-meeting"
+                      text="Need a consultation"
+                    />
+                    <ButtonComponent path="/contact" text="Contact me" />
+                  </div>
                 </div>
 
                 <div className="hidden lg:flex">
