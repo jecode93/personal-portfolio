@@ -120,7 +120,7 @@ This project underscores my web development skills and my ability to bring desig
     id: 8,
     title: "Meal App",
     image: "/portfolio/meal.webp",
-    link: "https://github.com/jecode93/javascript-group-capstone",
+    link: "https://jecode93.github.io/javascript-group-capstone/",
     github: "https://github.com/jecode93/javascript-group-capstone",
     description: `This collaborative project involved developing a web application using HTML5, JavaScript, WebPack, API integration, and Jest for testing. Based on a detailed design, the project focused on creating a dynamic and interactive user experience. The application allows users to interact with real-time data fetched from APIs and provides a robust, responsive interface.
 
