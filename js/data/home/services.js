@@ -2,25 +2,25 @@ export const services = [
   {
     icon: "/icons/web.svg",
     title: "Web development",
-    href: 'services#web',
+    href: "services#web",
     description:
-      "From landing pages to complex applications, I create custom web solutions that engage your audience",
+      "From dynamic landing pages to sophisticated web applications, I deliver custom web solutions that captivate and engage your audience.",
     price: "55.00",
   },
   {
     icon: "/icons/api.svg",
     title: "API development",
-    href: 'services#api',
+    href: "services#api",
     description:
-      "Connect your systems & unlock data with secure, scalable APIs tailored to your needs.",
+      "Integrate and streamline your systems with secure, scalable APIs designed to meet your specific requirements.",
     price: "60.00",
   },
   {
     icon: "/icons/database.svg",
     title: "Database design and management",
-    href: 'services#database',
+    href: "services#database",
     description:
-      "Design & manage robust databases that store & organize your critical data efficiently.",
+      "Design and manage robust databases that efficiently store and organize your critical data, ensuring optimal performance and reliability.",
     price: "65.00",
   },
 ];

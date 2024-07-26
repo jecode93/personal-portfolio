@@ -6,7 +6,7 @@ import { hero } from "@/js/data/services/hero";
 const Hero = () => {
   return (
     <SectionsComponent id="services" otherClasses="pt-32 md:pt-48 -mb-20">
-      <SectionTitle title="Services" text="What I Build" />
+      <SectionTitle title="Available Services" text="What I Offer" />
       <div className="-mt-7">
         {hero.map((data) => (
           <div key={data}>

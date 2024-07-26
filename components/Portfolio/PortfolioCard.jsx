@@ -33,7 +33,7 @@ const PortfolioCard = ({ content, index }) => {
             </p>
             <div className="w-fit text-xs md:text-sm mt-3 bg-orange-500 px-5 py-2 uppercase btn43-43 btn-43">
               <p className="flex items-center">
-                See Project
+                View Project
                 <FaFolderOpen className="ml-2" />
               </p>
             </div>

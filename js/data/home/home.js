@@ -25,36 +25,36 @@ export const infosHero = [
 export const aboutme = [
   {
     title: "I'm Jean Emmanuel CADET",
-    description: `As a Full-stack software engineer, I possess the expertise to craft and implement cutting-edge software solutions that cater to the unique needs of businesses. 
-    
-From ideation to deployment, I handle the entire software development cycle with precision and skill. With my proficiency in designing, building, and deploying innovative software solutions, I guarantee to provide bespoke services that can help your business thrive.`,
+    description: `As a Full-Stack Software Engineer, I specialize in crafting and implementing cutting-edge software solutions tailored to your business needs.
+
+From ideation to deployment, I manage the entire software development cycle with precision and expertise. My proficiency in designing, building, and deploying innovative software ensures bespoke services that help your business thrive.`,
   },
 ];
 
 export const skillList = [
   {
     id: "1",
-    title: "JavaScript",
+    title: "Ruby",
   },
   {
     id: "2",
+    title: "Ruby on Rails",
+  },
+  {
+    id: "3",
+    title: "JavaScript",
+  },
+  {
+    id: "4",
     title: "TypeScript",
   },
 
   {
-    id: "3",
+    id: "5",
     title: "React",
   },
   {
-    id: "4",
-    title: "Next.js",
-  },
-  {
-    id: "5",
-    title: "Ruby",
-  },
-  {
     id: "6",
-    title: "Ruby on Rails",
+    title: "Next.js",
   },
 ];
