@@ -10,14 +10,14 @@ const PortfolioSection = () => {
   const limitedPortfolios = portfolios.slice(0, 3);
   return (
     <SectionsComponent id="portfolio">
-      <SectionTitle title="Portfolio" text="Featured Projects" />
+      <SectionTitle title="My Works" text="Featured Projects" />
       {limitedPortfolios.map((portfolio, index) => (
         <div key={portfolio.id} className="duration-500">
           <PortfolioCard content={portfolio} index={index} />
         </div>
       ))}
       <div className="flex justify-center">
-        <ButtonComponent path="portfolio" text="View my portfolios" />
+        <ButtonComponent path="portfolio" text="See My Work" />
       </div>
     </SectionsComponent>
   );

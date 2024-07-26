@@ -1,40 +1,40 @@
 export const skills = [
   {
     id: 1,
-    title: "JavaScript",
-    percentage: "75",
-    icon: "/icons/skills/js.svg",
-  },
-  {
-    id: 2,
-    title: "TypeScript",
-    percentage: "75",
-    icon: "/icons/skills/ts.svg",
-  },
-  {
-    id: 3,
     title: "Ruby",
     percentage: "75",
     icon: "/icons/skills/ruby.svg",
   },
   {
+    id: 2,
+    title: "Ruby on Rails",
+    percentage: "75",
+    icon: "/icons/skills/rubyonrails.svg",
+  },
+  {
+    id: 3,
+    title: "JavaScript",
+    percentage: "75",
+    icon: "/icons/skills/js.svg",
+  },
+
+  {
     id: 4,
+    title: "TypeScript",
+    percentage: "75",
+    icon: "/icons/skills/ts.svg",
+  },
+  {
+    id: 5,
     title: "React",
     percentage: "75",
     icon: "/icons/skills/react.svg",
   },
   {
-    id: 5,
+    id: 6,
     title: "Next.js",
     percentage: "75",
     icon: "/icons/skills/next-js.svg",
-  },
-
-  {
-    id: 6,
-    title: "Ruby on Rails",
-    percentage: "75",
-    icon: "/icons/skills/rubyonrails.svg",
   },
   {
     id: 7,

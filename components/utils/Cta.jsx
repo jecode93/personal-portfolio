@@ -28,7 +28,7 @@ const Cta = () => {
         className="px-5 py-2 bg-blue text-xs md:text-sm text-lightestSlate uppercase hover:text-blue transition duration-500 btn41-43 btn-41"
       >
         <div className="flex gap-2 items-center">
-          <span>Start today</span>
+          <span>Get Started</span>
           <FaChevronRight />
         </div>
       </Link>

@@ -13,7 +13,7 @@ export const menu = [
     path: "/",
   },
   {
-    name: "About",
+    name: "About Me",
     path: "/about-me",
   },
   {

@@ -34,9 +34,9 @@ const Hero = () => {
                   <div className="flex flex-col items-center lg:gap-3 lg:flex-row">
                     <BookingCalendly
                       path="/schedule-meeting"
-                      text="Need a consultation"
+                      text="Book a Consultation"
                     />
-                    <ButtonComponent path="/contact" text="Contact me" />
+                    <ButtonComponent path="/contact" text="Get in Touch" />
                   </div>
                 </div>
 

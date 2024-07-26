@@ -11,7 +11,7 @@ const ContactSection = () => {
       id="contact"
       otherClasses="pt-32 md:pt-48 border-b border-degrade"
     >
-      <SectionTitle title="Contact Me" text="Shape your future with Me" />
+      <SectionTitle title="Get in Touch" text="Shape your future with Me" />
       <div className="flex flex-col justify-center items-center">
         <div className="lg:flex justify-between gap-5">
           <div className="mb-10 lg:w-1/2">
