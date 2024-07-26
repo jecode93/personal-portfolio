@@ -141,7 +141,7 @@ This project successfully demonstrates the ability to work effectively in a team
     id: 9,
     title: "Car Booking System",
     image: "/portfolio/bookcar.webp",
-    link: "https://final-capstone-frontend-3l0g.onrender.com/",
+    link: "https://github.com/jecode93/carbook_frontend",
     github: "https://github.com/jecode93/carbook_frontend",
     description: `Car Book revolutionizes car rentals, bridging the gap between renters and owners with a user-centric platform.
 
